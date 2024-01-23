@@ -1,4 +1,7 @@
-﻿using System.Windows;
+﻿using DocumentFormat.OpenXml.Packaging;
+using System.Text;
+using System.Windows;
+using System.Windows.Controls;
 using Xceed.Document.NET;
 using Xceed.Words.NET;
 
@@ -9,6 +12,8 @@ namespace Economy
 	/// </summary>
 	public partial class MainWindow : Window
 	{
+		public int MyProperty { get; set; }
+
 		public MainWindow()
 		{
 			InitializeComponent();
@@ -69,11 +74,39 @@ namespace Economy
 				string userData = UserDataTextBox.Text;
 				paragraph.Append(userData).Font("Times New Roman").FontSize(12);
 
+				using (WordprocessingDocument docXaml = WordprocessingDocument.Open("example.docx", false))
+				{
+					DocumentFormat.OpenXml.Wordprocessing.Body body = docXaml.MainDocumentPart.Document.Body;
+					// Извлечение информации из документа
+					string documentText = body.InnerText;
+					// Другие операции с содержимым документа
+					XamlBuilder(doc);
+				}
 				// Сохранение документа
 				doc.Save();
 			}
 
 			MessageBox.Show("DOCX файл успешно сгенерирован!");
+		}
+
+		public void XamlBuilder(DocX doc)
+		{
+			StringBuilder xamlBuilder = new StringBuilder();
+
+			// Создание TextBlock для текста
+			xamlBuilder.AppendLine("<TextBlock>");
+
+			// Обход элементов из DOCX и добавление их в XAML
+			foreach (var paragraph in doc.Paragraphs)
+			{
+				xamlBuilder.AppendLine($"  <Paragraph>{paragraph.Text}</Paragraph>");
+			}
+
+			// Завершение TextBlock
+			xamlBuilder.AppendLine("</TextBlock>");
+
+			// Результат в виде строки XAML
+			string xamlResult = xamlBuilder.ToString();
 		}
 	}
 }
