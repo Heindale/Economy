@@ -45,10 +45,10 @@ namespace Economy
 		public MainWindow()
 		{
 			InitializeComponent();
-			Binding binding = new Binding();
+			/*Binding binding = new Binding();
 			binding.ElementName = "myTextBox";
 			binding.Path = new PropertyPath("ModelName");
-			Table.SetBinding(UidProperty, binding);
+			Table.SetBinding(UidProperty, binding);*/
 			this.viewModel = new ViewModel
 			{
 				DataGridItems = new List<DataGridItems>()
@@ -97,12 +97,13 @@ namespace Economy
 				{
 					for (int j = 0; j < Table.Columns.Count; j++)
 					{
+                        /*DataGridItems dataGridItems = Table.SelectedValue as DataGridItems;*/
                         /*table.Rows[i].Cells[j] = */
-						/*DataGridItems dataGridItems = Table.SelectedCells as DataGridItems;
+                        /*DataGridItems dataGridItems = Table.SelectedCells as DataGridItems;
 						
-                        var dataGridCellInfo = new DataGridCellInfo(Table.Items[i], Table.Columns[j]);
-                        MessageBox.Show(Convert.ToString(dataGridItems.Name));*/
-
+						var dataGridCellInfo = new DataGridCellInfo(Table.Items[i], Table.Columns[j]);*/
+                        /*MessageBox.Show(Convert.ToString(Table.Columns[j].GetCellContent(Table.Items[i])));*/
+						MessageBox.Show(Convert.ToString(this.viewModel.DataGridItems.ToArray()[i].Value));
 					}
 				}
 				/*foreach (DataGridCellInfo cellinfo in Table.SelectedCells)
