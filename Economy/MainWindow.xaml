@@ -19,12 +19,12 @@
                      Text=""/>
             <Button Content="Сгенерировать DOCX"
                     Click="GenerateDocxButton_Click" />
-            <DataGrid ItemsSource="{Binding DataGridItems}" x:Name="Table">
+            <DataGrid ItemsSource="{Binding DataGridItems}" x:Name="Table" AutoGenerateColumns="False">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Продукт" Width="175" 
+                    <DataGridTextColumn Header="Продукт" Width="325" 
                              Binding="{Binding Path=Name}">
                     </DataGridTextColumn>
-                    <DataGridTextColumn Header="Цена" 
+                    <DataGridTextColumn Header="Цена" Width="325" 
                              Binding="{Binding Path=Value}">
                     </DataGridTextColumn>
                 </DataGrid.Columns>

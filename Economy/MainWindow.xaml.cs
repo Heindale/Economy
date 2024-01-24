@@ -85,27 +85,42 @@ namespace Economy
 				Size = 14D,
 				Spacing = 1.5
 			};
-			// Создание нового документа
-			using (DocX doc = DocX.Create("GeneratedDocument.docx"))
+
+            //using (var document = DocX.Load("D:\\Projects\\Economy\\Economy\\bin\\Debug\\net8.0-windows\\GeneratedDocument.docx"))
+            //{
+            //    Paragraph paragraph = document.InsertParagraph();
+            //    string userData = "Это гг";
+            //    paragraph.Append(userData).Font("Arial").FontSize(12).Bold();
+            //    ReplacePlaceholder(document, "<FirstName>", "John");
+            //    ReplacePlaceholder(document, "<LastName>", "Doe");
+            //    ReplacePlaceholder(document, "<DateOfBirth>", "01/01/1990");
+            //    document.SaveAs("NewCopy.docx");
+            //}
+
+            // Создание нового документа
+            using (DocX doc = DocX.Create("GeneratedDocument.docx"))
 			{
 				// Добавление параграфа в документ
 				Paragraph paragraph = doc.InsertParagraph();
 				Table table = doc.AddTable(Table.Items.Count, Table.Columns.Count);
-				table.Alignment = Alignment.center;
 				table.Design = TableDesign.TableGrid;
-				for (int i = 0; i < Table.Items.Count; i++)
+                for (int i = 0; i < Table.Items.Count-1; i++)
 				{
-					for (int j = 0; j < Table.Columns.Count; j++)
+                    MessageBox.Show(Convert.ToString(this.viewModel.DataGridItems.ToArray()[i].Name));
+                    MessageBox.Show(Convert.ToString(this.viewModel.DataGridItems.ToArray()[i].Value));
+                    table.Rows[i].Cells[0].Paragraphs[0].Append(Convert.ToString(this.viewModel.DataGridItems.ToArray()[i].Name));
+                    table.Rows[i].Cells[1].Paragraphs[0].Append(Convert.ToString(this.viewModel.DataGridItems.ToArray()[i].Value));
+                    /*for (int j = 0; j < Table.Columns.Count; j++)
 					{
-                        /*DataGridItems dataGridItems = Table.SelectedValue as DataGridItems;*/
-                        /*table.Rows[i].Cells[j] = */
-                        /*DataGridItems dataGridItems = Table.SelectedCells as DataGridItems;
-						
-						var dataGridCellInfo = new DataGridCellInfo(Table.Items[i], Table.Columns[j]);*/
-                        /*MessageBox.Show(Convert.ToString(Table.Columns[j].GetCellContent(Table.Items[i])));*/
-						MessageBox.Show(Convert.ToString(this.viewModel.DataGridItems.ToArray()[i].Value));
-					}
-				}
+                        *//*DataGridItems dataGridItems = Table.SelectedValue as DataGridItems;*/
+                    /*table.Rows[i].Cells[j] = */
+                    /*DataGridItems dataGridItems = Table.SelectedCells as DataGridItems;
+
+                    var dataGridCellInfo = new DataGridCellInfo(Table.Items[i], Table.Columns[j]);*/
+                    /*MessageBox.Show(Convert.ToString(Table.Columns[j].GetCellContent(Table.Items[i])));*//*
+
+                }*/
+                }
 				/*foreach (DataGridCellInfo cellinfo in Table.SelectedCells)
                 {
 					MessageBox.Show(Convert.ToString(cellinfo.Column.GetCellContent(cellinfo.Item))); 
@@ -121,5 +136,15 @@ namespace Economy
 
 			MessageBox.Show("DOCX файл успешно сгенерирован!");
 		}
-	}
+        private static void ReplacePlaceholder(DocX document, string placeholder, string value)
+        {
+            foreach (var paragraph in document.Paragraphs)
+            {
+                if (paragraph.Text.Contains(placeholder))
+                {
+                    paragraph.ReplaceText(placeholder, value);
+                }
+            }
+        }
+    }
 }
