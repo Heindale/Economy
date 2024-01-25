@@ -9,16 +9,12 @@
         Height="450"
         Width="800">
     <Grid>
-        
-        <StackPanel Margin="10">
-            <Label Content="Введите данные:" />
-            <TextBox x:Name="UserDataTextBox"
-                     TextWrapping="Wrap"
-                     VerticalScrollBarVisibility="Auto"
-                     Height="80"
-                     Margin="0,0,0,10" />
-            <Button Content="Сгенерировать DOCX"
-                    Click="GenerateDocxButton_Click" />
+        <StackPanel>
+            <Label Content="1. Какой бизнес создавать? (этап № 1 – бизнес-идея)"
+                   HorizontalAlignment="Center"
+                   FontWeight="Bold" />
+            <Label Content="Задание № 1.1 Поиск и отбор бизнес-идеи. Подобрать бизнес-идеи, а затем выбрать из них лучшие можно заполнив таблицу 1.1."
+                   Padding="30 0 0 0" />
         </StackPanel>
     </Grid>
 </Window>
