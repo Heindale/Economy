@@ -37,6 +37,8 @@
                         <RowDefinition />
                         <RowDefinition />
                         <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
                     </Grid.RowDefinitions>
 
                     <Border BorderBrush="Black"
@@ -242,6 +244,19 @@
                                Grid.ColumnSpan="6"
                                Grid.Column="0"
                                Text="Основные способы поиска " />
+
+                    <DataGrid Grid.Row="5"
+                              Grid.ColumnSpan="6"
+                              ItemsSource="{DynamicResource ResourceKey=table11}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Width="*" />
+                            <DataGridTextColumn Width="*" />
+                            <DataGridTextColumn Width="*" />
+                            <DataGridTextColumn Width="*" />
+                            <DataGridTextColumn Width="*" />
+                            <DataGridTextColumn Width="*" />
+                        </DataGrid.Columns>
+                    </DataGrid>
                 </Grid>
             </StackPanel>
         </ScrollViewer>

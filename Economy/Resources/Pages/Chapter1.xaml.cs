@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using Economy.Resources.Models;
+using System.Collections.ObjectModel;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Economy.Resources.Pages
 {
@@ -20,9 +9,22 @@ namespace Economy.Resources.Pages
 	/// </summary>
 	public partial class Chapter1 : Page
 	{
+		public ObservableCollection<Table11> DataCollection { get; set; }
+
 		public Chapter1()
 		{
 			InitializeComponent();
+
+			DataCollection = new ObservableCollection<Table11>()
+			{
+				new Table11
+				{
+					DemandForTheProduct = 1,
+					NecessaryFinancing = 1,
+					NumberOfInternetRequests = 1,
+					PersonalInterest = 1
+				}
+			};
 		}
 	}
 }
