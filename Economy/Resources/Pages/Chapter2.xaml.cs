@@ -15,14 +15,14 @@ using System.Windows.Shapes;
 
 namespace Economy.Resources.Pages
 {
-    /// <summary>
-    /// Interaction logic for Chapter1.xaml
-    /// </summary>
-    public partial class Chapter1 : Page
-    {
-        public Chapter1()
-        {
-            InitializeComponent();
-        }
-    }
+	/// <summary>
+	/// Логика взаимодействия для Chapter2.xaml
+	/// </summary>
+	public partial class Chapter2 : Page
+	{
+		public Chapter2()
+		{
+			InitializeComponent();
+		}
+	}
 }

@@ -11,5 +11,77 @@
       Title="Chapter1">
 
     <Grid>
+        <ScrollViewer>
+            <StackPanel>
+                <Label Content="1. Какой бизнес создавать? (этап № 1 – бизнес-идея)"
+                       HorizontalAlignment="Center"
+                       FontWeight="Bold" />
+                <Label Content="Задание № 1.1 Поиск и отбор бизнес-идеи. Подобрать бизнес-идеи, а затем выбрать из них лучшие можно заполнив таблицу 1.1."
+                       Padding="30 0 0 0" />
+                <Label Content="Таблица 1.1 Задание № 1.1 Поиск и отбор бизнес-идеи"
+                       HorizontalAlignment="Center"
+                       FontWeight="Bold" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Border BorderBrush="Black"
+                            BorderThickness="1" />
+                    <Label HorizontalAlignment="Center"
+                           Content="Поиск" />
+
+                    <Border BorderBrush="Black"
+                            BorderThickness="1"
+                            Grid.Column="1"
+                            Grid.ColumnSpan="5" />
+                    <Label Grid.Column="1"
+                           Grid.ColumnSpan="5"
+                           HorizontalAlignment="Center"
+                           Content="Выбор бизнес-идей" />
+
+                    <Border BorderBrush="Black"
+                            BorderThickness="1"
+                            Grid.Row="1"
+                            Grid.RowSpan="2" />
+                    <Label Grid.Row="1"
+                           Grid.RowSpan="2"
+                           Content="Бизнес-идеи" />
+
+                    <Border BorderBrush="Black"
+                            BorderThickness="1"
+                            Grid.Row="1"
+                            Grid.Column="1" />
+                    <TextBlock TextWrapping="Wrap"
+                               Padding="5"
+                               Grid.Row="1"
+                               Grid.Column="1"
+                               Text="Необходимое финансирование" />
+
+                    <Border BorderBrush="Black"
+                            BorderThickness="1"
+                            Grid.Row="2"
+                            Grid.Column="1" />
+                    <TextBlock TextWrapping="Wrap"
+                               Padding="5"
+                               Grid.Row="2"
+                               Grid.Column="1"
+                               Text="3 – у вас уже достаточно деньг для бизнеса
+                                     2 – не достаточно, но можно накопить (привлечь)
+                                     1 – не достаточно, не возможно накопить (привлечь)" />
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>
