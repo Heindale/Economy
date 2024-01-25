@@ -55,12 +55,13 @@
                     Margin="0,10,0,0">
             </Button>
         </StackPanel>
-        <Frame x:Name="CurrentPage"
+        <ScrollViewer Grid.Column="1">
+            <Frame x:Name="CurrentPage"
                NavigationUIVisibility="Hidden"
-               Grid.Column="1"
                Width="auto"
                Height="auto"
                Background="#EEEEEE">
-        </Frame>
+            </Frame>
+        </ScrollViewer>
     </Grid>
 </Window>
