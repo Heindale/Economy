@@ -11,8 +11,7 @@
       Title="Chapter1">
 
     <Grid>
-        <ScrollViewer>
-            <StackPanel Margin="5">
+        <StackPanel Margin="5">
                 <TextBlock Text="1. Какой бизнес создавать? (этап № 1 – бизнес-идея)"
                            HorizontalAlignment="Center"
                            FontWeight="Bold" />
@@ -244,6 +243,5 @@
                                Text="Основные способы поиска " />
                 </Grid>
             </StackPanel>
-        </ScrollViewer>
     </Grid>
 </Page>
