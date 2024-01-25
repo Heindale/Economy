@@ -18,5 +18,10 @@ namespace Economy
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void GenerateDocxButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+    }
 }
