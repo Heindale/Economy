@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Economy.Resources.Pages
 {
 	/// <summary>
-	/// Логика взаимодействия для Chapter2.xaml
+	/// Логика взаимодействия для Chapter1.xaml
 	/// </summary>
-	public partial class Chapter2 : Page
+	public partial class Chapter1 : Page
 	{
-		public Chapter2()
+		public Chapter1()
 		{
 			InitializeComponent();
 		}
