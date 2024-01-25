@@ -36,6 +36,7 @@
                         <RowDefinition />
                         <RowDefinition />
                         <RowDefinition />
+                        <RowDefinition />
                     </Grid.RowDefinitions>
 
                     <Border BorderBrush="Black"
@@ -151,6 +152,96 @@
                                Grid.Column="5"
                                Grid.RowSpan="2"
                                Text="Сумма баллов (п.2+3+5, макс. 9 баллов)" />
+
+                    <Border BorderBrush="Black"
+                            BorderThickness="1"
+                            Grid.Row="3"
+                            Grid.Column="0" />
+                    <TextBlock TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               Padding="5"
+                               Grid.Row="3"
+                               Grid.Column="0"
+                               Text="1" />
+
+                    <Border BorderBrush="Black"
+                            BorderThickness="1"
+                            Grid.Row="3"
+                            Grid.Column="1" />
+                    <TextBlock TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               Padding="5"
+                               Grid.Row="3"
+                               Grid.Column="1"
+                               Text="2" />
+
+                    <Border BorderBrush="Black"
+                            BorderThickness="1"
+                            Grid.Row="3"
+                            Grid.Column="2" />
+                    <TextBlock TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               Padding="5"
+                               Grid.Row="3"
+                               Grid.Column="2"
+                               Text="3" />
+
+                    <Border BorderBrush="Black"
+                            BorderThickness="1"
+                            Grid.Row="3"
+                            Grid.Column="3" />
+                    <TextBlock TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               Padding="5"
+                               Grid.Row="3"
+                               Grid.Column="3"
+                               Text="4" />
+
+                    <Border BorderBrush="Black"
+                            BorderThickness="1"
+                            Grid.Row="3"
+                            Grid.Column="4" />
+                    <TextBlock TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               Padding="5"
+                               Grid.Row="3"
+                               Grid.Column="4"
+                               Text="5" />
+
+                    <Border BorderBrush="Black"
+                            BorderThickness="1"
+                            Grid.Row="3"
+                            Grid.Column="5" />
+                    <TextBlock TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               Padding="5"
+                               Grid.Row="3"
+                               Grid.Column="5"
+                               Text="6" />
+
+                    <Border BorderBrush="Black"
+                            BorderThickness="1"
+                            Grid.Row="3"
+                            Grid.Column="0" />
+                    <TextBlock TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               Padding="5"
+                               Grid.Row="3"
+                               Grid.Column="0"
+                               Text="1" />
+
+                    <Border BorderBrush="Black"
+                            BorderThickness="1"
+                            Grid.Row="4"
+                            Grid.ColumnSpan="6"
+                            Grid.Column="0" />
+                    <TextBlock TextWrapping="Wrap"
+                               TextAlignment="Center"
+                               Padding="5"
+                               Grid.Row="4"
+                               Grid.ColumnSpan="6"
+                               Grid.Column="0"
+                               Text="Основные способы поиска " />
                 </Grid>
             </StackPanel>
         </ScrollViewer>
