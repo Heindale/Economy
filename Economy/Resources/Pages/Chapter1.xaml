@@ -12,236 +12,297 @@
 
     <Grid>
         <StackPanel Margin="5">
-                <TextBlock Text="1. Какой бизнес создавать? (этап № 1 – бизнес-идея)"
+            <TextBlock Text="1. Какой бизнес создавать? (этап № 1 – бизнес-идея)"
+                       HorizontalAlignment="Center"
+                       FontWeight="Bold" />
+            <TextBlock Text="Задание № 1.1 Поиск и отбор бизнес-идеи. Подобрать бизнес-идеи, а затем выбрать из них лучшие можно заполнив таблицу 1.1."
+                       TextWrapping="Wrap"
+                       Padding="30 0 0 0" />
+            <TextBlock Text="Таблица 1.1 Задание № 1.1 Поиск и отбор бизнес-идеи"
+                       HorizontalAlignment="Center"
+                       FontWeight="Bold" />
+            <Grid x:Name="Table11">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1" />
+                <TextBlock HorizontalAlignment="Center"
+                           Text="Поиск" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="5" />
+                <TextBlock Grid.Column="1"
+                           Grid.ColumnSpan="5"
                            HorizontalAlignment="Center"
-                           FontWeight="Bold" />
-                <TextBlock Text="Задание № 1.1 Поиск и отбор бизнес-идеи. Подобрать бизнес-идеи, а затем выбрать из них лучшие можно заполнив таблицу 1.1."
+                           Text="Выбор бизнес-идей" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="1"
+                        Grid.RowSpan="2" />
+                <TextBlock Grid.Row="1"
+                           Padding="5"
                            TextWrapping="Wrap"
-                           Padding="30 0 0 0" />
-                <TextBlock Text="Таблица 1.1 Задание № 1.1 Поиск и отбор бизнес-идеи"
-                           HorizontalAlignment="Center"
-                           FontWeight="Bold" />
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                    </Grid.RowDefinitions>
+                           Grid.RowSpan="2"
+                           Text="Бизнес-идеи" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1" />
-                    <TextBlock HorizontalAlignment="Center"
-                               Text="Поиск" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="1"
+                        Grid.Column="1" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="1"
+                           Grid.Column="1"
+                           Text="Необходимое финансирование" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="1"
-                            Grid.ColumnSpan="5" />
-                    <TextBlock Grid.Column="1"
-                               Grid.ColumnSpan="5"
-                               HorizontalAlignment="Center"
-                               Text="Выбор бизнес-идей" />
-
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="1"
-                            Grid.RowSpan="2" />
-                    <TextBlock Grid.Row="1"
-                               Padding="5"
-                               TextWrapping="Wrap"
-                               Grid.RowSpan="2"
-                               Text="Бизнес-идеи" />
-
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="1"
-                            Grid.Column="1" />
-                    <TextBlock TextWrapping="Wrap"
-                               Padding="5"
-                               Grid.Row="1"
-                               Grid.Column="1"
-                               Text="Необходимое финансирование" />
-
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="2"
-                            Grid.Column="1" />
-                    <TextBlock TextWrapping="Wrap"
-                               Padding="5"
-                               Grid.Row="2"
-                               Grid.Column="1"
-                               Text="3 – у вас уже достаточно денег для бизнеса
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="2"
+                        Grid.Column="1" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="2"
+                           Grid.Column="1"
+                           Text="3 – у вас уже достаточно денег для бизнеса
                                      2 – не достаточно, но можно накопить (привлечь)
                                      1 – не достаточно, не возможно накопить (привлечь)" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="1"
-                            Grid.Column="2" />
-                    <TextBlock TextWrapping="Wrap"
-                               Padding="5"
-                               Grid.Row="1"
-                               Grid.Column="2"
-                               Text="Личный интерес к бизнес-идее" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="1"
+                        Grid.Column="2" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="1"
+                           Grid.Column="2"
+                           Text="Личный интерес к бизнес-идее" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="2"
-                            Grid.Column="2" />
-                    <TextBlock TextWrapping="Wrap"
-                               Padding="5"
-                               Grid.Row="2"
-                               Grid.Column="2"
-                               Text="3 – очень нравится (дело всей жизни)
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="2"
+                        Grid.Column="2" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="2"
+                           Grid.Column="2"
+                           Text="3 – очень нравится (дело всей жизни)
                                     2 – нравится
                                     1 – не нравится" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="1"
-                            Grid.Column="3"
-                            Grid.ColumnSpan="2" />
-                    <TextBlock TextWrapping="Wrap"
-                               Padding="5"
-                               Grid.Row="1"
-                               Grid.Column="3"
-                               Grid.ColumnSpan="2"
-                               Text="Максимальный спрос на товар (услугу) бизнес-идеи" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="1"
+                        Grid.Column="3"
+                        Grid.ColumnSpan="2" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="1"
+                           Grid.Column="3"
+                           Grid.ColumnSpan="2"
+                           Text="Максимальный спрос на товар (услугу) бизнес-идеи" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="2"
-                            Grid.Column="3" />
-                    <TextBlock TextWrapping="Wrap"
-                               Padding="5"
-                               Grid.Row="2"
-                               Grid.Column="3"
-                               Text="Количество интернет запросов за месяц на Яндекс или Гугл" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="2"
+                        Grid.Column="3" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="2"
+                           Grid.Column="3"
+                           Text="Количество интернет запросов за месяц на Яндекс или Гугл" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="2"
-                            Grid.Column="4" />
-                    <TextBlock TextWrapping="Wrap"
-                               Padding="5"
-                               Grid.Row="2"
-                               Grid.Column="4"
-                               Text="3 – максимальный
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="2"
+                        Grid.Column="4" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="2"
+                           Grid.Column="4"
+                           Text="3 – максимальный
                                      2 – средний
                                      1 – минимальный" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="5"
-                            Grid.Row="1"
-                            Grid.RowSpan="2" />
-                    <TextBlock Grid.Row="1"
-                               Padding="5"
-                               TextWrapping="Wrap"
-                               Grid.Column="5"
-                               Grid.RowSpan="2"
-                               Text="Сумма баллов (п.2+3+5, макс. 9 баллов)" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Column="5"
+                        Grid.Row="1"
+                        Grid.RowSpan="2" />
+                <TextBlock Grid.Row="1"
+                           Padding="5"
+                           TextWrapping="Wrap"
+                           Grid.Column="5"
+                           Grid.RowSpan="2"
+                           Text="Сумма баллов (п.2+3+5, макс. 9 баллов)" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="3"
-                            Grid.Column="0" />
-                    <TextBlock TextWrapping="Wrap"
-                               TextAlignment="Center"
-                               Padding="5"
-                               Grid.Row="3"
-                               Grid.Column="0"
-                               Text="1" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="0"
+                           Text="1" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="3"
-                            Grid.Column="1" />
-                    <TextBlock TextWrapping="Wrap"
-                               TextAlignment="Center"
-                               Padding="5"
-                               Grid.Row="3"
-                               Grid.Column="1"
-                               Text="2" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="1" />
+                <TextBlock TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="1"
+                           Text="2" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="3"
-                            Grid.Column="2" />
-                    <TextBlock TextWrapping="Wrap"
-                               TextAlignment="Center"
-                               Padding="5"
-                               Grid.Row="3"
-                               Grid.Column="2"
-                               Text="3" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="2" />
+                <TextBlock TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="2"
+                           Text="3" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="3"
-                            Grid.Column="3" />
-                    <TextBlock TextWrapping="Wrap"
-                               TextAlignment="Center"
-                               Padding="5"
-                               Grid.Row="3"
-                               Grid.Column="3"
-                               Text="4" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="3" />
+                <TextBlock TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="3"
+                           Text="4" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="3"
-                            Grid.Column="4" />
-                    <TextBlock TextWrapping="Wrap"
-                               TextAlignment="Center"
-                               Padding="5"
-                               Grid.Row="3"
-                               Grid.Column="4"
-                               Text="5" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="4" />
+                <TextBlock TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="4"
+                           Text="5" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="3"
-                            Grid.Column="5" />
-                    <TextBlock TextWrapping="Wrap"
-                               TextAlignment="Center"
-                               Padding="5"
-                               Grid.Row="3"
-                               Grid.Column="5"
-                               Text="6" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="5" />
+                <TextBlock TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="5"
+                           Text="6" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="3"
-                            Grid.Column="0" />
-                    <TextBlock TextWrapping="Wrap"
-                               TextAlignment="Center"
-                               Padding="5"
-                               Grid.Row="3"
-                               Grid.Column="0"
-                               Text="1" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="4"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Padding="5"
+                           Grid.Row="4"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="Основные способы поиска " />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="4"
-                            Grid.ColumnSpan="6"
-                            Grid.Column="0" />
-                    <TextBlock TextWrapping="Wrap"
-                               TextAlignment="Center"
-                               Padding="5"
-                               Grid.Row="4"
-                               Grid.ColumnSpan="6"
-                               Grid.Column="0"
-                               Text="Основные способы поиска " />
-                </Grid>
-            </StackPanel>
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="4"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Padding="5"
+                           Grid.Row="4"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="Основные способы поиска " />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="5"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="5"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="1. Составьте список из 3 бизнес-идей, основанных на ваших УВЛЕЧЕНИЯХ (ХОББИ)" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="Table11Cell11"
+                         Padding="5"
+                         Grid.Row="6"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="Table11Cell12"
+                           Padding="5"
+                           Grid.Row="6"
+                           Grid.Column="1">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="Table11Cell13"
+                           Padding="5"
+                           Grid.Row="6"
+                           Grid.Column="2">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell14"
+                          Padding="5"
+                          Grid.Row="6"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="Table11Cell15"
+                           Padding="5"
+                           Grid.Row="6"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell16"
+                          Padding="5"
+                          Grid.Row="6"
+                          Grid.Column="5"
+                          IsEnabled="False" />
+            </Grid>
+            <Button x:Name="Sum"
+                    Content="Посчитать сумму баллов"
+                    Click="Sum_Click" />
+        </StackPanel>
     </Grid>
 </Page>
