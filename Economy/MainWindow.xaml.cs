@@ -1,5 +1,7 @@
 ﻿using DocumentFormat.OpenXml.Packaging;
+using DocumentFormat.OpenXml.Wordprocessing;
 using Economy.Resources.Pages;
+using Microsoft.Win32;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -28,11 +30,18 @@ namespace Economy
 
 		private void GenerateDocxButton_Click(object sender, RoutedEventArgs e)
 		{
+            OpenFolderDialog folderBrowser = new OpenFolderDialog();
+            string path = "";
             ChangePage1();
             ChangePage2();
             ChangePage3();
             ChangePage4();
-            this.document.SaveAs("Документ");
+
+            if (folderBrowser.ShowDialog() ==  true)
+            {
+                path = folderBrowser.FolderName;
+            }
+            this.document.SaveAs($"{path}\\Документ");
 
 			MessageBox.Show("DOCX файл успешно сгенерирован!");
 		}
