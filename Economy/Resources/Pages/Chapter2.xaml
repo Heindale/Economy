@@ -29,7 +29,7 @@
                 </Label>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="1."></Label>
-                    <TextBox Width="400" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
+                    <TextBox x:Name="TextBox1" Width="400" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="2."></Label>
