@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Xceed.Words.NET;
 
 namespace Economy.Resources.Pages
 {
@@ -22,7 +23,7 @@ namespace Economy.Resources.Pages
 	{
 		public Chapter1()
 		{
-			InitializeComponent();
-		}
-	}
+			InitializeComponent();  
+        }
+    }
 }
