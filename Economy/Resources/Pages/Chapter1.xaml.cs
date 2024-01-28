@@ -28,33 +28,33 @@ namespace Economy.Resources.Pages
 
 		private void Sum_Click(object sender, RoutedEventArgs e)
 		{
-			Table11Cell16.Text = ComboBoxSum(Table11Cell12.Text, Table11Cell13.Text, Table11Cell15.Text);
-			Table11Cell26.Text = ComboBoxSum(Table11Cell22.Text, Table11Cell23.Text, Table11Cell25.Text);
-			Table11Cell36.Text = ComboBoxSum(Table11Cell32.Text, Table11Cell33.Text, Table11Cell35.Text);
+			T11Cell16.Text = ComboBoxSum(T11Cell12.Text, T11Cell13.Text, T11Cell15.Text);
+			T11Cell26.Text = ComboBoxSum(T11Cell22.Text, T11Cell23.Text, T11Cell25.Text);
+			T11Cell36.Text = ComboBoxSum(T11Cell32.Text, T11Cell33.Text, T11Cell35.Text);
 
-			var emptyTextBoxesOfTable11 = Table11.Children.OfType<TextBox>().Where(tb => string.IsNullOrEmpty(tb.Text));
-			var notEmptyTextBoxesOfTable11 = Table11.Children.OfType<TextBox>().Where(tb => !string.IsNullOrEmpty(tb.Text));
-			foreach (var item in notEmptyTextBoxesOfTable11)
+			var emptyTextBoxesOfT11 = Page1.Children.OfType<TextBox>().Where(tb => string.IsNullOrEmpty(tb.Text));
+			var notEmptyTextBoxesOfT11 = Page1.Children.OfType<TextBox>().Where(tb => !string.IsNullOrEmpty(tb.Text));
+			foreach (var item in notEmptyTextBoxesOfT11)
 			{
 				item.Background = Brushes.White;
 			}
-			var emptyComboBoxesOfTable11 = Table11.Children.OfType<ComboBox>().Where(cb => string.IsNullOrEmpty(cb.Text));
-			var notEmptyComboBoxesOfTable11 = Table11.Children.OfType<ComboBox>().Where(cb => !string.IsNullOrEmpty(cb.Text));
-			foreach (var item in notEmptyComboBoxesOfTable11)
+			var emptyComboBoxesOfT11 = Page1.Children.OfType<ComboBox>().Where(cb => string.IsNullOrEmpty(cb.Text));
+			var notEmptyComboBoxesOfT11 = Page1.Children.OfType<ComboBox>().Where(cb => !string.IsNullOrEmpty(cb.Text));
+			foreach (var item in notEmptyComboBoxesOfT11)
 			{
 				item.Background = Brushes.White;
 			}
-			var comboBoxesOfTable11 = Table11.Children.OfType<ComboBox>();
+			var comboBoxesOfT11 = Page1.Children.OfType<ComboBox>();
 
-			if (Table11.Children.OfType<TextBox>().Any(tb => string.IsNullOrEmpty(tb.Text))
-				|| Table11.Children.OfType<ComboBox>().Any(cb => string.IsNullOrEmpty(cb.Text)))
+			if (Page1.Children.OfType<TextBox>().Any(tb => string.IsNullOrEmpty(tb.Text))
+				|| Page1.Children.OfType<ComboBox>().Any(cb => string.IsNullOrEmpty(cb.Text)))
 			{
-				foreach (var item in emptyTextBoxesOfTable11)
+				foreach (var item in emptyTextBoxesOfT11)
 				{
 					item.Background = Brushes.Red;
 					item.Focus();
 				}
-				foreach (var item in emptyComboBoxesOfTable11)
+				foreach (var item in emptyComboBoxesOfT11)
 				{
 					item.Focus();
 				}

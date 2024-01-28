@@ -10,7 +10,7 @@
       Height="692"
       Title="Chapter3">
 
-    <Grid>
+    <Grid x:Name="Page3">
         
     </Grid>
 </Page>
