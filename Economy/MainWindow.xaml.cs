@@ -2,9 +2,13 @@
 using DocumentFormat.OpenXml.Wordprocessing;
 using Economy.Resources.Pages;
 using Microsoft.Win32;
+using System.ComponentModel;
+using System.IO;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Markup;
 using System.Windows.Media;
 using Xceed.Document.NET;
 using Xceed.Words.NET;
@@ -27,7 +31,9 @@ namespace Economy
 			this.page1 = new Chapter1();
 			this.page2 = new Chapter2();
 			this.document = DocX.Load("TemplateVersionSecond.docx");
-		}
+            
+            
+        }
         private void SetText(DependencyObject xamlpage)
         {
             foreach (var textBox in FindVisualChildren<TextBox>(xamlpage))
@@ -37,6 +43,46 @@ namespace Economy
 
         }
 
+        private void MainWindow_Loaded()
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            string path = "";
+            if (dialog.ShowDialog() == true)
+            {
+                path = dialog.FileName;
+            }
+            LoadExternalXaml(path);
+        }
+
+        private void MainWindow_Closing()
+        {
+            OpenFolderDialog openFolderDialog = new OpenFolderDialog();
+            string path = "";
+            if (openFolderDialog.ShowDialog() == true)
+            {
+                path = openFolderDialog.FolderName;
+            }
+            SaveExternalXaml(path);
+        }
+
+        private void LoadExternalXaml(string PathFile)
+        {
+            if (File.Exists(PathFile))
+            {
+                using (FileStream stream = new FileStream(PathFile, FileMode.Open))
+                {
+                    this.Content = XamlReader.Load(stream);  
+                }
+            }
+        }
+
+        private void SaveExternalXaml(string PathFile)
+        {
+            using (FileStream stream = new FileStream($"{PathFile}\\Test.xaml", FileMode.Create))
+            {
+                XamlWriter.Save(this.Content, stream);
+            }
+        }
 
         private IEnumerable<T> FindVisualChildren<T>(DependencyObject depObj) where T : DependencyObject
         {
@@ -113,6 +159,22 @@ namespace Economy
                     paragraph.ReplaceText(placeholder, value);
                 }
             }
+        }
+
+        private void DownloadXaml_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow_Loaded();
+        }
+
+        //private void OnExit(object sender, ExitEventArgs e)
+        //{
+        //    Settings
+        //}
+
+        private void SaveXaml_Click(object sender, RoutedEventArgs e)
+        {
+            
+            MainWindow_Closing();
         }
     }
 }
