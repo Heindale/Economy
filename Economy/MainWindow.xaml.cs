@@ -19,12 +19,14 @@ namespace Economy
 		public DocX document { get; set; }
 		public Chapter1 page1 { get; set; }
 		public Chapter2 page2 { get; set; }
+		public Chapter3 page3 { get; set; }
 
 		public MainWindow()
 		{
 			InitializeComponent();
 			this.page1 = new Chapter1();
 			this.page2 = new Chapter2();
+            this.page3 = new Chapter3();
 			this.document = DocX.Load("TemplateVersionSecond.docx");
 		}
 
@@ -74,6 +76,10 @@ namespace Economy
 		{
 			CurrentPage.Navigate(this.page2);
 		}
+        private void Chapter3_Click(object sender, RoutedEventArgs e)
+        {
+            CurrentPage.Navigate(this.page3);
+        }
         private static void ReplacePlaceholder(DocX document, string placeholder, string value)
         {
             foreach (var paragraph in document.Paragraphs)
@@ -84,5 +90,6 @@ namespace Economy
                 }
             }
         }
+
     }
 }
