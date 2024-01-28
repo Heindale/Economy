@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:Economy.Resources.Pages"
       mc:Ignorable="d"
-      d:DesignHeight="450"
+      d:DesignHeight="1537.5"
       d:DesignWidth="800"
       Background="White"
       Title="Chapter1">
@@ -1347,6 +1347,168 @@
             <Button x:Name="Sum"
                     Content="Посчитать сумму баллов"
                     Click="Sum_Click" />
+
+            <TextBlock Text="Оценка и выбор бизнес-идей"
+                       Margin="0 30 0 5"
+                       HorizontalAlignment="Center"
+                       FontWeight="Bold" />
+
+            <Grid x:Name="Table12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.RowSpan="4" />
+                <TextBlock Text="Критерии для сравнения"
+                           Padding="5"
+                           Grid.RowSpan="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2" />
+                <TextBlock Text="1 бизнес-идея"
+                           Padding="5"
+                           Grid.Column="1"
+                           Grid.ColumnSpan="2" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Column="3"
+                        Grid.ColumnSpan="2" />
+                <TextBlock Text="2 бизнес-идея"
+                           Padding="5"
+                           Grid.Column="3"
+                           Grid.ColumnSpan="2" />
+
+                <TextBox x:Name="Table12Cell1"
+                         Grid.Row="1"
+                         Grid.Column="1"
+                         Grid.ColumnSpan="2"
+                         Padding="5" />
+
+                <TextBox x:Name="Table12Cell2"
+                         Grid.Row="1"
+                         Grid.Column="3"
+                         Grid.ColumnSpan="2"
+                         Padding="5" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="1" />
+                <TextBlock Text="значение"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="1" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="2" />
+                <TextBlock Text="балл"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="2" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="3" />
+                <TextBlock Text="значение"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="3" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="4" />
+                <TextBlock Text="балл"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="4"
+                        Grid.Column="0" />
+                <TextBlock Text="1"
+                           Padding="5"
+                           Grid.Row="4"
+                           Grid.Column="0" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="4"
+                        Grid.Column="1" />
+                <TextBlock Text="2"
+                           Padding="5"
+                           Grid.Row="4"
+                           Grid.Column="1" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="4"
+                        Grid.Column="2" />
+                <TextBlock Text="3"
+                           Padding="5"
+                           Grid.Row="4"
+                           Grid.Column="2" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="4"
+                        Grid.Column="3" />
+                <TextBlock Text="4"
+                           Padding="5"
+                           Grid.Row="4"
+                           Grid.Column="3" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="4"
+                        Grid.Column="4" />
+                <TextBlock Text="5"
+                           Padding="5"
+                           Grid.Row="4"
+                           Grid.Column="4" />
+            </Grid>
         </StackPanel>
     </Grid>
 </Page>
