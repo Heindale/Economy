@@ -65,6 +65,22 @@
                     <RowDefinition />
                     <RowDefinition />
                     <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
                 </Grid.RowDefinitions>
 
                 <Border BorderBrush="Black"
@@ -592,6 +608,120 @@
                           IsReadOnly="True" />
                 <Border Grid.Row="10"
                         Grid.RowSpan="3"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="6"
+                        BorderBrush="Black"
+                        BorderThickness="1" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="13"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="13"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="3.Составьте список из 2 бизнес-идей, основанных на товарах/услугах с сайтов объявлений Авито (https://www.avito.ru/ ) и Юла (https://youla.io/) и др." />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="Table11Cell71"
+                         Padding="5"
+                         Grid.Row="14"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="Table11Cell72"
+                           Padding="5"
+                           Grid.Row="14"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="Table11Cell73"
+                           Padding="5"
+                           Grid.Row="14"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell74"
+                          Padding="5"
+                          Grid.Row="14"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="Table11Cell75"
+                           Padding="5"
+                           Grid.Row="14"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell76"
+                          Padding="5"
+                          Grid.Row="14"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="Table11Cell81"
+                         Padding="5"
+                         Grid.Row="15"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="Table11Cell82"
+                           Padding="5"
+                           Grid.Row="15"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="Table11Cell83"
+                           Padding="5"
+                           Grid.Row="15"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell84"
+                          Padding="5"
+                          Grid.Row="15"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="Table11Cell85"
+                           Padding="5"
+                           Grid.Row="15"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell86"
+                          Padding="5"
+                          Grid.Row="15"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+                <Border Grid.Row="14"
+                        Grid.RowSpan="2"
                         Grid.Column="0"
                         Grid.ColumnSpan="6"
                         BorderBrush="Black"
