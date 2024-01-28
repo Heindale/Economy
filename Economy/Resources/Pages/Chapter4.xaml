@@ -18,22 +18,22 @@
 
             <StackPanel Orientation="Horizontal">
                 <Label Content="Название бизнес-идеи:"/>
-                <TextBox x:Name="Table411Cell11" Width="400" Margin="5 5 0 0"></TextBox>
+                <TextBox x:Name="T411Cell11" Width="400" Margin="5 5 0 0"></TextBox>
             </StackPanel>
 
             <StackPanel Margin="0 5 0 0">
                 <Label Content="Выбор основного(ых) товара(ов)/услуг(и)" FontWeight="Bold" HorizontalAlignment="Center"/>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №1:"/>
-                    <TextBox x:Name="Table412Cell11" Width="400" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T412Cell11" Width="400" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0 5 0 0">
                     <Label Content="Т/У №2:"/>
-                    <TextBox x:Name="Table412Cell21" Width="400" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T412Cell21" Width="400" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0 5 0 0">
                     <Label Content="Т/У №3:"/>
-                    <TextBox x:Name="Table412Cell31" Width="400" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T412Cell31" Width="400" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
             </StackPanel>
 
@@ -61,28 +61,28 @@
                     </Grid.RowDefinitions>
 
                     <Label Content="Микрорайон города:"/>
-                    <CheckBox x:Name="Table414Cell11" Margin="5,0,0,0" VerticalAlignment="Center" Grid.Column="1" Height="16"></CheckBox>
+                    <CheckBox x:Name="T414Cell11" Margin="5,0,0,0" VerticalAlignment="Center" Grid.Column="1" Height="16"></CheckBox>
 
                     <Label Content="Город:" Grid.Row="1"/>
-                    <CheckBox x:Name="Table414Cell21" Margin="5,0,0,0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1" Height="15"></CheckBox>
+                    <CheckBox x:Name="T414Cell21" Margin="5,0,0,0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1" Height="15"></CheckBox>
 
                     <TextBlock Grid.Row="2" TextWrapping="Wrap" Width="150" HorizontalAlignment="Left" Margin="5,0,0,0">Город и район, а также ближайшие города:</TextBlock>
-                    <CheckBox x:Name="Table414Cell31" Margin="5,0,0,0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" Height="15"></CheckBox>
+                    <CheckBox x:Name="T414Cell31" Margin="5,0,0,0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" Height="15"></CheckBox>
 
                     <Label Content="Регион, область:" Grid.Row="3"/>
-                    <CheckBox x:Name="Table414Cell41" Margin="5 3 0 0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="3"></CheckBox>
+                    <CheckBox x:Name="T414Cell41" Margin="5 3 0 0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="3"></CheckBox>
 
                     <Label Content="Группа регионов:" Grid.Row="4"/>
-                    <CheckBox x:Name="Table414Cell51" Margin="5 3 0 0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="4"></CheckBox>
+                    <CheckBox x:Name="T414Cell51" Margin="5 3 0 0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="4"></CheckBox>
 
                     <Label Content="Россия:" Grid.Row="5"/>
-                    <CheckBox x:Name="Table414Cell61" Margin="5 3 0 0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="5"></CheckBox>
+                    <CheckBox x:Name="T414Cell61" Margin="5 3 0 0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="5"></CheckBox>
 
                     <Label Content="Страны СНГ (русскоязычные):" Grid.Row="6"/>
-                    <CheckBox x:Name="Table414Cell71" Margin="5 3 0 0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="6"></CheckBox>
+                    <CheckBox x:Name="T414Cell71" Margin="5 3 0 0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="6"></CheckBox>
 
                     <Label Content="Мир:" Grid.Row="7"/>
-                    <CheckBox x:Name="Table414Cell81" Margin="5 3 0 0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="7"></CheckBox>
+                    <CheckBox x:Name="T414Cell81" Margin="5 3 0 0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="7"></CheckBox>
                 </Grid>
             </StackPanel>
 
@@ -101,15 +101,15 @@
                 </TextBlock>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №1:"/>
-                    <TextBox x:Name="Table416Cell11" Width="400" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T416Cell11" Width="400" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №2:"/>
-                    <TextBox x:Name="Table416Cell21" Width="400" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T416Cell21" Width="400" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №3:"/>
-                    <TextBox x:Name="Table416Cell31" Width="400" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T416Cell31" Width="400" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
             </StackPanel>
 
@@ -121,17 +121,17 @@
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №1:"/>
-                    <TextBox x:Name="Table417Cell11" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell11" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №2:"/>
-                    <TextBox x:Name="Table417Cell12" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell12" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №3:"/>
-                    <TextBox x:Name="Table417Cell13" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell13" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <Label Content="Численность всех покупателей (на территории бизнеса):"/>
@@ -141,51 +141,51 @@
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №1:"/>
-                    <TextBox x:Name="Table417Cell21" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell21" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №2:"/>
-                    <TextBox x:Name="Table417Cell22" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell22" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №3:"/>
-                    <TextBox x:Name="Table417Cell23" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell23" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <Label Content="б) поправочный коэффициент статистики"/>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №1:"/>
-                    <TextBox x:Name="Table417Cell31" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell31" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №2:"/>
-                    <TextBox x:Name="Table417Cell32" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell32" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №3:"/>
-                    <TextBox x:Name="Table417Cell33" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell33" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <Label Content="в) численность с коэффициентом"/>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №1:"/>
-                    <TextBox x:Name="Table417Cell41" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell41" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №2:"/>
-                    <TextBox x:Name="Table417Cell42" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell42" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №3:"/>
-                    <TextBox x:Name="Table417Cell43" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell43" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <Label Content="2 - интернет-запросы:"/>
@@ -196,68 +196,68 @@
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №1:"/>
-                    <TextBox x:Name="Table417Cell51" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell51" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №2:"/>
-                    <TextBox x:Name="Table417Cell52" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell52" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №3:"/>
-                    <TextBox x:Name="Table417Cell53" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell53" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <Label Content="б) поправочный коэффициент запросов"/>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №1:"/>
-                    <TextBox x:Name="Table417Cell61" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell61" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №2:"/>
-                    <TextBox x:Name="Table417Cell62" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell62" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №3:"/>
-                    <TextBox x:Name="Table417Cell63" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell63" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <Label Content="в) численность с коэффициентом (п. а умножить на п. б) "/>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №1:"/>
-                    <TextBox x:Name="Table417Cell71" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell71" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №2:"/>
-                    <TextBox x:Name="Table417Cell72" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell72" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №3:"/>
-                    <TextBox x:Name="Table417Cell73" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell73" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <Label Content="3 - итоговое (оптимальное) значение"/>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №1:"/>
-                    <TextBox x:Name="Table417Cell81" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell81" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №2:"/>
-                    <TextBox x:Name="Table417Cell82" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell82" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №3:"/>
-                    <TextBox x:Name="Table417Cell83" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell83" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <TextBlock Margin="5 0 0 0"> 
@@ -267,17 +267,17 @@
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №1:"/>
-                    <TextBox x:Name="Table417Cell91" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell91" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №2:"/>
-                    <TextBox x:Name="Table417Cell92" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell92" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №3:"/>
-                    <TextBox x:Name="Table417Cell93" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell93" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <TextBlock Margin="5 0 0 0"> 
@@ -286,17 +286,17 @@
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №1:"/>
-                    <TextBox x:Name="Table417Cell101" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell101" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №2:"/>
-                    <TextBox x:Name="Table417Cell102" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell102" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №3:"/>
-                    <TextBox x:Name="Table417Cell103" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell103" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <TextBlock Margin="5 0 0 0"> 
@@ -305,17 +305,17 @@
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №1:"/>
-                    <TextBox x:Name="Table417Cell111" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell111" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №2:"/>
-                    <TextBox x:Name="Table417Cell112" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell112" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Т/У №3:"/>
-                    <TextBox x:Name="Table417Cell113" Width="200" Margin="5 5 0 0"></TextBox>
+                    <TextBox x:Name="T417Cell113" Width="200" Margin="5 5 0 0"></TextBox>
                 </StackPanel>
 
             </StackPanel>
