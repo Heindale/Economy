@@ -59,6 +59,12 @@
                     <RowDefinition />
                     <RowDefinition />
                     <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
                 </Grid.RowDefinitions>
 
                 <Border BorderBrush="Black"
@@ -423,6 +429,168 @@
                           Grid.Column="5"
                           IsReadOnly="True" />
                 <Border Grid.Row="6"
+                        Grid.RowSpan="3"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="6"
+                        BorderBrush="Black"
+                        BorderThickness="1" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="9"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="9"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="2. Составьте список из 3 товаров/услуг (бизнес-идей), которые Вы недавно выгодно КУПИЛИ ИЛИ СОЗДАЛИ " />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="Table11Cell41"
+                         Padding="5"
+                         Grid.Row="10"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="Table11Cell42"
+                           Padding="5"
+                           Grid.Row="10"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="Table11Cell43"
+                           Padding="5"
+                           Grid.Row="10"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell44"
+                          Padding="5"
+                          Grid.Row="10"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="Table11Cell45"
+                           Padding="5"
+                           Grid.Row="10"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell46"
+                          Padding="5"
+                          Grid.Row="10"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="Table11Cell51"
+                         Padding="5"
+                         Grid.Row="11"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="Table11Cell52"
+                           Padding="5"
+                           Grid.Row="11"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="Table11Cell53"
+                           Padding="5"
+                           Grid.Row="11"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell54"
+                          Padding="5"
+                          Grid.Row="11"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="Table11Cell55"
+                           Padding="5"
+                           Grid.Row="11"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell56"
+                          Padding="5"
+                          Grid.Row="11"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="Table11Cell61"
+                         Padding="5"
+                         Grid.Row="12"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="Table11Cell62"
+                           Padding="5"
+                           Grid.Row="12"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="Table11Cell63"
+                           Padding="5"
+                           Grid.Row="12"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell64"
+                          Padding="5"
+                          Grid.Row="12"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="Table11Cell65"
+                           Padding="5"
+                           Grid.Row="12"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell66"
+                          Padding="5"
+                          Grid.Row="12"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+                <Border Grid.Row="10"
                         Grid.RowSpan="3"
                         Grid.Column="0"
                         Grid.ColumnSpan="6"
