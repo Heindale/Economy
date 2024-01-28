@@ -30,6 +30,7 @@ namespace Economy.Resources.Pages
 		{
 			Table11Cell16.Text = ComboBoxSum(Table11Cell12.Text, Table11Cell13.Text, Table11Cell15.Text);
 			Table11Cell26.Text = ComboBoxSum(Table11Cell22.Text, Table11Cell23.Text, Table11Cell25.Text);
+			Table11Cell36.Text = ComboBoxSum(Table11Cell32.Text, Table11Cell33.Text, Table11Cell35.Text);
 
 			var emptyTextBoxesOfTable11 = Table11.Children.OfType<TextBox>().Where(tb => string.IsNullOrEmpty(tb.Text));
 			var notEmptyTextBoxesOfTable11 = Table11.Children.OfType<TextBox>().Where(tb => !string.IsNullOrEmpty(tb.Text));
