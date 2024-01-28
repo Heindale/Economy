@@ -726,6 +726,120 @@
                         Grid.ColumnSpan="6"
                         BorderBrush="Black"
                         BorderThickness="1" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="16"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="16"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="4.Составьте список из 2 бизнес-идей, основанных на соц.сетях (вконтакте, инстаграм и др.) " />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="Table11Cell91"
+                         Padding="5"
+                         Grid.Row="17"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="Table11Cell92"
+                           Padding="5"
+                           Grid.Row="17"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="Table11Cell93"
+                           Padding="5"
+                           Grid.Row="17"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell94"
+                          Padding="5"
+                          Grid.Row="17"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="Table11Cell95"
+                           Padding="5"
+                           Grid.Row="17"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell96"
+                          Padding="5"
+                          Grid.Row="17"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="Table11Cell101"
+                         Padding="5"
+                         Grid.Row="18"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="Table11Cell102"
+                           Padding="5"
+                           Grid.Row="18"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="Table11Cell103"
+                           Padding="5"
+                           Grid.Row="18"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell104"
+                          Padding="5"
+                          Grid.Row="18"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="Table11Cell105"
+                           Padding="5"
+                           Grid.Row="18"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell106"
+                          Padding="5"
+                          Grid.Row="18"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+                <Border Grid.Row="17"
+                        Grid.RowSpan="2"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="6"
+                        BorderBrush="Black"
+                        BorderThickness="1" />
             </Grid>
             <Button x:Name="Sum"
                     Content="Посчитать сумму баллов"
