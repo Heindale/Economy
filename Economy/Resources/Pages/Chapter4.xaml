@@ -543,8 +543,8 @@
                     <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10"></TextBox>
                     <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11"></TextBox>
                     <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12"></TextBox>
-
-                </Grid>
+        
+    </Grid>
             </StackPanel>
         </StackPanel>
     </Grid>

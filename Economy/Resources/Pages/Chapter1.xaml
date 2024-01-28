@@ -39,7 +39,7 @@
             <TextBlock Text="Таблица 1.1 Задание № 1.1 Поиск и отбор бизнес-идеи"
                        HorizontalAlignment="Center"
                        FontWeight="Bold" />
-            <Grid x:Name="Table11">
+            <Grid x:Name="Page1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
@@ -304,11 +304,11 @@
                            Text="1. Составьте список из 3 бизнес-идей, основанных на ваших УВЛЕЧЕНИЯХ (ХОББИ)" />
 
                 <TextBox TextWrapping="Wrap"
-                         x:Name="Table11Cell11"
+                         x:Name="T11Cell11"
                          Padding="5"
                          Grid.Row="6"
                          Grid.Column="0" />
-                <ComboBox  x:Name="Table11Cell12"
+                <ComboBox  x:Name="T11Cell12"
                            Padding="5"
                            Grid.Row="6"
                            Grid.Column="1"
@@ -321,7 +321,7 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <ComboBox  x:Name="Table11Cell13"
+                <ComboBox  x:Name="T11Cell13"
                            Padding="5"
                            Grid.Row="6"
                            Grid.Column="2">
@@ -333,11 +333,11 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <TextBox  x:Name="Table11Cell14"
+                <TextBox  x:Name="T11Cell14"
                           Padding="5"
                           Grid.Row="6"
                           Grid.Column="3" />
-                <ComboBox  x:Name="Table11Cell15"
+                <ComboBox  x:Name="T11Cell15"
                            Padding="5"
                            Grid.Row="6"
                            Grid.Column="4">
@@ -345,18 +345,18 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <TextBox  x:Name="Table11Cell16"
+                <TextBox  x:Name="T11Cell16"
                           Padding="5"
                           Grid.Row="6"
                           Grid.Column="5"
                           IsReadOnly="True" />
 
                 <TextBox TextWrapping="Wrap"
-                         x:Name="Table11Cell21"
+                         x:Name="T11Cell21"
                          Padding="5"
                          Grid.Row="7"
                          Grid.Column="0" />
-                <ComboBox  x:Name="Table11Cell22"
+                <ComboBox  x:Name="T11Cell22"
                            Padding="5"
                            Grid.Row="7"
                            Grid.Column="1"
@@ -369,7 +369,7 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <ComboBox  x:Name="Table11Cell23"
+                <ComboBox  x:Name="T11Cell23"
                            Padding="5"
                            Grid.Row="7"
                            Grid.Column="2">
@@ -381,11 +381,11 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <TextBox  x:Name="Table11Cell24"
+                <TextBox  x:Name="T11Cell24"
                           Padding="5"
                           Grid.Row="7"
                           Grid.Column="3" />
-                <ComboBox  x:Name="Table11Cell25"
+                <ComboBox  x:Name="T11Cell25"
                            Padding="5"
                            Grid.Row="7"
                            Grid.Column="4">
@@ -393,18 +393,18 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <TextBox  x:Name="Table11Cell26"
+                <TextBox  x:Name="T11Cell26"
                           Padding="5"
                           Grid.Row="7"
                           Grid.Column="5"
                           IsReadOnly="True" />
 
                 <TextBox TextWrapping="Wrap"
-                         x:Name="Table11Cell31"
+                         x:Name="T11Cell31"
                          Padding="5"
                          Grid.Row="8"
                          Grid.Column="0" />
-                <ComboBox  x:Name="Table11Cell32"
+                <ComboBox  x:Name="T11Cell32"
                            Padding="5"
                            Grid.Row="8"
                            Grid.Column="1"
@@ -417,7 +417,7 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <ComboBox  x:Name="Table11Cell33"
+                <ComboBox  x:Name="T11Cell33"
                            Padding="5"
                            Grid.Row="8"
                            Grid.Column="2">
@@ -429,11 +429,11 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <TextBox  x:Name="Table11Cell34"
+                <TextBox  x:Name="T11Cell34"
                           Padding="5"
                           Grid.Row="8"
                           Grid.Column="3" />
-                <ComboBox  x:Name="Table11Cell35"
+                <ComboBox  x:Name="T11Cell35"
                            Padding="5"
                            Grid.Row="8"
                            Grid.Column="4">
@@ -441,7 +441,7 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <TextBox  x:Name="Table11Cell36"
+                <TextBox  x:Name="T11Cell36"
                           Padding="5"
                           Grid.Row="8"
                           Grid.Column="5"
