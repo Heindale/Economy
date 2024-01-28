@@ -83,6 +83,7 @@ namespace Economy
 		private void ChangePage1()
 		{
 			SetText(page1.Table11);
+			SetText(page1.Table12);
 		}
 
 		private void ChangePage2()
