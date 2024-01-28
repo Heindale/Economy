@@ -24,6 +24,6 @@ namespace Economy.Resources.Pages
 		public Chapter2()
 		{
 			InitializeComponent();
-        }
-    }
+		}
+	}
 }
