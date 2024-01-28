@@ -10,6 +10,24 @@
       Background="White"
       Title="Chapter1">
 
+    <Page.Resources>
+        <!-- Стиль для FocusVisualStyle -->
+        <Style x:Key="ComboBoxFocusVisualStyle"
+               TargetType="Control">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle StrokeDashArray="1 2"
+                                   Stroke="OrangeRed"
+                                   StrokeThickness="1"
+                                   SnapsToDevicePixels="true"
+                                   Margin="-2" />
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
     <Grid>
         <StackPanel Margin="5">
             <TextBlock Text="1. Какой бизнес создавать? (этап № 1 – бизнес-идея)"
@@ -269,7 +287,12 @@
                 <ComboBox  x:Name="Table11Cell12"
                            Padding="5"
                            Grid.Row="6"
-                           Grid.Column="1">
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
                     <Label>1</Label>
                     <Label>2</Label>
                     <Label>3</Label>
@@ -278,6 +301,10 @@
                            Padding="5"
                            Grid.Row="6"
                            Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
                     <Label>1</Label>
                     <Label>2</Label>
                     <Label>3</Label>
@@ -298,7 +325,109 @@
                           Padding="5"
                           Grid.Row="6"
                           Grid.Column="5"
-                          IsEnabled="False" />
+                          IsReadOnly="True" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="Table11Cell21"
+                         Padding="5"
+                         Grid.Row="7"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="Table11Cell22"
+                           Padding="5"
+                           Grid.Row="7"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="Table11Cell23"
+                           Padding="5"
+                           Grid.Row="7"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell24"
+                          Padding="5"
+                          Grid.Row="7"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="Table11Cell25"
+                           Padding="5"
+                           Grid.Row="7"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell26"
+                          Padding="5"
+                          Grid.Row="7"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="Table11Cell31"
+                         Padding="5"
+                         Grid.Row="8"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="Table11Cell32"
+                           Padding="5"
+                           Grid.Row="8"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="Table11Cell33"
+                           Padding="5"
+                           Grid.Row="8"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell34"
+                          Padding="5"
+                          Grid.Row="8"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="Table11Cell35"
+                           Padding="5"
+                           Grid.Row="8"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell36"
+                          Padding="5"
+                          Grid.Row="8"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+                <Border Grid.Row="6"
+                        Grid.RowSpan="3"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="6"
+                        BorderBrush="Black"
+                        BorderThickness="1" />
             </Grid>
             <Button x:Name="Sum"
                     Content="Посчитать сумму баллов"

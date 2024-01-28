@@ -5,6 +5,7 @@ using Microsoft.Win32;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using Xceed.Document.NET;
 using Xceed.Words.NET;
 
@@ -29,8 +30,37 @@ namespace Economy
             this.page3 = new Chapter3();
 			this.document = DocX.Load("TemplateVersionSecond.docx");
 		}
+        private void SetText(DependencyObject xamlpage)
+        {
+            foreach (var textBox in FindVisualChildren<TextBox>(xamlpage))
+            {
+                ReplacePlaceholder(document, $"<{textBox.Name}>", textBox.Text);
+            }
 
-		private void GenerateDocxButton_Click(object sender, RoutedEventArgs e)
+        }
+
+
+        private IEnumerable<T> FindVisualChildren<T>(DependencyObject depObj) where T : DependencyObject
+        {
+            if (depObj != null)
+            {
+                for (int i = 0; i < VisualTreeHelper.GetChildrenCount(depObj); i++)
+                {
+                    DependencyObject child = VisualTreeHelper.GetChild(depObj, i);
+
+                    if (child != null && child is T)
+                    {
+                        yield return (T)child;
+                    }
+
+                    foreach (T childOfChild in FindVisualChildren<T>(child))
+                    {
+                        yield return childOfChild;
+                    }
+                }
+            }
+        }
+        private void GenerateDocxButton_Click(object sender, RoutedEventArgs e)
 		{
             OpenFolderDialog folderBrowser = new OpenFolderDialog();
             string path = "";
@@ -55,7 +85,7 @@ namespace Economy
 
         private void ChangePage2()
 		{
-            ReplacePlaceholder(this.document, "<Table2Cell11>", this.page2.TextBox1.Text);
+            SetText(page2.Page2);
         }
 
         private void ChangePage3()
