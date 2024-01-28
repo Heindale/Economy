@@ -10,238 +10,596 @@
       Background="White"
       Title="Chapter1">
 
+    <Page.Resources>
+        <!-- Стиль для FocusVisualStyle -->
+        <Style x:Key="ComboBoxFocusVisualStyle"
+               TargetType="Control">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle StrokeDashArray="1 2"
+                                   Stroke="OrangeRed"
+                                   StrokeThickness="1"
+                                   SnapsToDevicePixels="true"
+                                   Margin="-2" />
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
     <Grid>
         <StackPanel Margin="5">
-                <TextBlock Text="1. Какой бизнес создавать? (этап № 1 – бизнес-идея)"
+            <TextBlock Text="1. Какой бизнес создавать? (этап № 1 – бизнес-идея)"
+                       HorizontalAlignment="Center"
+                       FontWeight="Bold" />
+            <TextBlock Text="Задание № 1.1 Поиск и отбор бизнес-идеи. Подобрать бизнес-идеи, а затем выбрать из них лучшие можно заполнив таблицу 1.1."
+                       TextWrapping="Wrap"
+                       Padding="30 0 0 0" />
+            <TextBlock Text="Таблица 1.1 Задание № 1.1 Поиск и отбор бизнес-идеи"
+                       HorizontalAlignment="Center"
+                       FontWeight="Bold" />
+            <Grid x:Name="Table11">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1" />
+                <TextBlock HorizontalAlignment="Center"
+                           Text="Поиск" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="5" />
+                <TextBlock Grid.Column="1"
+                           Grid.ColumnSpan="5"
                            HorizontalAlignment="Center"
-                           FontWeight="Bold" />
-                <TextBlock Text="Задание № 1.1 Поиск и отбор бизнес-идеи. Подобрать бизнес-идеи, а затем выбрать из них лучшие можно заполнив таблицу 1.1."
+                           Text="Выбор бизнес-идей" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="1"
+                        Grid.RowSpan="2" />
+                <TextBlock Grid.Row="1"
+                           Padding="5"
                            TextWrapping="Wrap"
-                           Padding="30 0 0 0" />
-                <TextBlock Text="Таблица 1.1 Задание № 1.1 Поиск и отбор бизнес-идеи"
-                           HorizontalAlignment="Center"
-                           FontWeight="Bold" />
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                    </Grid.RowDefinitions>
+                           Grid.RowSpan="2"
+                           Text="Бизнес-идеи" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1" />
-                    <TextBlock HorizontalAlignment="Center"
-                               Text="Поиск" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="1"
+                        Grid.Column="1" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="1"
+                           Grid.Column="1"
+                           Text="Необходимое финансирование" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="1"
-                            Grid.ColumnSpan="5" />
-                    <TextBlock Grid.Column="1"
-                               Grid.ColumnSpan="5"
-                               HorizontalAlignment="Center"
-                               Text="Выбор бизнес-идей" />
-
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="1"
-                            Grid.RowSpan="2" />
-                    <TextBlock Grid.Row="1"
-                               Padding="5"
-                               TextWrapping="Wrap"
-                               Grid.RowSpan="2"
-                               Text="Бизнес-идеи" />
-
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="1"
-                            Grid.Column="1" />
-                    <TextBlock TextWrapping="Wrap"
-                               Padding="5"
-                               Grid.Row="1"
-                               Grid.Column="1"
-                               Text="Необходимое финансирование" />
-
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="2"
-                            Grid.Column="1" />
-                    <TextBlock TextWrapping="Wrap"
-                               Padding="5"
-                               Grid.Row="2"
-                               Grid.Column="1"
-                               Text="3 – у вас уже достаточно денег для бизнеса
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="2"
+                        Grid.Column="1" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="2"
+                           Grid.Column="1"
+                           Text="3 – у вас уже достаточно денег для бизнеса
                                      2 – не достаточно, но можно накопить (привлечь)
                                      1 – не достаточно, не возможно накопить (привлечь)" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="1"
-                            Grid.Column="2" />
-                    <TextBlock TextWrapping="Wrap"
-                               Padding="5"
-                               Grid.Row="1"
-                               Grid.Column="2"
-                               Text="Личный интерес к бизнес-идее" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="1"
+                        Grid.Column="2" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="1"
+                           Grid.Column="2"
+                           Text="Личный интерес к бизнес-идее" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="2"
-                            Grid.Column="2" />
-                    <TextBlock TextWrapping="Wrap"
-                               Padding="5"
-                               Grid.Row="2"
-                               Grid.Column="2"
-                               Text="3 – очень нравится (дело всей жизни)
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="2"
+                        Grid.Column="2" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="2"
+                           Grid.Column="2"
+                           Text="3 – очень нравится (дело всей жизни)
                                     2 – нравится
                                     1 – не нравится" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="1"
-                            Grid.Column="3"
-                            Grid.ColumnSpan="2" />
-                    <TextBlock TextWrapping="Wrap"
-                               Padding="5"
-                               Grid.Row="1"
-                               Grid.Column="3"
-                               Grid.ColumnSpan="2"
-                               Text="Максимальный спрос на товар (услугу) бизнес-идеи" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="1"
+                        Grid.Column="3"
+                        Grid.ColumnSpan="2" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="1"
+                           Grid.Column="3"
+                           Grid.ColumnSpan="2"
+                           Text="Максимальный спрос на товар (услугу) бизнес-идеи" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="2"
-                            Grid.Column="3" />
-                    <TextBlock TextWrapping="Wrap"
-                               Padding="5"
-                               Grid.Row="2"
-                               Grid.Column="3"
-                               Text="Количество интернет запросов за месяц на Яндекс или Гугл" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="2"
+                        Grid.Column="3" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="2"
+                           Grid.Column="3"
+                           Text="Количество интернет запросов за месяц на Яндекс или Гугл" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="2"
-                            Grid.Column="4" />
-                    <TextBlock TextWrapping="Wrap"
-                               Padding="5"
-                               Grid.Row="2"
-                               Grid.Column="4"
-                               Text="3 – максимальный
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="2"
+                        Grid.Column="4" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="2"
+                           Grid.Column="4"
+                           Text="3 – максимальный
                                      2 – средний
                                      1 – минимальный" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Column="5"
-                            Grid.Row="1"
-                            Grid.RowSpan="2" />
-                    <TextBlock Grid.Row="1"
-                               Padding="5"
-                               TextWrapping="Wrap"
-                               Grid.Column="5"
-                               Grid.RowSpan="2"
-                               Text="Сумма баллов (п.2+3+5, макс. 9 баллов)" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Column="5"
+                        Grid.Row="1"
+                        Grid.RowSpan="2" />
+                <TextBlock Grid.Row="1"
+                           Padding="5"
+                           TextWrapping="Wrap"
+                           Grid.Column="5"
+                           Grid.RowSpan="2"
+                           Text="Сумма баллов (п.2+3+5, макс. 9 баллов)" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="3"
-                            Grid.Column="0" />
-                    <TextBlock TextWrapping="Wrap"
-                               TextAlignment="Center"
-                               Padding="5"
-                               Grid.Row="3"
-                               Grid.Column="0"
-                               Text="1" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="0"
+                           Text="1" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="3"
-                            Grid.Column="1" />
-                    <TextBlock TextWrapping="Wrap"
-                               TextAlignment="Center"
-                               Padding="5"
-                               Grid.Row="3"
-                               Grid.Column="1"
-                               Text="2" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="1" />
+                <TextBlock TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="1"
+                           Text="2" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="3"
-                            Grid.Column="2" />
-                    <TextBlock TextWrapping="Wrap"
-                               TextAlignment="Center"
-                               Padding="5"
-                               Grid.Row="3"
-                               Grid.Column="2"
-                               Text="3" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="2" />
+                <TextBlock TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="2"
+                           Text="3" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="3"
-                            Grid.Column="3" />
-                    <TextBlock TextWrapping="Wrap"
-                               TextAlignment="Center"
-                               Padding="5"
-                               Grid.Row="3"
-                               Grid.Column="3"
-                               Text="4" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="3" />
+                <TextBlock TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="3"
+                           Text="4" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="3"
-                            Grid.Column="4" />
-                    <TextBlock TextWrapping="Wrap"
-                               TextAlignment="Center"
-                               Padding="5"
-                               Grid.Row="3"
-                               Grid.Column="4"
-                               Text="5" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="4" />
+                <TextBlock TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="4"
+                           Text="5" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="3"
-                            Grid.Column="5" />
-                    <TextBlock TextWrapping="Wrap"
-                               TextAlignment="Center"
-                               Padding="5"
-                               Grid.Row="3"
-                               Grid.Column="5"
-                               Text="6" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="5" />
+                <TextBlock TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="5"
+                           Text="6" />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="3"
-                            Grid.Column="0" />
-                    <TextBlock TextWrapping="Wrap"
-                               TextAlignment="Center"
-                               Padding="5"
-                               Grid.Row="3"
-                               Grid.Column="0"
-                               Text="1" />
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="4"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Padding="5"
+                           Grid.Row="4"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="Основные способы поиска " />
 
-                    <Border BorderBrush="Black"
-                            BorderThickness="1"
-                            Grid.Row="4"
-                            Grid.ColumnSpan="6"
-                            Grid.Column="0" />
-                    <TextBlock TextWrapping="Wrap"
-                               TextAlignment="Center"
-                               Padding="5"
-                               Grid.Row="4"
-                               Grid.ColumnSpan="6"
-                               Grid.Column="0"
-                               Text="Основные способы поиска " />
-                </Grid>
-            </StackPanel>
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="4"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Padding="5"
+                           Grid.Row="4"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="Основные способы поиска " />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="5"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="5"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="1. Составьте список из 3 бизнес-идей, основанных на ваших УВЛЕЧЕНИЯХ (ХОББИ)" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="Table11Cell11"
+                         Padding="5"
+                         Grid.Row="6"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="Table11Cell12"
+                           Padding="5"
+                           Grid.Row="6"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="Table11Cell13"
+                           Padding="5"
+                           Grid.Row="6"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell14"
+                          Padding="5"
+                          Grid.Row="6"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="Table11Cell15"
+                           Padding="5"
+                           Grid.Row="6"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell16"
+                          Padding="5"
+                          Grid.Row="6"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="Table11Cell21"
+                         Padding="5"
+                         Grid.Row="7"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="Table11Cell22"
+                           Padding="5"
+                           Grid.Row="7"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="Table11Cell23"
+                           Padding="5"
+                           Grid.Row="7"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell24"
+                          Padding="5"
+                          Grid.Row="7"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="Table11Cell25"
+                           Padding="5"
+                           Grid.Row="7"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell26"
+                          Padding="5"
+                          Grid.Row="7"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="Table11Cell31"
+                         Padding="5"
+                         Grid.Row="8"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="Table11Cell32"
+                           Padding="5"
+                           Grid.Row="8"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="Table11Cell33"
+                           Padding="5"
+                           Grid.Row="8"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell34"
+                          Padding="5"
+                          Grid.Row="8"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="Table11Cell35"
+                           Padding="5"
+                           Grid.Row="8"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell36"
+                          Padding="5"
+                          Grid.Row="8"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+                <Border Grid.Row="6"
+                        Grid.RowSpan="3"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="6"
+                        BorderBrush="Black"
+                        BorderThickness="1" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="9"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="9"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="2. Составьте список из 3 товаров/услуг (бизнес-идей), которые Вы недавно выгодно КУПИЛИ ИЛИ СОЗДАЛИ " />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="Table11Cell41"
+                         Padding="5"
+                         Grid.Row="10"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="Table11Cell42"
+                           Padding="5"
+                           Grid.Row="10"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="Table11Cell43"
+                           Padding="5"
+                           Grid.Row="10"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell44"
+                          Padding="5"
+                          Grid.Row="10"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="Table11Cell45"
+                           Padding="5"
+                           Grid.Row="10"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell46"
+                          Padding="5"
+                          Grid.Row="10"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="Table11Cell51"
+                         Padding="5"
+                         Grid.Row="11"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="Table11Cell52"
+                           Padding="5"
+                           Grid.Row="11"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="Table11Cell53"
+                           Padding="5"
+                           Grid.Row="11"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell54"
+                          Padding="5"
+                          Grid.Row="11"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="Table11Cell55"
+                           Padding="5"
+                           Grid.Row="11"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell56"
+                          Padding="5"
+                          Grid.Row="11"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="Table11Cell61"
+                         Padding="5"
+                         Grid.Row="12"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="Table11Cell62"
+                           Padding="5"
+                           Grid.Row="12"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="Table11Cell63"
+                           Padding="5"
+                           Grid.Row="12"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell64"
+                          Padding="5"
+                          Grid.Row="12"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="Table11Cell65"
+                           Padding="5"
+                           Grid.Row="12"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="Table11Cell66"
+                          Padding="5"
+                          Grid.Row="12"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+                <Border Grid.Row="10"
+                        Grid.RowSpan="3"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="6"
+                        BorderBrush="Black"
+                        BorderThickness="1" />
+            </Grid>
+            <Button x:Name="Sum"
+                    Content="Посчитать сумму баллов"
+                    Click="Sum_Click" />
+        </StackPanel>
     </Grid>
 </Page>
