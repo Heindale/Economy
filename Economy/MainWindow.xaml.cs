@@ -44,14 +44,19 @@ namespace Economy
         }
         private void SetText(DependencyObject xamlpage)
         {
+            TextBox[] ArrayTextBox = new TextBox[1000];
+            int i = 0;
             foreach (var textBox in FindVisualChildren<TextBox>(xamlpage))
             {
-                ReplacePlaceholder(document, $"<{textBox.Name}>", textBox.Text);
+                ArrayTextBox[i] = textBox;
+                i++;
+                //ReplacePlaceholder(document, $"<{textBox.Name}>", textBox.Text);
             }
-            foreach (var comboBox in FindVisualChildren<ComboBox>(xamlpage))
-            {
-                ReplacePlaceholder(document, $"<{comboBox.Name}>", comboBox.Text);
-            }
+            ReplacePlaceholder(document, ArrayTextBox);
+            //foreach (var comboBox in FindVisualChildren<ComboBox>(xamlpage))
+            //{
+            //    ReplacePlaceholder(document, $"<{comboBox.Name}>", comboBox.Text);
+            //}
 
         }
         private void SavePage(DependencyObject xamlpage)
@@ -131,12 +136,14 @@ namespace Economy
             {
                 if (depObj != null)
                 {
+                    //DependencyObject[] ArrayDepObj = new DependencyObject[VisualTreeHelper.GetChildrenCount(depObj)];
                     for (int i = 0; i < VisualTreeHelper.GetChildrenCount(depObj); i++)
                     {
                         DependencyObject child = VisualTreeHelper.GetChild(depObj, i);
 
                         if (child != null && child is T)
                         {
+                            
                             yield return (T)child;
                         }
 
@@ -226,14 +233,21 @@ namespace Economy
             {
                 LoadDataAllPage();
             }
-            private static void ReplacePlaceholder(DocX document, string placeholder, string value)
+            private static void ReplacePlaceholder(DocX document, TextBox[] placeholder)
             {
+                int i = 0;
                 foreach (var paragraph in document.Paragraphs)
                 {
-                    if (paragraph.Text.Contains(placeholder))
+                    if (placeholder[i] == null)
                     {
-                        paragraph.ReplaceText(placeholder, value);
+                        break;
                     }
+                    if (paragraph.Text.Contains($"<{placeholder[i].Name}>"))
+                    {
+                        paragraph.ReplaceText($"<{placeholder[i].Name}>", placeholder[i].Text);
+                        i++;
+                    }
+                    
                 }
             }
 
