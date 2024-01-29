@@ -7,10 +7,152 @@
       mc:Ignorable="d"
       d:DesignWidth="800"
       Background="White"
-      Height="692"
+      Height="2020"
       Title="Chapter3">
 
     <Grid x:Name="Page3">
-        
+        <StackPanel>
+            <Label Content="3. Будут ли покупать? (этап № 3 – маркетинговый опрос)"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center">
+            </Label>
+            <TextBlock  Margin="10,0,10,0"
+                        Text="Задание № 3.1 Проведение проблемного интервью. Необходимо, когда неочевидно будет ли в достаточном объеме продаваться товар/услуга (как правило, либо совсем уникальный, либо достаточно новый для конкретной территории). Задача – выяснить у потенциальных клиентов, за решение какой проблемы они готовы заплатить."
+                        TextWrapping="Wrap">
+            </TextBlock>
+
+            <Label Content="1. Подготовка к интервью"
+                   HorizontalAlignment="Center" />
+
+            <Label Content="1.1. Название бизнес-идеи" />
+            <TextBox x:Name="Tabel31Cell11"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="1.2. Перечень основных проблем клиента, побуждающих его купить" />
+            <TextBox x:Name="Tabel31Cell21"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="1.3. Гипотеза основной проблемы клиента" />
+            <TextBox x:Name="Tabel31Cell31"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="1.4. Количество интервью и подтверждений гипотезы " />
+            <TextBox x:Name="Tabel31Cell41"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <StackPanel Orientation="Horizontal"
+                        Margin="5 10 0 0">
+                <TextBlock>
+                <Run Text="1.5. Примерный план интервью: " />
+                <LineBreak />
+                <Run Text=" - как вызвать интерес собеседника:  " />
+                <LineBreak />
+                <Run Text=" - значимая тема" />
+                <LineBreak />
+                <Run Text=" - ваша компетенция " />
+                <LineBreak />
+                <Run Text=" - описание продукт/технологии " />
+                <LineBreak />
+                <Run Text=" - реальные примеры" />
+                <LineBreak />
+                <Run Text=" - показать ценность" />
+                <LineBreak />
+                <LineBreak />
+                <Run Text=" - о чем расспрашивать собеседника: " />
+                <LineBreak />
+                <Run Text=" - ситуация и цель" />
+                <LineBreak />
+                <Run Text=" - проблема " />
+                <LineBreak />
+                <Run Text=" - желаемое состояние " />
+                <LineBreak />
+                <Run Text=" - возможности " />
+                </TextBlock>
+                <TextBox x:Name="Tabel31Cell51"
+                         Margin="5 0"
+                         HorizontalAlignment="Left"
+                         Width="400" />
+            </StackPanel>
+
+            <Label Content="2. Проведение интервью"
+                   HorizontalAlignment="Center"
+                   Margin="0 10 0 0" />
+
+            <Label Content="Первое интервью" />
+            <StackPanel Orientation="Horizontal">
+                <Label Content=" - ситуация и цель:         " />
+                <TextBox x:Name="Tabel31Cell61"
+                         Margin="0 5 0 0"
+                         Width="400" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content=" - проблема:                   " />
+                <TextBox x:Name="Tabel31Cell71"
+                         Margin="0 5 0 0"
+                         Width="400" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content=" - желаемое состояние: " />
+                <TextBox x:Name="Tabel31Cell81"
+                         Margin="0 5 0 0"
+                         Width="400" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content=" - возможности:             " />
+                <TextBox x:Name="Tabel31Cell91"
+                         Margin="0 5 0 0"
+                         Width="400" />
+            </StackPanel>
+
+            <Label Content="Первое интервью" />
+            <StackPanel Orientation="Horizontal">
+                <Label Content=" - ситуация и цель:         " />
+                <TextBox x:Name="Tabel31Cell101"
+                         Margin="0 5 0 0"
+                         Width="400" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content=" - проблема:                   " />
+                <TextBox x:Name="Tabel31Cell111"
+                         Margin="0 5 0 0"
+                         Width="400" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content=" - желаемое состояние: " />
+                <TextBox x:Name="Tabel31Cell121"
+                         Margin="0 5 0 0"
+                         Width="400" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content=" - возможности:             " />
+                <TextBox x:Name="Tabel31Cell131"
+                         Margin="0 5 0 0"
+                         Width="400" />
+            </StackPanel>
+
+            <Label Content="3. Подведение выводов интервью "
+                   HorizontalAlignment="Center"
+                   Margin="0 10 0 0" />
+
+            <Label Content="1.3. Гипотеза основной проблемы клиента" />
+            <TextBox x:Name="Tabel31Cell141"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="1.4. Количество интервью и подтверждений гипотезы " />
+            <TextBox x:Name="Tabel31Cell151"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+        </StackPanel>
     </Grid>
 </Page>
