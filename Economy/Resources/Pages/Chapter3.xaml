@@ -347,6 +347,185 @@
                      Margin="5 0"
                      HorizontalAlignment="Left"
                      Width="400" />
+
+            <Label Content="Тестирование наличия спроса через канал сбыта"
+                   Margin="0 10"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center">
+            </Label>
+
+            <Label Content="1. Выбор канала и создание прототипа группы/сайта:"
+                   Margin="5 0" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="1.1. Бизнес-идея " />
+            <TextBox x:Name="T33Cell11"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="1.2. Персонаж: имя, возраст, место работы, должность и зарплата, семейное положение, место проживания, автомобиль, когда, где и с кем был последний раз в отпуске, как проводит выходные/как хотел бы их проводить, как проводит вечера, любимое блюдо, занимается ли спортом, играет ли в компьютерные игры " />
+            <TextBox x:Name="T33Cell21"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Height="100"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="1.3. Интернет: устройства, сайты, любимые соц.сети" />
+            <TextBox x:Name="T33Cell31"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="1.4. Ситуация (у персонажа возникнет потребность в данном товаре/услуге)" />
+            <TextBox x:Name="T33Cell41"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="1.5. Поисковый запрос: на каком ресурсе (сайте, приложение и т.д.) поиск, поисковый запрос, который персонаж сможет использовать при поиске,	нашли ли вы то, что искал персонаж,	какого типа ссылки будет открывать персонаж в первую очередь" />
+            <TextBox x:Name="T33Cell51"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="1.6. Вопросы: какой вопрос возникает первым у персонажа, открывшим группу/сайт, последовательность вопросов, возникающих у персонажа при изучении группы/сайта (от 8 до 15), не пропустил ли персонаж первый вопрос «Что это?» («Та ли это группа/сайт?»)" />
+            <TextBox x:Name="T33Cell61"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="1.7. Создание прототипа: элементы группы/сайта (текст, кнопка, форма для ввода информации, картинка, видео, слайдер и др.):, отвечают на все вопросы персонажа, в правильной последовательности" />
+            <TextBox x:Name="T33Cell71"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="1.8. Выбранный канал сбыта" />
+            <TextBox x:Name="T33Cell81"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="2. Формулирование гипотезы:"
+                   Margin="5 0" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="2.1. Действие клиента (не сложное) в отношении канала сбыта, которое свидетельствует о спросе (Простой первый шаг): как измеряется количество таких действий, если другое действие более легкое для клиента, но точнее подтверждающее его намерения" />
+            <TextBox x:Name="T33Cell91"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="2.2. Гипотеза по количеству данных действий, достаточных для подтверждения реального спроса и срок" />
+            <TextBox x:Name="T33Cell92"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="3. Создание, наполнение и опубликование группы/сайта:"
+                   Margin="5 0" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="3.1. Создание группы/сайта: выбранный конструктор сайта (табл. 3.4) и причины" />
+            <TextBox x:Name="T33Cell101"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="3.2. Наполнение группы/сайта (+/-): простой первый шаг, основные элементы ранее составленного прототипа" />
+            <TextBox x:Name="T33Cell111"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="3.3. Вариант опубликования группы/сайта: интернет-ссылка на группу/сайт" />
+            <TextBox x:Name="T33Cell121"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="4. Продвижение группы/сайта и тестирование гипотезы:"
+                   Margin="5 0" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="4.1. Выбранные инструменты продвижения и план их внедрения" />
+            <TextBox x:Name="T33Cell131"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="4.2. Анализ планового и фактического количества действий " />
+            <TextBox x:Name="T33Cell141"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="4.3. Подтвердилась ли гипотеза " />
+            <TextBox x:Name="T33Cell151"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
         </StackPanel>
     </Grid>
 </Page>
