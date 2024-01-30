@@ -10,7 +10,7 @@
       Title="Chapter2" Height="692">
 
     <Grid Name="Page2">
-        <StackPanel>
+        <StackPanel x:Name="StackPanel">
             <StackPanel>
                 <Label Content="2. Что потребуется для создания бизнеса? (этап №2 - бизнес-модель)"
                        FontWeight="Bold"
@@ -29,15 +29,15 @@
                 </Label>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="1."></Label>
-                    <TextBox x:Name="Table2Cell11" Width="400" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
+                    <TextBox x:Name="T2Cell11" Width="400" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="2."></Label>
-                    <TextBox x:Name="Table2Cell21" Width="400" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
+                    <TextBox x:Name="T2Cell21" Width="400" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="3."></Label>
-                    <TextBox x:Name="Table2Cell31" Width="400" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
+                    <TextBox x:Name="T2Cell31" Width="400" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
                 </StackPanel>
             </StackPanel>
 
@@ -47,15 +47,15 @@
                 </Label>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="1."></Label>
-                    <TextBox Width="400" x:Name="Table2Cell12" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
+                    <TextBox Width="400" x:Name="T2Cell12" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="2."></Label>
-                    <TextBox Width="400" x:Name="Table2Cell22" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
+                    <TextBox Width="400" x:Name="T2Cell22" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="3."></Label>
-                    <TextBox Width="400" x:Name="Table2Cell32" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
+                    <TextBox Width="400" x:Name="T2Cell32" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                
                 
@@ -65,27 +65,27 @@
                 <Label Content="Уникальная ценность предложения">
 
                 </Label>
-                <TextBox Width="400" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="19,5,0,0" Height="86"></TextBox>
+                <TextBox Name ="T2Cell13" Width="400" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="19,5,0,0" Height="86"></TextBox>
             </StackPanel>
             <StackPanel Margin="0,5,0,0">
                 <Label Content="Конкуретные преимущества:">
 
                 </Label>
-                <TextBox Width="400" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="19,5,0,0" Height="86"></TextBox>
+                <TextBox Width="400" Name="T2Cell14" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="19,5,0,0" Height="86"></TextBox>
             </StackPanel>
             <StackPanel Margin="0,5,0,0">
                 <Label Content="Группы целевых клиентов (пользователей)"></Label>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="1."></Label>
-                    <TextBox Width="400" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
+                    <TextBox Name ="T2Cell15"  Width="400" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="2."></Label>
-                    <TextBox Width="400" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
+                    <TextBox Name ="T2Cell25" Width="400" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="3."></Label>
-                    <TextBox Width="400" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
+                    <TextBox Name="T2Cell35" Width="400" HorizontalAlignment="Left" Margin="0,5,0,0"></TextBox>
                 </StackPanel>
             </StackPanel>
 
