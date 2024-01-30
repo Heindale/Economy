@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:Economy.Resources.Pages"
       mc:Ignorable="d"
-      d:DesignHeight="450"
+      d:DesignHeight="2690.5"
       d:DesignWidth="800"
       Background="White"
       Title="Chapter1">
@@ -28,7 +28,7 @@
         </Style>
     </Page.Resources>
 
-    <Grid>
+    <Grid Name="Page1">
         <StackPanel Margin="5">
             <TextBlock Text="1. Какой бизнес создавать? (этап № 1 – бизнес-идея)"
                        HorizontalAlignment="Center"
@@ -39,7 +39,7 @@
             <TextBlock Text="Таблица 1.1 Задание № 1.1 Поиск и отбор бизнес-идеи"
                        HorizontalAlignment="Center"
                        FontWeight="Bold" />
-            <Grid x:Name="Table11">
+            <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
@@ -49,6 +49,24 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
                     <RowDefinition />
                     <RowDefinition />
                     <RowDefinition />
@@ -286,11 +304,11 @@
                            Text="1. Составьте список из 3 бизнес-идей, основанных на ваших УВЛЕЧЕНИЯХ (ХОББИ)" />
 
                 <TextBox TextWrapping="Wrap"
-                         x:Name="Table11Cell11"
+                         x:Name="T11Cell11"
                          Padding="5"
                          Grid.Row="6"
                          Grid.Column="0" />
-                <ComboBox  x:Name="Table11Cell12"
+                <ComboBox  x:Name="T11Cell12"
                            Padding="5"
                            Grid.Row="6"
                            Grid.Column="1"
@@ -303,7 +321,7 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <ComboBox  x:Name="Table11Cell13"
+                <ComboBox  x:Name="T11Cell13"
                            Padding="5"
                            Grid.Row="6"
                            Grid.Column="2">
@@ -315,11 +333,11 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <TextBox  x:Name="Table11Cell14"
+                <TextBox  x:Name="T11Cell14"
                           Padding="5"
                           Grid.Row="6"
                           Grid.Column="3" />
-                <ComboBox  x:Name="Table11Cell15"
+                <ComboBox  x:Name="T11Cell15"
                            Padding="5"
                            Grid.Row="6"
                            Grid.Column="4">
@@ -327,18 +345,18 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <TextBox  x:Name="Table11Cell16"
+                <TextBox  x:Name="T11Cell16"
                           Padding="5"
                           Grid.Row="6"
                           Grid.Column="5"
                           IsReadOnly="True" />
 
                 <TextBox TextWrapping="Wrap"
-                         x:Name="Table11Cell21"
+                         x:Name="T11Cell21"
                          Padding="5"
                          Grid.Row="7"
                          Grid.Column="0" />
-                <ComboBox  x:Name="Table11Cell22"
+                <ComboBox  x:Name="T11Cell22"
                            Padding="5"
                            Grid.Row="7"
                            Grid.Column="1"
@@ -351,7 +369,7 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <ComboBox  x:Name="Table11Cell23"
+                <ComboBox  x:Name="T11Cell23"
                            Padding="5"
                            Grid.Row="7"
                            Grid.Column="2">
@@ -363,11 +381,11 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <TextBox  x:Name="Table11Cell24"
+                <TextBox  x:Name="T11Cell24"
                           Padding="5"
                           Grid.Row="7"
                           Grid.Column="3" />
-                <ComboBox  x:Name="Table11Cell25"
+                <ComboBox  x:Name="T11Cell25"
                            Padding="5"
                            Grid.Row="7"
                            Grid.Column="4">
@@ -375,18 +393,18 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <TextBox  x:Name="Table11Cell26"
+                <TextBox  x:Name="T11Cell26"
                           Padding="5"
                           Grid.Row="7"
                           Grid.Column="5"
                           IsReadOnly="True" />
 
                 <TextBox TextWrapping="Wrap"
-                         x:Name="Table11Cell31"
+                         x:Name="T11Cell31"
                          Padding="5"
                          Grid.Row="8"
                          Grid.Column="0" />
-                <ComboBox  x:Name="Table11Cell32"
+                <ComboBox  x:Name="T11Cell32"
                            Padding="5"
                            Grid.Row="8"
                            Grid.Column="1"
@@ -399,7 +417,7 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <ComboBox  x:Name="Table11Cell33"
+                <ComboBox  x:Name="T11Cell33"
                            Padding="5"
                            Grid.Row="8"
                            Grid.Column="2">
@@ -411,11 +429,11 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <TextBox  x:Name="Table11Cell34"
+                <TextBox  x:Name="T11Cell34"
                           Padding="5"
                           Grid.Row="8"
                           Grid.Column="3" />
-                <ComboBox  x:Name="Table11Cell35"
+                <ComboBox  x:Name="T11Cell35"
                            Padding="5"
                            Grid.Row="8"
                            Grid.Column="4">
@@ -423,7 +441,7 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <TextBox  x:Name="Table11Cell36"
+                <TextBox  x:Name="T11Cell36"
                           Padding="5"
                           Grid.Row="8"
                           Grid.Column="5"
@@ -448,11 +466,11 @@
                            Text="2. Составьте список из 3 товаров/услуг (бизнес-идей), которые Вы недавно выгодно КУПИЛИ ИЛИ СОЗДАЛИ " />
 
                 <TextBox TextWrapping="Wrap"
-                         x:Name="Table11Cell41"
+                         x:Name="T11Cell41"
                          Padding="5"
                          Grid.Row="10"
                          Grid.Column="0" />
-                <ComboBox  x:Name="Table11Cell42"
+                <ComboBox  x:Name="T11Cell42"
                            Padding="5"
                            Grid.Row="10"
                            Grid.Column="1"
@@ -465,7 +483,7 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <ComboBox  x:Name="Table11Cell43"
+                <ComboBox  x:Name="T11Cell43"
                            Padding="5"
                            Grid.Row="10"
                            Grid.Column="2">
@@ -477,11 +495,11 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <TextBox  x:Name="Table11Cell44"
+                <TextBox  x:Name="T11Cell44"
                           Padding="5"
                           Grid.Row="10"
                           Grid.Column="3" />
-                <ComboBox  x:Name="Table11Cell45"
+                <ComboBox  x:Name="T11Cell45"
                            Padding="5"
                            Grid.Row="10"
                            Grid.Column="4">
@@ -489,18 +507,18 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <TextBox  x:Name="Table11Cell46"
+                <TextBox  x:Name="T11Cell46"
                           Padding="5"
                           Grid.Row="10"
                           Grid.Column="5"
                           IsReadOnly="True" />
 
                 <TextBox TextWrapping="Wrap"
-                         x:Name="Table11Cell51"
+                         x:Name="T11Cell51"
                          Padding="5"
                          Grid.Row="11"
                          Grid.Column="0" />
-                <ComboBox  x:Name="Table11Cell52"
+                <ComboBox  x:Name="T11Cell52"
                            Padding="5"
                            Grid.Row="11"
                            Grid.Column="1"
@@ -513,7 +531,7 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <ComboBox  x:Name="Table11Cell53"
+                <ComboBox  x:Name="T11Cell53"
                            Padding="5"
                            Grid.Row="11"
                            Grid.Column="2">
@@ -525,11 +543,11 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <TextBox  x:Name="Table11Cell54"
+                <TextBox  x:Name="T11Cell54"
                           Padding="5"
                           Grid.Row="11"
                           Grid.Column="3" />
-                <ComboBox  x:Name="Table11Cell55"
+                <ComboBox  x:Name="T11Cell55"
                            Padding="5"
                            Grid.Row="11"
                            Grid.Column="4">
@@ -537,18 +555,18 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <TextBox  x:Name="Table11Cell56"
+                <TextBox  x:Name="T11Cell56"
                           Padding="5"
                           Grid.Row="11"
                           Grid.Column="5"
                           IsReadOnly="True" />
 
                 <TextBox TextWrapping="Wrap"
-                         x:Name="Table11Cell61"
+                         x:Name="T11Cell61"
                          Padding="5"
                          Grid.Row="12"
                          Grid.Column="0" />
-                <ComboBox  x:Name="Table11Cell62"
+                <ComboBox  x:Name="T11Cell62"
                            Padding="5"
                            Grid.Row="12"
                            Grid.Column="1"
@@ -561,7 +579,7 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <ComboBox  x:Name="Table11Cell63"
+                <ComboBox  x:Name="T11Cell63"
                            Padding="5"
                            Grid.Row="12"
                            Grid.Column="2">
@@ -573,11 +591,11 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <TextBox  x:Name="Table11Cell64"
+                <TextBox  x:Name="T11Cell64"
                           Padding="5"
                           Grid.Row="12"
                           Grid.Column="3" />
-                <ComboBox  x:Name="Table11Cell65"
+                <ComboBox  x:Name="T11Cell65"
                            Padding="5"
                            Grid.Row="12"
                            Grid.Column="4">
@@ -585,7 +603,7 @@
                     <Label>2</Label>
                     <Label>3</Label>
                 </ComboBox>
-                <TextBox  x:Name="Table11Cell66"
+                <TextBox  x:Name="T11Cell66"
                           Padding="5"
                           Grid.Row="12"
                           Grid.Column="5"
@@ -596,10 +614,1509 @@
                         Grid.ColumnSpan="6"
                         BorderBrush="Black"
                         BorderThickness="1" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="13"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="13"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="3.Составьте список из 2 бизнес-идей, основанных на товарах/услугах с сайтов объявлений Авито (https://www.avito.ru/ ) и Юла (https://youla.io/) и др." />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="T11Cell71"
+                         Padding="5"
+                         Grid.Row="14"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="T11Cell72"
+                           Padding="5"
+                           Grid.Row="14"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="T11Cell73"
+                           Padding="5"
+                           Grid.Row="14"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell74"
+                          Padding="5"
+                          Grid.Row="14"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="T11Cell75"
+                           Padding="5"
+                           Grid.Row="14"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell76"
+                          Padding="5"
+                          Grid.Row="14"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="T11Cell81"
+                         Padding="5"
+                         Grid.Row="15"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="T11Cell82"
+                           Padding="5"
+                           Grid.Row="15"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="T11Cell83"
+                           Padding="5"
+                           Grid.Row="15"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell84"
+                          Padding="5"
+                          Grid.Row="15"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="T11Cell85"
+                           Padding="5"
+                           Grid.Row="15"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell86"
+                          Padding="5"
+                          Grid.Row="15"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+                <Border Grid.Row="14"
+                        Grid.RowSpan="2"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="6"
+                        BorderBrush="Black"
+                        BorderThickness="1" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="16"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="16"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="4.Составьте список из 2 бизнес-идей, основанных на соц.сетях (вконтакте, инстаграм и др.) " />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="T11Cell91"
+                         Padding="5"
+                         Grid.Row="17"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="T11Cell92"
+                           Padding="5"
+                           Grid.Row="17"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="T11Cell93"
+                           Padding="5"
+                           Grid.Row="17"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell94"
+                          Padding="5"
+                          Grid.Row="17"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="T11Cell95"
+                           Padding="5"
+                           Grid.Row="17"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell96"
+                          Padding="5"
+                          Grid.Row="17"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="T11Cell101"
+                         Padding="5"
+                         Grid.Row="18"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="T11Cell102"
+                           Padding="5"
+                           Grid.Row="18"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="T11Cell103"
+                           Padding="5"
+                           Grid.Row="18"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell104"
+                          Padding="5"
+                          Grid.Row="18"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="T11Cell105"
+                           Padding="5"
+                           Grid.Row="18"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell106"
+                          Padding="5"
+                          Grid.Row="18"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+                <Border Grid.Row="17"
+                        Grid.RowSpan="2"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="6"
+                        BorderBrush="Black"
+                        BorderThickness="1" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="19"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="19"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="5. Напишите 2 бизнес-идей, реализация которых поможет решить существующие ПРОБЛЕМЫ, часто возникают у вас или ваших знакомых, в т.ч. на текущей, прошлой РАБОТЕ ПО НАЙМУ и/или УЧЕБЕ" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="T11Cell111"
+                         Padding="5"
+                         Grid.Row="20"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="T11Cell112"
+                           Padding="5"
+                           Grid.Row="20"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="T11Cell113"
+                           Padding="5"
+                           Grid.Row="20"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell114"
+                          Padding="5"
+                          Grid.Row="20"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="T11Cell115"
+                           Padding="5"
+                           Grid.Row="20"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell116"
+                          Padding="5"
+                          Grid.Row="20"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="T11Cell121"
+                         Padding="5"
+                         Grid.Row="21"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="T11Cell122"
+                           Padding="5"
+                           Grid.Row="21"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="T11Cell123"
+                           Padding="5"
+                           Grid.Row="21"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell124"
+                          Padding="5"
+                          Grid.Row="21"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="T11Cell125"
+                           Padding="5"
+                           Grid.Row="21"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell126"
+                          Padding="5"
+                          Grid.Row="21"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+                <Border Grid.Row="20"
+                        Grid.RowSpan="2"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="6"
+                        BorderBrush="Black"
+                        BorderThickness="1" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="22"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="22"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="6. Составьте список из бизнес-идей, основанных на товарах, услугах не требующих вложения денег." />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="T11Cell131"
+                         Padding="5"
+                         Grid.Row="23"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="T11Cell132"
+                           Padding="5"
+                           Grid.Row="23"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="T11Cell133"
+                           Padding="5"
+                           Grid.Row="23"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell134"
+                          Padding="5"
+                          Grid.Row="23"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="T11Cell135"
+                           Padding="5"
+                           Grid.Row="23"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell136"
+                          Padding="5"
+                          Grid.Row="23"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="T11Cell141"
+                         Padding="5"
+                         Grid.Row="24"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="T11Cell142"
+                           Padding="5"
+                           Grid.Row="24"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="T11Cell143"
+                           Padding="5"
+                           Grid.Row="24"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell144"
+                          Padding="5"
+                          Grid.Row="24"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="T11Cell145"
+                           Padding="5"
+                           Grid.Row="24"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell146"
+                          Padding="5"
+                          Grid.Row="24"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+                <Border Grid.Row="23"
+                        Grid.RowSpan="2"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="6"
+                        BorderBrush="Black"
+                        BorderThickness="1" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="25"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           TextAlignment="Center"
+                           Padding="5"
+                           Grid.Row="25"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="Дополнительные способы поиска  " />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="26"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="26"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="7. Составьте идею бизнеса, не требующего уплаты налогов" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="T11Cell151"
+                         Padding="5"
+                         Grid.Row="27"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="T11Cell152"
+                           Padding="5"
+                           Grid.Row="27"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="T11Cell153"
+                           Padding="5"
+                           Grid.Row="27"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell154"
+                          Padding="5"
+                          Grid.Row="27"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="T11Cell155"
+                           Padding="5"
+                           Grid.Row="27"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell156"
+                          Padding="5"
+                          Grid.Row="27"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+                <Border Grid.Row="27"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="6"
+                        BorderBrush="Black"
+                        BorderThickness="1" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="28"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="28"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="8. Составьте список из 1 бизнес-идеи, основанной на ЗАИМСТВОВАНИИ С ЗАРУБЕЖНЫХ, СТОЛИЧНЫХ РЫНКОВ" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="T11Cell161"
+                         Padding="5"
+                         Grid.Row="29"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="T11Cell162"
+                           Padding="5"
+                           Grid.Row="29"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="T11Cell163"
+                           Padding="5"
+                           Grid.Row="29"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell164"
+                          Padding="5"
+                          Grid.Row="29"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="T11Cell165"
+                           Padding="5"
+                           Grid.Row="29"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell166"
+                          Padding="5"
+                          Grid.Row="29"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+                <Border Grid.Row="29"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="6"
+                        BorderBrush="Black"
+                        BorderThickness="1" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="30"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="30"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="9.Составьте список из 1 бизнес-идеи, основанной на Франчайзинге" />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="T11Cell171"
+                         Padding="5"
+                         Grid.Row="31"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="T11Cell172"
+                           Padding="5"
+                           Grid.Row="31"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="T11Cell173"
+                           Padding="5"
+                           Grid.Row="31"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell174"
+                          Padding="5"
+                          Grid.Row="31"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="T11Cell175"
+                           Padding="5"
+                           Grid.Row="31"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell176"
+                          Padding="5"
+                          Grid.Row="31"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+                <Border Grid.Row="31"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="6"
+                        BorderBrush="Black"
+                        BorderThickness="1" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="32"
+                        Grid.ColumnSpan="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.Row="32"
+                           Grid.ColumnSpan="6"
+                           Grid.Column="0"
+                           Text="10.Составьте список из бизнес-идей, основанных на ИЗОБРЕТЕНИЯХ, открытиях, новинках и т.д." />
+
+                <TextBox TextWrapping="Wrap"
+                         x:Name="T11Cell181"
+                         Padding="5"
+                         Grid.Row="33"
+                         Grid.Column="0" />
+                <ComboBox  x:Name="T11Cell182"
+                           Padding="5"
+                           Grid.Row="33"
+                           Grid.Column="1"
+                           BorderBrush="White">
+                    <ComboBox.FocusVisualStyle>
+                        <Style TargetType="AccessText" />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <ComboBox  x:Name="T11Cell183"
+                           Padding="5"
+                           Grid.Row="33"
+                           Grid.Column="2">
+                    <ComboBox.FocusVisualStyle>
+                        <Style />
+                    </ComboBox.FocusVisualStyle>
+
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell184"
+                          Padding="5"
+                          Grid.Row="33"
+                          Grid.Column="3" />
+                <ComboBox  x:Name="T11Cell185"
+                           Padding="5"
+                           Grid.Row="33"
+                           Grid.Column="4">
+                    <Label>1</Label>
+                    <Label>2</Label>
+                    <Label>3</Label>
+                </ComboBox>
+                <TextBox  x:Name="T11Cell186"
+                          Padding="5"
+                          Grid.Row="33"
+                          Grid.Column="5"
+                          IsReadOnly="True" />
+                <Border Grid.Row="33"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="6"
+                        BorderBrush="Black"
+                        BorderThickness="1" />
             </Grid>
             <Button x:Name="Sum"
                     Content="Посчитать сумму баллов"
                     Click="Sum_Click" />
+
+            <TextBlock Text="Оценка и выбор бизнес-идей"
+                       Margin="0 30 0 5"
+                       HorizontalAlignment="Center"
+                       FontWeight="Bold" />
+
+            <Grid x:Name="T12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.RowSpan="4" />
+                <TextBlock Text="Критерии для сравнения"
+                           TextWrapping="Wrap"
+                           Padding="5"
+                           Grid.RowSpan="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2" />
+                <TextBlock Text="1 бизнес-идея"
+                           Padding="5"
+                           Grid.Column="1"
+                           Grid.ColumnSpan="2" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Column="3"
+                        Grid.ColumnSpan="2" />
+                <TextBlock Text="2 бизнес-идея"
+                           Padding="5"
+                           Grid.Column="3"
+                           Grid.ColumnSpan="2" />
+
+                <TextBox x:Name="T12Cell1"
+                         Grid.Row="1"
+                         Grid.Column="1"
+                         Grid.ColumnSpan="2"
+                         Padding="5" />
+
+                <TextBox x:Name="T12Cell2"
+                         Grid.Row="1"
+                         Grid.Column="3"
+                         Grid.ColumnSpan="2"
+                         Padding="5" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="1" />
+                <TextBlock Text="значение"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="1" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="2" />
+                <TextBlock Text="балл"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="2" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="3" />
+                <TextBlock Text="значение"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="3" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="3"
+                        Grid.Column="4" />
+                <TextBlock Text="балл"
+                           Padding="5"
+                           Grid.Row="3"
+                           Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="4"
+                        Grid.Column="0" />
+                <TextBlock Text="1"
+                           Padding="5"
+                           Grid.Row="4"
+                           Grid.Column="0" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="4"
+                        Grid.Column="1" />
+                <TextBlock Text="2"
+                           Padding="5"
+                           Grid.Row="4"
+                           Grid.Column="1" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="4"
+                        Grid.Column="2" />
+                <TextBlock Text="3"
+                           Padding="5"
+                           Grid.Row="4"
+                           Grid.Column="2" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="4"
+                        Grid.Column="3" />
+                <TextBlock Text="4"
+                           Padding="5"
+                           Grid.Row="4"
+                           Grid.Column="3" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="4"
+                        Grid.Column="4" />
+                <TextBlock Text="5"
+                           Padding="5"
+                           Grid.Row="4"
+                           Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="5"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="1. Формальные критерии"
+                           Padding="5"
+                           Grid.Row="5"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell11"
+                         Padding="5"
+                         Grid.Row="5"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell12"
+                          Padding="5"
+                          Grid.Row="5"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell13"
+                         Padding="5"
+                         Grid.Row="5"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell14"
+                         Padding="5"
+                         Grid.Row="5"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="6"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="1.1. Объем рынка (количество потенциальных покупателей)"
+                           Padding="5"
+                           Grid.Row="6"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell21"
+                         Padding="5"
+                         Grid.Row="6"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell22"
+                          Padding="5"
+                          Grid.Row="6"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell23"
+                         Padding="5"
+                         Grid.Row="6"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell24"
+                         Padding="5"
+                         Grid.Row="6"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="7"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="1.2. Маржинальность (или примерная наценка, или прибыльность), в %"
+                           Padding="5"
+                           Grid.Row="7"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell31"
+                         Padding="5"
+                         Grid.Row="7"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell32"
+                          Padding="5"
+                          Grid.Row="7"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell33"
+                         Padding="5"
+                         Grid.Row="7"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell34"
+                         Padding="5"
+                         Grid.Row="7"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="8"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="1.3. Конкурентность (кол-во конкурентов на территории)"
+                           Padding="5"
+                           Grid.Row="8"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell41"
+                         Padding="5"
+                         Grid.Row="8"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell42"
+                          Padding="5"
+                          Grid.Row="8"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell43"
+                         Padding="5"
+                         Grid.Row="8"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell44"
+                         Padding="5"
+                         Grid.Row="8"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="9"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="1.4. Уникальность (через сколько месяцев у вас могут появиться конкуренты)"
+                           Padding="5"
+                           Grid.Row="9"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell51"
+                         Padding="5"
+                         Grid.Row="9"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell52"
+                          Padding="5"
+                          Grid.Row="9"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell53"
+                         Padding="5"
+                         Grid.Row="9"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell54"
+                         Padding="5"
+                         Grid.Row="9"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="10"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="1.5. Сложность выходы на рынок (сколько времени, в неделях)"
+                           Padding="5"
+                           Grid.Row="10"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell61"
+                         Padding="5"
+                         Grid.Row="10"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell62"
+                          Padding="5"
+                          Grid.Row="10"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell63"
+                         Padding="5"
+                         Grid.Row="10"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell64"
+                         Padding="5"
+                         Grid.Row="10"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="11"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="1.6. Возможность повторных продаж тому же клиенту (кол-во повторных продаж в год)"
+                           Padding="5"
+                           Grid.Row="11"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell71"
+                         Padding="5"
+                         Grid.Row="11"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell72"
+                          Padding="5"
+                          Grid.Row="11"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell73"
+                         Padding="5"
+                         Grid.Row="11"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell74"
+                         Padding="5"
+                         Grid.Row="11"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="12"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="1.7. Сумма, денег необходимая для открытия  "
+                           Padding="5"
+                           Grid.Row="12"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell81"
+                         Padding="5"
+                         Grid.Row="12"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell82"
+                          Padding="5"
+                          Grid.Row="12"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell83"
+                         Padding="5"
+                         Grid.Row="12"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell84"
+                         Padding="5"
+                         Grid.Row="12"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="13"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="1.8. Скорость оборота денег по 1 сделке (дней)"
+                           Padding="5"
+                           Grid.Row="13"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell91"
+                         Padding="5"
+                         Grid.Row="13"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell92"
+                          Padding="5"
+                          Grid.Row="13"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell93"
+                         Padding="5"
+                         Grid.Row="13"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell94"
+                         Padding="5"
+                         Grid.Row="13"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="14"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="1.9. Охват ваших клиентов"
+                           Padding="5"
+                           Grid.Row="14"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell101"
+                         Padding="5"
+                         Grid.Row="14"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell102"
+                          Padding="5"
+                          Grid.Row="14"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell103"
+                         Padding="5"
+                         Grid.Row="14"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell104"
+                         Padding="5"
+                         Grid.Row="14"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="15"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="1.10. Наличие у Вас товара/услуги, который(ю) Вы будите продавать или его образца (прототипа)"
+                           Padding="5"
+                           Grid.Row="15"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell111"
+                         Padding="5"
+                         Grid.Row="15"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell112"
+                          Padding="5"
+                          Grid.Row="15"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell113"
+                         Padding="5"
+                         Grid.Row="15"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell114"
+                         Padding="5"
+                         Grid.Row="15"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="16"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="1.12 Перспективность рынка (увеличивается/сокращается)"
+                           Padding="5"
+                           Grid.Row="16"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell121"
+                         Padding="5"
+                         Grid.Row="16"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell122"
+                          Padding="5"
+                          Grid.Row="16"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell123"
+                         Padding="5"
+                         Grid.Row="16"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell124"
+                         Padding="5"
+                         Grid.Row="16"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="17"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="ИТОГО формальные"
+                           Padding="5"
+                           Grid.Row="17"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell131"
+                         Padding="5"
+                         Grid.Row="17"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell132"
+                          Padding="5"
+                          Grid.Row="17"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell133"
+                         Padding="5"
+                         Grid.Row="17"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell134"
+                         Padding="5"
+                         Grid.Row="17"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="18"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="2. Неформальные критерии"
+                           Padding="5"
+                           Grid.Row="18"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell141"
+                         Padding="5"
+                         Grid.Row="18"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell142"
+                          Padding="5"
+                          Grid.Row="18"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell143"
+                         Padding="5"
+                         Grid.Row="18"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell144"
+                         Padding="5"
+                         Grid.Row="18"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="19"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="2.1. Нравится ли вам идея"
+                           Padding="5"
+                           Grid.Row="19"
+                           Grid.Column="0" />
+                <TextBox Text="-"
+                         IsReadOnly="True"
+                         Padding="5"
+                         Grid.Row="19"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell152"
+                          Padding="5"
+                          Grid.Row="19"
+                          Grid.Column="2" />
+                <TextBox Text="-"
+                         IsReadOnly="True"
+                         Padding="5"
+                         Grid.Row="19"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell154"
+                         Padding="5"
+                         Grid.Row="19"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="20"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="2.2. Мнение экспертов о бизнес-идее "
+                           Padding="5"
+                           Grid.Row="20"
+                           Grid.Column="0" />
+                <TextBox Text="-"
+                         IsReadOnly="True"
+                         Padding="5"
+                         Grid.Row="20"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell162"
+                          Padding="5"
+                          Grid.Row="20"
+                          Grid.Column="2" />
+                <TextBox Text="-"
+                         IsReadOnly="True"
+                         Padding="5"
+                         Grid.Row="20"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell164"
+                         Padding="5"
+                         Grid.Row="20"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="21"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="2.3. Наличие команды, которая будет реализовывать бизнес-идею "
+                           Padding="5"
+                           Grid.Row="21"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell171"
+                         Padding="5"
+                         Grid.Row="21"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell172"
+                          Padding="5"
+                          Grid.Row="21"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell173"
+                         Padding="5"
+                         Grid.Row="21"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell174"
+                         Padding="5"
+                         Grid.Row="21"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="22"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="2.4. Решается значимая проблема "
+                           Padding="5"
+                           Grid.Row="22"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell181"
+                         Padding="5"
+                         Grid.Row="22"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell182"
+                          Padding="5"
+                          Grid.Row="22"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell183"
+                         Padding="5"
+                         Grid.Row="22"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell184"
+                         Padding="5"
+                         Grid.Row="22"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="23"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="2.5. Знаете отрасль и товар/услугу (умеете, есть навыки)  "
+                           Padding="5"
+                           Grid.Row="23"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell191"
+                         Padding="5"
+                         Grid.Row="23"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell192"
+                          Padding="5"
+                          Grid.Row="23"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell193"
+                         Padding="5"
+                         Grid.Row="23"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell194"
+                         Padding="5"
+                         Grid.Row="23"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="24"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="2.6. Готовы изучать отрасль и товар/услугу "
+                           Padding="5"
+                           Grid.Row="24"
+                           Grid.Column="0" />
+                <TextBox Text="-"
+                         IsReadOnly="True"
+                         Padding="5"
+                         Grid.Row="24"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell202"
+                          Padding="5"
+                          Grid.Row="24"
+                          Grid.Column="2" />
+                <TextBox Text="-"
+                         IsReadOnly="True"
+                         Padding="5"
+                         Grid.Row="24"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell204"
+                         Padding="5"
+                         Grid.Row="24"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="25"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="2.7. Готовы ли вы (психологически) уже начать лично продавать товар/услугу?"
+                           Padding="5"
+                           Grid.Row="25"
+                           Grid.Column="0" />
+                <TextBox Text="-"
+                         IsReadOnly="True"
+                         Padding="5"
+                         Grid.Row="25"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell212"
+                          Padding="5"
+                          Grid.Row="25"
+                          Grid.Column="2" />
+                <TextBox Text="-"
+                         IsReadOnly="True"
+                         Padding="5"
+                         Grid.Row="25"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell214"
+                         Padding="5"
+                         Grid.Row="25"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="26"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="ИТОГО неформальные"
+                           Padding="5"
+                           Grid.Row="26"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell221"
+                         Padding="5"
+                         Grid.Row="26"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell222"
+                          Padding="5"
+                          Grid.Row="26"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell223"
+                         Padding="5"
+                         Grid.Row="26"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell224"
+                         Padding="5"
+                         Grid.Row="26"
+                         Grid.Column="4" />
+
+                <Border BorderBrush="Black"
+                        BorderThickness="1"
+                        Grid.Row="27"
+                        Grid.Column="0" />
+                <TextBlock TextWrapping="Wrap"
+                           Text="ИТОГО (СУММА)"
+                           Padding="5"
+                           Grid.Row="27"
+                           Grid.Column="0" />
+                <TextBox x:Name="T12Cell231"
+                         Padding="5"
+                         Grid.Row="27"
+                         Grid.Column="1" />
+                <TextBox  x:Name="T12Cell232"
+                          Padding="5"
+                          Grid.Row="27"
+                          Grid.Column="2" />
+                <TextBox x:Name="T12Cell233"
+                         Padding="5"
+                         Grid.Row="27"
+                         Grid.Column="3" />
+                <TextBox x:Name="T12Cell234"
+                         Padding="5"
+                         Grid.Row="27"
+                         Grid.Column="4" />
+            </Grid>
         </StackPanel>
     </Grid>
 </Page>
