@@ -6,6 +6,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
 using Xceed.Document.NET;
 using Xceed.Words.NET;
 
@@ -113,6 +114,40 @@ namespace Economy
                     paragraph.ReplaceText(placeholder, value);
                 }
             }
+        }
+
+        private void Maximize_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.WindowState == WindowState.Maximized)
+            {
+                this.WindowState = WindowState.Normal;
+                //MaxButImage.Source = new BitmapImage(new Uri("pack://application:,,,/Resources/Images/max.png"));
+            }
+            else
+            {
+                this.WindowState = WindowState.Maximized;
+                //MaxButImage.Source = new BitmapImage(new Uri("pack://application:,,,/Resources/Images/win.png"));
+            }
+            
+        }
+
+        private void Minimize_Click(object sender, RoutedEventArgs e)
+        {
+           this.WindowState = WindowState.Minimized;
+            
+        }
+
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+     
+
+        private void TitleBar_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            
+            App.Current.MainWindow.DragMove();
         }
     }
 }
