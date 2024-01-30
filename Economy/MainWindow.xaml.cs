@@ -193,6 +193,41 @@ namespace Economy
 		{
 			CurrentPage.Navigate(this.page2);
 		}
+        private void Chapter3_Click(object sender, RoutedEventArgs e)
+        {
+            CurrentPage.Navigate(this.page3);
+        }
+        private void Chapter4_Click(object sender, RoutedEventArgs e)
+        {
+            CurrentPage.Navigate(this.page4);
+        }
+        private void SaveAllPage()
+        {
+            textBoxDataList.Clear();
+            File.Delete("textBoxDataList.xml");
+            SavePage(page1.Page1);
+            SavePage(page2.Page2);
+            SavePage(page3.Page3);
+            SavePage(page4.Page4);
+            SaveFile();
+            MessageBox.Show("Файл успешно сохранен!");
+        }
+        private void LoadDataAllPage()
+        {
+            LoadDataOfPage(page1.Page1, 1);
+            LoadDataOfPage(page2.Page2, 2);
+            LoadDataOfPage(page3.Page3, 3);
+            LoadDataOfPage(page4.Page4, 4);
+        }
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            SaveAllPage();
+        }
+        private void Load_Click(object sender, RoutedEventArgs e)
+        {
+            LoadDataAllPage();
+        }
+
         private static void ReplacePlaceholder(DocX document, string placeholder, string value)
         {
             foreach (var paragraph in document.Paragraphs)
@@ -203,6 +238,8 @@ namespace Economy
                 }
             }
         }
+
+
 
         private void Maximize_Click(object sender, RoutedEventArgs e)
         {
@@ -237,61 +274,11 @@ namespace Economy
             
             App.Current.MainWindow.DragMove();
         }
+
+
+
+
+
     }
 }
-            }
-            private void SaveAllPage()
-            {
-                textBoxDataList.Clear();
-                File.Delete("textBoxDataList.xml");
-                SavePage(page1.Page1);
-                SavePage(page2.Page2);
-                SavePage(page3.Page3);
-                SavePage(page4.Page4);
-                SaveFile();
-                MessageBox.Show("Файл успешно сохранен!");
-            }
-            private void LoadDataAllPage()
-            {
-                LoadDataOfPage(page1.Page1, 1);
-                LoadDataOfPage(page2.Page2, 2);
-                LoadDataOfPage(page3.Page3, 3);
-                LoadDataOfPage(page4.Page4, 4);
-            }
-            private void Chapter1_Click(object sender, RoutedEventArgs e)
-            {
-                CurrentPage.Navigate(this.page1);
-            }
-            private void Chapter2_Click(object sender, RoutedEventArgs e)
-            {
-                CurrentPage.Navigate(this.page2);
-            }
-            private void Chapter3_Click(object sender, RoutedEventArgs e)
-            {
-                CurrentPage.Navigate(this.page3);
-            }
-            private void Chapter4_Click(object sender, RoutedEventArgs e)
-            {
-                CurrentPage.Navigate(this.page4);
-            }
-            private void Save_Click(object sender, RoutedEventArgs e)
-            {
-                SaveAllPage();
-            }
-            private void Load_Click(object sender, RoutedEventArgs e)
-            {
-                LoadDataAllPage();
-            }
-            private static void ReplacePlaceholder(DocX document, string placeholder, string value)
-            {
-                foreach (var paragraph in document.Paragraphs)
-                {
-                    if (paragraph.Text.Contains(placeholder))
-                    {
-                        paragraph.ReplaceText(placeholder, value);
-                    }
-                }
-            }
-
-        }
-    }
+    

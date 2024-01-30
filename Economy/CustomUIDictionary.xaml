@@ -38,7 +38,7 @@
                 <Setter Property="Background" Value="#EBEFFF"/>
             </Trigger>
             <Trigger Property="IsPressed" Value="True">
-                <Setter Property="Background" Value="#E3E9FF"/>
+                <Setter Property="Background" Value="#CAD3F3"/>
                 <Setter Property="Foreground" Value="#AFAAAA"/>
             </Trigger>
         </Style.Triggers>
