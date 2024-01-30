@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Economy.Resources.Pages"
       mc:Ignorable="d" 
       Background="White" d:DesignWidth="800"
-      Title="Chapter4" Height="4910"
+      Title="Chapter4" Height="5755"
       
       >
 
@@ -1033,8 +1033,207 @@
                 </Grid>
 
             </StackPanel>
-            
+
+            <StackPanel Margin="5 35 5 5">
+
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 5">Прогноз выручки от реализации товаров / услуг</TextBlock>
+
+            </StackPanel>
+
+            <StackPanel Margin="5 35 5 5">
+
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 5">Инвестиционные издержки (прогнозные)</TextBlock>
+
+            </StackPanel>
+
+            <StackPanel Margin="5 35 5 5">
+
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 5">Стоимость регистрации ООО</TextBlock>
+
+                <Grid>
+                    
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Border BorderThickness="1"/>
+                    <Border BorderThickness="0 1 1 1" Grid.Column="1"/>
+
+                    <TextBlock HorizontalAlignment="Center" FontWeight="Bold">Статья расходов</TextBlock>
+                    <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Grid.Column="1">Стоимость, руб.</TextBlock>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="1"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="1">Государственная пошлина за регистрацию</TextBlock>
+                    <TextBox x:Name="T4412C11" BorderThickness="0 0 1 1" Grid.Row="1" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="2"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="2">Нотариальное засвидетельствование подписи заявителя, представляющего документы в регистрационный орган, на заявлении о регистрации (из них техническая работа)</TextBlock>
+                    <TextBox x:Name="T4412C21" BorderThickness="0 0 1 1" Grid.Row="2" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="3"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="3">Изготовление и оснастка печати</TextBlock>
+                    <TextBox x:Name="T4412C31" BorderThickness="0 0 1 1" Grid.Row="3" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="4"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="4">Открытие банковского счета</TextBlock>
+                    <TextBox x:Name="T4412C41" BorderThickness="0 0 1 1" Grid.Row="4" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="5" Grid.ColumnSpan="2"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Center" Grid.Row="5" Grid.ColumnSpan="2">Нотариальное удостоверение копии учредительных документов</TextBlock>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="6"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="6">Устав (из них техническая работа)</TextBlock>
+                    <TextBox x:Name="T4412C61" BorderThickness="0 0 1 1" Grid.Row="6" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="7"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="7">Засвидетельствование подлинности подписи на банковской карточке (с каждого лица)</TextBlock>
+                    <TextBox x:Name="T4412C71" BorderThickness="0 0 1 1" Grid.Row="7" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="8" Grid.ColumnSpan="2"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Center" Grid.Row="8" Grid.ColumnSpan="2">Нотариальное засвидетельствование верности копий документов</TextBlock>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="9"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="9">Свидетельство ОГРН</TextBlock>
+                    <TextBox x:Name="T4412C91" BorderThickness="0 0 1 1" Grid.Row="9" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="10"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="10">Свидетельство ИНН</TextBlock>
+                    <TextBox x:Name="T4412C101" BorderThickness="0 0 1 1" Grid.Row="10" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="11"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="11">Выписка из ЕГРЮЛ</TextBlock>
+                    <TextBox x:Name="T4412C111" BorderThickness="0 0 1 1" Grid.Row="11" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="12"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="12" FontWeight="Bold">Итого</TextBlock>
+                    <TextBox x:Name="T4412C121" BorderThickness="0 0 1 1" Grid.Row="12" Grid.Column="1"></TextBox>
+
+                </Grid>
+                
+            </StackPanel>
+
+            <StackPanel Margin="5 35 5 5">
+
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 5">Стоимость регистрации в качестве индивидуального предпринимателя</TextBlock>
+
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Border BorderThickness="1"/>
+                    <Border BorderThickness="0 1 1 1" Grid.Column="1"/>
+
+                    <TextBlock HorizontalAlignment="Center" FontWeight="Bold">Статья расходов</TextBlock>
+                    <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Grid.Column="1">Стоимость, руб.</TextBlock>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="1"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="1">Государственная пошлина за регистрацию</TextBlock>
+                    <TextBox x:Name="T4413C11" BorderThickness="0 0 1 1" Grid.Row="1" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="2"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="2">Нотариальное засвидетельствование подписи заявителя, представляющего документы в регистрационный орган, на заявлении о регистрации (из них техническая работа)</TextBlock>
+                    <TextBox x:Name="T4413C21" BorderThickness="0 0 1 1" Grid.Row="2" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="3"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="3">Изготовление и оснастка печати</TextBlock>
+                    <TextBox x:Name="T4413C31" BorderThickness="0 0 1 1" Grid.Row="3" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="4"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="4">Открытие банковского счета</TextBlock>
+                    <TextBox x:Name="T4413C41" BorderThickness="0 0 1 1" Grid.Row="4" Grid.Column="1"></TextBox>
+
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="5"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="5">Засвидетельствование подлинности подписи на банковской карточке (с каждого лица)</TextBlock>
+                    <TextBox x:Name="T4413C51" BorderThickness="0 0 1 1" Grid.Row="5" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="6" Grid.ColumnSpan="2"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Center" Grid.Row="6" Grid.ColumnSpan="2">Засвидетельствование верности копий документов</TextBlock>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="7"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="7">Свидетельство</TextBlock>
+                    <TextBox x:Name="T4413C61" BorderThickness="0 0 1 1" Grid.Row="7" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="8"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="8">Выписка из ЕГРИП</TextBlock>
+                    <TextBox x:Name="T4413C71" BorderThickness="0 0 1 1" Grid.Row="8" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="9"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="9" FontWeight="Bold">Итого</TextBlock>
+                    <TextBox x:Name="T4413C81" BorderThickness="0 0 1 1" Grid.Row="9" Grid.Column="1"></TextBox>
+
+                </Grid>
+
+            </StackPanel>
+
+            <StackPanel Margin="5 35 5 5">
+
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 5">Текущие (ежемесячные) издержки</TextBlock>
+
+            </StackPanel>
+
+            <StackPanel Margin="5 35 5 5">
+
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 5">План о движении денежных средств</TextBlock>
+
+            </StackPanel>
+
         </StackPanel>
+        
 
     </Grid>
 </Page>
