@@ -8,7 +8,7 @@
         Title="MainWindow"
         Background="#EFF7F6"
         MinWidth="600"
-        MinHeight="300"
+        MinHeight="500"
         Height="500"
         Width="800">
     <Grid>
@@ -81,15 +81,16 @@
                     Width="50"
                     Height="50"
                     Content="Экспорт"
-                    Margin="0,10,0,0" Click="GenerateDocxButton_Click">
+                    Margin="0,10,0,0"
+                    Click="GenerateDocxButton_Click">
             </Button>
         </StackPanel>
         <ScrollViewer Grid.Column="1">
             <Frame x:Name="CurrentPage"
-               NavigationUIVisibility="Hidden"
-               Width="auto"
-               Height="auto"
-               Background="#EEEEEE">
+                   NavigationUIVisibility="Hidden"
+                   Width="auto"
+                   Height="auto"
+                   Background="#EEEEEE">
             </Frame>
         </ScrollViewer>
     </Grid>
