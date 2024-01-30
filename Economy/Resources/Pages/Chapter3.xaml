@@ -7,10 +7,525 @@
       mc:Ignorable="d"
       d:DesignWidth="800"
       Background="White"
-      Height="692"
+      Height="4034"
       Title="Chapter3">
 
     <Grid x:Name="Page3">
-        
+        <StackPanel RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform Angle="0.077" />
+                    <TranslateTransform />
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+            <Label Content="3. Будут ли покупать? (этап № 3 – маркетинговый опрос)"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center">
+            </Label>
+            <Label Content="Проведение проблемного интервью"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center">
+            </Label>
+            <TextBlock  Margin="10,0,10,0"
+                        Text="Задание № 3.1 Проведение проблемного интервью. Необходимо, когда неочевидно будет ли в достаточном объеме продаваться товар/услуга (как правило, либо совсем уникальный, либо достаточно новый для конкретной территории). Задача – выяснить у потенциальных клиентов, за решение какой проблемы они готовы заплатить."
+                        TextWrapping="Wrap">
+            </TextBlock>
+
+            <Label Content="1. Подготовка к интервью"
+                   HorizontalAlignment="Center" />
+
+            <Label Content="1.1. Название бизнес-идеи" />
+            <TextBox x:Name="T31Cell11"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="1.2. Перечень основных проблем клиента, побуждающих его купить" />
+            <TextBox x:Name="T31Cell21"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="1.3. Гипотеза основной проблемы клиента" />
+            <TextBox x:Name="T31Cell31"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="1.4. Количество интервью и подтверждений гипотезы " />
+            <TextBox x:Name="T31Cell41"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <StackPanel Orientation="Horizontal"
+                        Margin="5 10 0 0">
+                <TextBlock>
+                <Run Text="1.5. Примерный план интервью: " />
+                <LineBreak />
+                <Run Text=" - как вызвать интерес собеседника:  " />
+                <LineBreak />
+                <Run Text=" - значимая тема" />
+                <LineBreak />
+                <Run Text=" - ваша компетенция " />
+                <LineBreak />
+                <Run Text=" - описание продукт/технологии " />
+                <LineBreak />
+                <Run Text=" - реальные примеры" />
+                <LineBreak />
+                <Run Text=" - показать ценность" />
+                <LineBreak />
+                <LineBreak />
+                <Run Text=" - о чем расспрашивать собеседника: " />
+                <LineBreak />
+                <Run Text=" - ситуация и цель" />
+                <LineBreak />
+                <Run Text=" - проблема " />
+                <LineBreak />
+                <Run Text=" - желаемое состояние " />
+                <LineBreak />
+                <Run Text=" - возможности " />
+                </TextBlock>
+                <TextBox x:Name="T31Cell51"
+                         Margin="5 0"
+                         HorizontalAlignment="Left"
+                         Width="400" />
+            </StackPanel>
+
+            <Label Content="2. Проведение интервью"
+                   HorizontalAlignment="Center"
+                   Margin="0 10 0 0" />
+
+            <Label Content="Первое интервью" />
+            <StackPanel Orientation="Horizontal">
+                <Label Content=" - ситуация и цель:         " />
+                <TextBox x:Name="T31Cell61"
+                         Margin="0 5 0 0"
+                         Width="400" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content=" - проблема:                   " />
+                <TextBox x:Name="T31Cell71"
+                         Margin="0 5 0 0"
+                         Width="400" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content=" - желаемое состояние: " />
+                <TextBox x:Name="T31Cell81"
+                         Margin="0 5 0 0"
+                         Width="400" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content=" - возможности:             " />
+                <TextBox x:Name="T31Cell91"
+                         Margin="0 5 0 0"
+                         Width="400" />
+            </StackPanel>
+
+            <Label Content="Первое интервью" />
+            <StackPanel Orientation="Horizontal">
+                <Label Content=" - ситуация и цель:         " />
+                <TextBox x:Name="T31Cell101"
+                         Margin="0 5 0 0"
+                         Width="400" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content=" - проблема:                   " />
+                <TextBox x:Name="T31Cell111"
+                         Margin="0 5 0 0"
+                         Width="400" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content=" - желаемое состояние: " />
+                <TextBox x:Name="T31Cell121"
+                         Margin="0 5 0 0"
+                         Width="400" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content=" - возможности:             " />
+                <TextBox x:Name="T31Cell131"
+                         Margin="0 5 0 0"
+                         Width="400" />
+            </StackPanel>
+
+            <Label Content="3. Подведение выводов интервью "
+                   HorizontalAlignment="Center"
+                   Margin="0 10 0 0" />
+
+            <Label Content="1.3. Гипотеза основной проблемы клиента" />
+            <TextBox x:Name="T31Cell141"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="1.4. Количество интервью и подтверждений гипотезы " />
+            <TextBox x:Name="T31Cell151"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="Проведение маркетингового опроса"
+                   Margin="0 10"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center">
+            </Label>
+
+            <Label Content="1. Подготовка к опросу "
+                   Margin="5 0" />
+
+            <Label Content="1.1. Цель опроса " />
+            <TextBox x:Name="T32Cell11"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="1.2. Опрашиваемая целевая аудитория " />
+            <TextBox x:Name="T32Cell21"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="1.3. Наличие статистических данных количества потенциальных клиентов " />
+            <TextBox x:Name="T32Cell31"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="1.4. Количество запросов в поисковых системах Яндекс " />
+            <TextBox x:Name="T32Cell41"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="1.5. Тип опроса (массовый или узкоспециализированный) и где опрашивать   " />
+            <TextBox x:Name="T32Cell51"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="1.6. Очный опрос (печатная анкета) или дистанционный (электронная анкета) " />
+            <TextBox x:Name="T32Cell61"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="1.7. Место проведение опроса или размещения анкеты (интернет-ссылки)  " />
+            <TextBox x:Name="T32Cell71"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="2. Разработка анкеты:"
+                   Margin="5 0" />
+
+            <Label Content="2.1. Вступительная часть анкеты: " />
+            <TextBox x:Name="T32Cell81"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="2.2. Вопросы на выявление количества (объема спроса) – К1:" />
+            <TextBox x:Name="T32Cell91"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="2.3. Вопросы на выявление цены (стоимости) – Ц:" />
+            <TextBox x:Name="T32Cell101"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="2.4. Дополнительные вопросы: a) вопросы о местонахождении b) вопросы о конкурентах (К2) c) вопросы о качестве (К3) d) вопросы о клиентах (К4), отвечающих на анкету (уточнение социально-экономических, демографических параметров)" />
+            <TextBox x:Name="T32Cell111"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Height="100"
+                     Width="400" />
+
+            <Label Content="2.5. Заключительная часть анкеты: благодарность " />
+            <TextBox x:Name="T32Cell121"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="3. Редактирование анкеты:"
+                   Margin="5 0" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="3.1. Отражение целей опроса: вопросы позволяют выявить (+/-): конкретное количество (К1) спроса, цену в рублях (Ц1), по которой готовы покупать, конкурентов (К2), качество (К3), клиентов (К4)" />
+            <TextBox x:Name="T32Cell131"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Height="100"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="3.2. Соответствие правилам составление (+/-), понятные формулировки,понятное оформление анкеты (подсказки, место для ответа), вопросы содержат варианты ответов, выбраны правильные типы вопросов (один из списка или несколько из списка и т. д.), правильная орфография и пунктуация" />
+            <TextBox x:Name="T32Cell141"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Height="100"
+                     Width="400" />
+
+            <Label Content="3.3. Интернет-ссылка на подготовленную анкету " />
+            <TextBox x:Name="T32Cell151"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="3.4. Текст с просьбой заполнить анкету (+ фото для электронной версии) " />
+            <TextBox x:Name="T32Cell161"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="4. Проведение анкетирования"
+                   Margin="5 0" />
+
+            <Label Content="4.1. Интернет-ссылка на фото (скриншот) с размещенным в целевых местах просьбой заполнить анкету и ссылкой" />
+            <TextBox x:Name="T32Cell171"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="4.2. Количество опрошенных, в том числе целевых клиентов" />
+            <TextBox x:Name="T32Cell181"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="4.3. Интернет-ссылка на результаты опроса" />
+            <TextBox x:Name="T32Cell191"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="5. Подведение результатов опроса:"
+                   Margin="5 0" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="5.1 Среднее арифметическое количества (объем спроса), т.е. среднее количество штук по каждому товару/услуге, которое у вас будет покупать один покупатель в единицу времени (например, месяц) " />
+            <TextBox x:Name="T32Cell201"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="5.2. Среднюю арифметическую цену (стоимость), т.е. среднюю цену одной единицы по каждому товару/услуге, по которой у вас будут покупать " />
+            <TextBox x:Name="T32Cell211"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="5.3. Доли конкурентов в рыночном сегменте (в %),
+т.е. у кого, сколько процентов покупают
+" />
+            <TextBox x:Name="T32Cell221"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="Тестирование наличия спроса через канал сбыта"
+                   Margin="0 10"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center">
+            </Label>
+
+            <Label Content="1. Выбор канала и создание прототипа группы/сайта:"
+                   Margin="5 0" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="1.1. Бизнес-идея " />
+            <TextBox x:Name="T33Cell11"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="1.2. Персонаж: имя, возраст, место работы, должность и зарплата, семейное положение, место проживания, автомобиль, когда, где и с кем был последний раз в отпуске, как проводит выходные/как хотел бы их проводить, как проводит вечера, любимое блюдо, занимается ли спортом, играет ли в компьютерные игры " />
+            <TextBox x:Name="T33Cell21"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Height="100"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="1.3. Интернет: устройства, сайты, любимые соц.сети" />
+            <TextBox x:Name="T33Cell31"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="1.4. Ситуация (у персонажа возникнет потребность в данном товаре/услуге)" />
+            <TextBox x:Name="T33Cell41"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="1.5. Поисковый запрос: на каком ресурсе (сайте, приложение и т.д.) поиск, поисковый запрос, который персонаж сможет использовать при поиске,	нашли ли вы то, что искал персонаж,	какого типа ссылки будет открывать персонаж в первую очередь" />
+            <TextBox x:Name="T33Cell51"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="1.6. Вопросы: какой вопрос возникает первым у персонажа, открывшим группу/сайт, последовательность вопросов, возникающих у персонажа при изучении группы/сайта (от 8 до 15), не пропустил ли персонаж первый вопрос «Что это?» («Та ли это группа/сайт?»)" />
+            <TextBox x:Name="T33Cell61"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="1.7. Создание прототипа: элементы группы/сайта (текст, кнопка, форма для ввода информации, картинка, видео, слайдер и др.):, отвечают на все вопросы персонажа, в правильной последовательности" />
+            <TextBox x:Name="T33Cell71"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="1.8. Выбранный канал сбыта" />
+            <TextBox x:Name="T33Cell81"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="2. Формулирование гипотезы:"
+                   Margin="5 0" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="2.1. Действие клиента (не сложное) в отношении канала сбыта, которое свидетельствует о спросе (Простой первый шаг): как измеряется количество таких действий, если другое действие более легкое для клиента, но точнее подтверждающее его намерения" />
+            <TextBox x:Name="T33Cell91"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="2.2. Гипотеза по количеству данных действий, достаточных для подтверждения реального спроса и срок" />
+            <TextBox x:Name="T33Cell92"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="3. Создание, наполнение и опубликование группы/сайта:"
+                   Margin="5 0" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="3.1. Создание группы/сайта: выбранный конструктор сайта (табл. 3.4) и причины" />
+            <TextBox x:Name="T33Cell101"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="3.2. Наполнение группы/сайта (+/-): простой первый шаг, основные элементы ранее составленного прототипа" />
+            <TextBox x:Name="T33Cell111"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="3.3. Вариант опубликования группы/сайта: интернет-ссылка на группу/сайт" />
+            <TextBox x:Name="T33Cell121"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <Label Content="4. Продвижение группы/сайта и тестирование гипотезы:"
+                   Margin="5 0" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="4.1. Выбранные инструменты продвижения и план их внедрения" />
+            <TextBox x:Name="T33Cell131"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="4.2. Анализ планового и фактического количества действий " />
+            <TextBox x:Name="T33Cell141"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+
+            <TextBlock Width="400"
+                       Padding="5"
+                       HorizontalAlignment="Left"
+                       TextWrapping="Wrap"
+                       Text="4.3. Подтвердилась ли гипотеза " />
+            <TextBox x:Name="T33Cell151"
+                     Margin="5 0"
+                     HorizontalAlignment="Left"
+                     Width="400" />
+        </StackPanel>
     </Grid>
 </Page>
