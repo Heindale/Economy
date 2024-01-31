@@ -6,13 +6,58 @@
         xmlns:local="clr-namespace:Economy"
         mc:Ignorable="d"
         Title="MainWindow"
-        Background="#EFF7F6"
+        Background="#4A5C9C"
         MinWidth="600"
-        MinHeight="500"
-        Height="500"
-        Width="800">
+        WindowStyle="None"
+        MinHeight="300"
+        Height="450"
+        Width="800"
+        >
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0">
+        </WindowChrome>
+    </WindowChrome.WindowChrome>
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Economy;component/CustomUIDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Name="TopRow">
+                <RowDefinition.Style>
+                    <Style TargetType="RowDefinition">
+                        <Setter Property="Height" Value="0"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding WindowState, RelativeSource={RelativeSource AncestorType=Window}}" Value="Maximized">
+                                <Setter Property="Height" Value="7"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </RowDefinition.Style>
+            </RowDefinition>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Name="LeftColumn">
+                <ColumnDefinition.Style>
+                    <Style TargetType="ColumnDefinition">
+                        <Setter Property="Width" Value="0"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding WindowState, RelativeSource={RelativeSource AncestorType=Window}}" Value="Maximized">
+                                <Setter Property="Width" Value="7"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </ColumnDefinition.Style>
+            </ColumnDefinition>
+
             <ColumnDefinition x:Name="MenuBar"
                               Width="75">
             </ColumnDefinition>
@@ -20,72 +65,125 @@
             <ColumnDefinition x:Name="PageContainer"
                               Width="*">
             </ColumnDefinition>
-        </Grid.ColumnDefinitions>
 
-        <StackPanel Name="Menu"
-                    Orientation="Vertical"
-                    Width="auto"
-                    Height="auto"
-                    Background="Transparent"
-                    Grid.Column="0"
-                    VerticalAlignment="Top"
-                    Margin="0,10,0,0">
-            <Image Source="/Economy;component/Resources/Images/ukrtbPrikol.png"
-                   Height="26"
-                   Width="35">
-            </Image>
-            <Button x:Name="Chapter1"
-                    Width="50"
-                    Height="50"
-                    Content="Раздел 1"
-                    Margin="0,10,0,0"
-                    Click="Chapter1_Click">
-            </Button>
+            <ColumnDefinition Name="RightColumn">
+                <ColumnDefinition.Style>
+                    <Style TargetType="ColumnDefinition">
+                        <Setter Property="Width" Value="0"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding WindowState, RelativeSource={RelativeSource AncestorType=Window}}" Value="Maximized">
+                                <Setter Property="Width" Value="7"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </ColumnDefinition.Style>
+            </ColumnDefinition>
 
-            <Button x:Name="Chapter2"
-                    Width="50"
-                    Height="50"
-                    Content="Раздел 2"
-                    Margin="0,10,0,0"
-                    Click="Chapter2_Click">
-            </Button>
-            <Button x:Name="Chapter3"
-                    Width="50"
-                    Height="50"
-                    Content="Раздел 3"
-                    Margin="0,10,0,0"
-                    Click="Chapter3_Click">
-            </Button>
-            <Button x:Name="Chapter4"
-                    Width="50"
-                    Height="50"
-                    Content="Раздел 4"
-                    Margin="0,10,0,0"
-                    Click="Chapter4_Click">
-            </Button>
-            <Button x:Name="Save"
-                    Width="50"
-                    Height="50"
-                    Content="Сохранение"
-                    Margin="0,10,0,0"
-                    Click="Save_Click">
-            </Button>
-            <Button x:Name="Load"
-                    Width="50"
-                    Height="50"
-                    Content="Загрузка"
-                    Margin="0,10,0,0"
-                    Click="Load_Click">
-            </Button>
-            <Button x:Name="GenerateDocxButton"
-                    Width="50"
-                    Height="50"
-                    Content="Экспорт"
-                    Margin="0,10,0,0"
-                    Click="GenerateDocxButton_Click">
-            </Button>
-        </StackPanel>
-        <ScrollViewer Grid.Column="1">
+        </Grid.ColumnDefinitions >
+        <ScrollViewer Grid.Column="1" Grid.Row="2" VerticalScrollBarVisibility="Hidden">
+            <StackPanel Name="Menu"
+                        Orientation="Vertical"
+                        Background="#8FA5F3"
+                        >
+
+
+                <Button x:Name="Chapter1"
+                        Style="{StaticResource MenuButton}"
+                        Width="50"
+                        Height="50"
+                        Margin="0,10,0,0"
+                        Click="Chapter1_Click">
+                    <Image Width="30">
+                        <Image.Style>
+                            <Style TargetType="{x:Type Image}">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsPressed, ElementName=Chapter1}" Value="True">
+                                        <Setter Property="Source" Value="/Resources/Images/BublClick.png"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsPressed, ElementName=Chapter1}" Value="False">
+                                        <Setter Property="Source" Value="/Resources/Images/Bubl.png"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Chapter1}" Value="True">
+                                        <Setter Property="Source" Value="/Resources/Images/ActvBubl.png"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Chapter1}" Value="False">
+                                        <Setter Property="Source" Value="/Resources/Images/Bubl.png"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
+                </Button>
+
+                <Button x:Name="Chapter2"
+                        Style="{StaticResource MenuButton}"
+                        Width="50"
+                        Height="50"
+                        Margin="0,10,0,0"
+                        Click="Chapter2_Click">
+                    <Image Width="40">
+                        <Image.Style>
+                            <Style TargetType="{x:Type Image}">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsPressed, ElementName=Chapter2}" Value="True">
+                                        <Setter Property="Source" Value="/Resources/Images/ActvModel.png"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsPressed, ElementName=Chapter2}" Value="False">
+                                        <Setter Property="Source" Value="/Resources/Images/Model.png"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Chapter2}" Value="True">
+                                        <Setter Property="Source" Value="/Resources/Images/ActvModel.png"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Chapter2}" Value="False">
+                                        <Setter Property="Source" Value="/Resources/Images/Model.png"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
+
+
+                </Button>
+                 <Button x:Name="Chapter3"
+                         Width="50"
+                         Height="50"
+                         Content="Раздел 3"
+                         Margin="0,10,0,0"
+                         Click="Chapter3_Click">
+                 </Button>
+                 <Button x:Name="Chapter4"
+                         Width="50"
+                         Height="50"
+                         Content="Раздел 4"
+                         Margin="0,10,0,0"
+                         Click="Chapter4_Click">
+                 </Button>
+                 <Button x:Name="Save"
+                         Width="50"
+                         Height="50"
+                         Content="Сохранение"
+                         Margin="0,10,0,0"
+                         Click="Save_Click">
+                 </Button>
+                 <Button x:Name="Load"
+                         Width="50"
+                         Height="50"
+                         Content="Загрузка"
+                         Margin="0,10,0,0"
+                         Click="Load_Click">
+                 </Button>
+
+
+                <Button x:Name="GenerateDocxButton"
+                        Style="{StaticResource MenuButton}"
+                        Width="50"
+                        Height="50"
+                        Content="Экспорт"
+                        Margin="0,10,0,0" Click="GenerateDocxButton_Click">
+                </Button>
+            </StackPanel>
+        </ScrollViewer>
+        <ScrollViewer Grid.Column="2" Grid.Row="2">
             <Frame x:Name="CurrentPage"
                    NavigationUIVisibility="Hidden"
                    Width="auto"
@@ -93,5 +191,37 @@
                    Background="#EEEEEE">
             </Frame>
         </ScrollViewer>
+        <DockPanel x:Name="TitleBar" VerticalAlignment="Top" Background="Transparent" LastChildFill="False" MouseDown="TitleBar_MouseDown"  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" >
+            <Label Content="Тренажёр для практического применения при разработке бизнес-проекта" Margin="10,0,0,0"  FontWeight="Medium" FontStretch="ExtraExpanded" Foreground="White" FontFamily="Calibri" FontSize="14"/>
+
+            <Button  x:Name="Close" Style= "{StaticResource TitleBarBut}" DockPanel.Dock="Right" Click="Close_Click" Width="50" Height="30" Background="Transparent" BorderBrush="Transparent">
+                <Image Source="/Resources/Images/close.png" Width="13" />
+
+            </Button>
+            <Button  x:Name="Maximize" Style= "{StaticResource TitleBarBut}" DockPanel.Dock="Right" Click="Maximize_Click" Width="50" Height="30"  Background="Transparent" BorderBrush="Transparent">
+                <Image x:Name="MaxButImage" Width="16">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding WindowState, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" Value="Maximized">
+                                    <Setter Property="Source" Value="/Resources/Images/win.png"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding WindowState, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" Value="Normal">
+                                    <Setter Property="Source" Value="/Resources/Images/max.png"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
+
+
+            </Button>
+            <Button x:Name="Minimize" Style= "{StaticResource TitleBarBut}" DockPanel.Dock="Right" Click="Minimize_Click" Width="50" Height="30" Background="Transparent" BorderBrush="Transparent">
+                <Image Source="/Resources/Images/min.png" Width="14" Margin="0,13,0,0"/>
+
+
+            </Button>
+
+        </DockPanel>
     </Grid>
 </Window>

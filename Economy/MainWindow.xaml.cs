@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
 using System.Xml.Serialization;
 using Xceed.Document.NET;
 using Xceed.Words.NET;
@@ -182,6 +183,62 @@ namespace Economy
             private void ChangePage4()
             {
 
+        }
+
+        private void Chapter1_Click(object sender, RoutedEventArgs e)
+		{
+			CurrentPage.Navigate(this.page1);
+		}
+        private void Chapter2_Click(object sender, RoutedEventArgs e)
+		{
+			CurrentPage.Navigate(this.page2);
+		}
+        private static void ReplacePlaceholder(DocX document, string placeholder, string value)
+        {
+            foreach (var paragraph in document.Paragraphs)
+            {
+                if (paragraph.Text.Contains(placeholder))
+                {
+                    paragraph.ReplaceText(placeholder, value);
+                }
+            }
+        }
+
+        private void Maximize_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.WindowState == WindowState.Maximized)
+            {
+                this.WindowState = WindowState.Normal;
+                //MaxButImage.Source = new BitmapImage(new Uri("pack://application:,,,/Resources/Images/max.png"));
+            }
+            else
+            {
+                this.WindowState = WindowState.Maximized;
+                //MaxButImage.Source = new BitmapImage(new Uri("pack://application:,,,/Resources/Images/win.png"));
+            }
+            
+        }
+
+        private void Minimize_Click(object sender, RoutedEventArgs e)
+        {
+           this.WindowState = WindowState.Minimized;
+            
+        }
+
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+     
+
+        private void TitleBar_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            
+            App.Current.MainWindow.DragMove();
+        }
+    }
+}
             }
             private void SaveAllPage()
             {
