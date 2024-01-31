@@ -10,7 +10,7 @@
         MinWidth="600"
         WindowStyle="None"
         MinHeight="300"
-        Height="403"
+        Height="1283"
         Width="800"
         >
     <WindowChrome.WindowChrome>
@@ -219,20 +219,46 @@
                          Style="{StaticResource MenuButton}"
                          Width="60"
                          Height="60"
-                         Content="Сохранение"
                          Margin="0,10,0,0"
                          Click="Save_Click">
-                        
-                        
-                 </Button>
+                    <Image Width="50">
+                        <Image.Style>
+                            <Style TargetType="{x:Type Image}">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Save}" Value="True">
+                                        <Setter Property="Source" Value="/Resources/Images/ActvSave.png"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Save}" Value="False">
+                                        <Setter Property="Source" Value="/Resources/Images/Save.png"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
+
+
+                </Button>
                  <Button x:Name="Load"
                          Style="{StaticResource MenuButton}"
                          Width="60"
                          Height="60"
-                         Content="Загрузка"
                          Margin="0,10,0,0"
                          Click="Load_Click">
-                 </Button>
+                    <Image Width="50">
+                        <Image.Style>
+                            <Style TargetType="{x:Type Image}">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Load}" Value="True">
+                                        <Setter Property="Source" Value="/Resources/Images/ActvLoad.png"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Load}" Value="False">
+                                        <Setter Property="Source" Value="/Resources/Images/Load.png"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
+                </Button>
 
 
                 <Button x:Name="GenerateDocxButton"

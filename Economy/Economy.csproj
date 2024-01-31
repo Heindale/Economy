@@ -11,22 +11,26 @@
   <ItemGroup>
     <None Remove="Resources\Images\ActvBubl.png" />
     <None Remove="Resources\Images\ActvExport.png" />
+    <None Remove="Resources\Images\ActvLoad.png" />
     <None Remove="Resources\Images\ActvModel.png" />
     <None Remove="Resources\Images\ActvMoney.png" />
     <None Remove="Resources\Images\ActvPlan.png" />
     <None Remove="Resources\Images\ActvPpl.png" />
+    <None Remove="Resources\Images\ActvSave.png" />
     <None Remove="Resources\Images\ActvWelcome.png" />
     <None Remove="Resources\Images\Bubl.png" />
     <None Remove="Resources\Images\BublClick.png" />
     <None Remove="Resources\Images\close.png" />
     <None Remove="Resources\Images\Export.png" />
     <None Remove="Resources\Images\IconBIG.png" />
+    <None Remove="Resources\Images\Load.png" />
     <None Remove="Resources\Images\max.png" />
     <None Remove="Resources\Images\min.png" />
     <None Remove="Resources\Images\Model.png" />
     <None Remove="Resources\Images\Money.png" />
     <None Remove="Resources\Images\Plan.png" />
     <None Remove="Resources\Images\Ppl.png" />
+    <None Remove="Resources\Images\Save.png" />
     <None Remove="Resources\Images\Welcome.png" />
     <None Remove="Resources\Images\win.png" />
   </ItemGroup>
@@ -43,6 +47,9 @@
     <Resource Include="Resources\Images\ActvExport.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Images\ActvLoad.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Images\ActvMoney.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
@@ -50,6 +57,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\ActvPpl.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ActvSave.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\ActvWelcome.png">
@@ -68,6 +78,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\IconBIG.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Load.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\max.png">
@@ -89,6 +102,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\Ppl.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Save.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\Welcome.png">
