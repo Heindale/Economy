@@ -16,15 +16,18 @@ namespace Economy
         public MainWindow()
         {
             InitializeComponent();
+            this.title = new Title();
             this.page1 = new Chapter1();
             this.page2 = new Chapter2();
             this.page3 = new Chapter3();
             this.page4 = new Chapter4();
+            
             this.document = DocX.Load("..\\..\\..\\Resources\\TemplateVersionSecond.docx");
         }
 
         public DocX document { get; set; }
         public int MyProperty { get; set; }
+        public Title title { get; set; }
         public Chapter1 page1 { get; set; }
         public Chapter2 page2 { get; set; }
         public Chapter3 page3 { get; set; }
@@ -40,6 +43,7 @@ namespace Economy
                 }
             }
         }
+
 
         private void ChangePage1()
         {
@@ -59,6 +63,10 @@ namespace Economy
         private void ChangePage4()
         {
             SetText(page4.Page4);
+        }
+        private void Title_Click(object sender, RoutedEventArgs e)
+        {
+            CurrentPage.Navigate(this.title);
         }
 
         private void Chapter1_Click(object sender, RoutedEventArgs e)
@@ -264,6 +272,8 @@ namespace Economy
         {
             App.Current.MainWindow.DragMove();
         }
+
+        
     }
 
     [Serializable]

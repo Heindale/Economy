@@ -25,6 +25,7 @@
     <None Remove="Resources\Images\IconBIG.png" />
     <None Remove="Resources\Images\Load.png" />
     <None Remove="Resources\Images\max.png" />
+    <None Remove="Resources\Images\MeMchik2025.png" />
     <None Remove="Resources\Images\min.png" />
     <None Remove="Resources\Images\Model.png" />
     <None Remove="Resources\Images\Money.png" />
@@ -84,6 +85,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\max.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\MeMchik2025.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\min.png">

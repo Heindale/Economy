@@ -1,0 +1,60 @@
+﻿<Page x:Class="Economy.Resources.Pages.Title"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Economy.Resources.Pages"
+      mc:Ignorable="d" 
+      Background="White" d:DesignWidth="800"
+      Title="Title" Height="1834">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="196*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.RowSpan="2">
+            <Label Content="Добро пожаловать в тренажёр для практического применения при разработке бизнес-проекта!"
+        FontWeight="ExtraBold"
+        HorizontalAlignment="Center" Foreground="#FF374474">
+            </Label>
+
+            <TextBlock  Margin="10,0,10,0"
+     Text="  Тренажёр предназначен для студентов, обучающихся основам предпринимательства. "
+     TextWrapping="Wrap">
+            </TextBlock>
+            <TextBlock
+                Margin="10,0,10,0"
+                Text="  Цель тренажёра состоит в том, чтобы познакомить студентов с содержанием предпринимательской деятельности и сформировать умения производить необходимые подготовительные действия по организации предпринимательства, расчеты, регистрационные процедуры, выстраивание бизнес-процессов и последующее совершенствование бизнеса." TextWrapping="Wrap">
+
+            </TextBlock>
+            <Image Width="700" Source="/Resources/Images/MeMchik2025.png" Margin="10">
+
+            </Image>
+            <TextBlock
+    Margin="10,0,10,0"
+    Text="
+        Выполняя задания, практикум научит находить ответы на основные вопросы, стоящие пе-
+ред начинающим предпринимателем и позволит приобрести практические знания и умения, не-
+обходимые в предпринимательской деятельности:" TextWrapping="Wrap">
+
+            </TextBlock >
+            <TextBlock  Margin="10,0,10,0" Text="1. Какой бизнес создавать? "/>
+            <TextBlock  Margin="10,0,10,0" Text="2. Что потребуется для создания бизнеса? "/>
+            <TextBlock  Margin="10,0,10,0" Text="3. Будут ли покупать?"/>
+            <TextBlock  Margin="10,0,10,0" Text="4. Будет ли бизнес прибыльным?"/>
+            <TextBlock  Margin="10,0,10,0" Text="5. Как будет работать бизнес?" />
+            <TextBlock  Margin="10,20,10,0" Text="Последовательное продвижение по разделам программы позволит студенту разработать и оформить собственный бизнес-проект:"/>
+            <TextBlock  Margin="10,0,10,0" Text="1. поиск, оценка и выбор бизнес-идеи;"/>
+            <TextBlock  Margin="10,0,10,0" Text="2. составление бизнес-модели;"/>
+            <TextBlock  Margin="10,0,10,0" Text="3. исследование рынка;"/>
+            <TextBlock  Margin="10,0,10,0" Text="4. составление финансовой модели;"/>
+            <TextBlock  Margin="10,0,10,0" Text="5. разработка бизнес-плана;" />
+            <TextBlock  Margin="10,20,10,0" Text="  Формирование предпринимательских компетенций может способствовать активизации положительных эффектов от развития собственного предпринимательского потенциала: инициативные граждане быстрее и эффективнее найдут приложение своим предпринимательским способностям, сформируют более адекватные ожидания от занятий собственным бизнесом." TextWrapping="Wrap"/>
+            <Label Margin="0,20,0,0" Content="Инструкция по использованию тренажёра" Foreground="#FF374474" FontWeight="ExtraBold" HorizontalAlignment="Center"/>
+
+
+
+        </StackPanel>
+    </Grid>
+</Page>
