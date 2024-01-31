@@ -132,32 +132,7 @@ namespace Economy
 			LoadDataAllPage();
 		}
 
-            private void ChangePage3()
-            {
-                SetText(page3.Page3);
-            }
-
-            private void ChangePage4()
-            {
-
-        }
-
-        private void Chapter1_Click(object sender, RoutedEventArgs e)
-		{
-			CurrentPage.Navigate(this.page1);
-		}
-        private void Chapter2_Click(object sender, RoutedEventArgs e)
-		{
-			CurrentPage.Navigate(this.page2);
-		}
-        private void Chapter3_Click(object sender, RoutedEventArgs e)
-        {
-            CurrentPage.Navigate(this.page3);
-        }
-        private void Chapter4_Click(object sender, RoutedEventArgs e)
-        {
-            CurrentPage.Navigate(this.page4);
-        }
+          
         private void SaveAllPage()
         {
             textBoxDataList.Clear();
