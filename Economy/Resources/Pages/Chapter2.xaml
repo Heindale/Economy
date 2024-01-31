@@ -1,0 +1,341 @@
+﻿<Page x:Class="Economy.Resources.Pages.Chapter2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Economy.Resources.Pages"
+      mc:Ignorable="d"
+      d:DesignWidth="800"
+      Background="White"
+      Title="Chapter2"
+      Height="1659">
+
+    <Grid Name="Page2">
+        <StackPanel x:Name="StackPanel">
+            <StackPanel>
+                <Label Content="2. Что потребуется для создания бизнеса? (этап №2 - бизнес-модель)"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center">
+                </Label>
+                <TextBlock  Margin="10,0,10,0"
+                            Text="Задание № 2 Составление бизнес-модели. Бизнес-модель – это схематическое описание бизнеса (будущего или действующего) с целью запланировать или оценить его ключевые факторы успеха. Составить бизнес-модель можно заполнив поля ниже."
+                            TextWrapping="Wrap">
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="ПРОБЛЕМЫ потребителей. 3 главные проблемы клиента, из-за которых он будет покупать:">
+                </Label>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="1."></Label>
+                    <TextBox x:Name="T2Cell11"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="2."></Label>
+                    <TextBox x:Name="T2Cell21"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="3."></Label>
+                    <TextBox x:Name="T2Cell31"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="РЕШЕНИЕ. Что делать, чтобы решить проблемы клиента?">
+                </Label>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="1."></Label>
+                    <TextBox Width="400"
+                             x:Name="T2Cell12"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="2."></Label>
+                    <TextBox Width="400"
+                             x:Name="T2Cell22"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="3."></Label>
+                    <TextBox Width="400"
+                             x:Name="T2Cell32"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="Уникальная ценность предложения">
+                </Label>
+                <TextBox x:Name="T2Cell13"
+                         Width="400"
+                         TextWrapping="Wrap"
+                         HorizontalAlignment="Left"
+                         Margin="19,5,0,0"
+                         Height="86"></TextBox>
+            </StackPanel>
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="Конкуретные преимущества:">
+                </Label>
+                <TextBox Width="400"
+                         x:Name="T2Cell14"
+                         TextWrapping="Wrap"
+                         HorizontalAlignment="Left"
+                         Margin="19,5,0,0"
+                         Height="86"></TextBox>
+            </StackPanel>
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="Группы целевых клиентов (пользователей)"></Label>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="1."></Label>
+                    <TextBox x:Name="T2Cell15"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="2."></Label>
+                    <TextBox x:Name="T2Cell25"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="3."></Label>
+                    <TextBox x:Name="T2Cell35"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="Конкуренты:"></Label>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Прямые (количество)."></Label>
+                    <TextBox x:Name="T2Cell41"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Названия основных."></Label>
+                    <TextBox x:Name="T2Cell51"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Косвенные (количество)."></Label>
+                    <TextBox x:Name="T2Cell61"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="КЛЮЧЕВЫЕ  РЕСУРСЫ. Что нужно будет купить для начала деятельности?"></Label>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="1."></Label>
+                    <TextBox x:Name="T2Cell42"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="2."></Label>
+                    <TextBox x:Name="T2Cell52"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="3."></Label>
+                    <TextBox x:Name="T2Cell62"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="4."></Label>
+                    <TextBox x:Name="T2Cell72"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="5."></Label>
+                    <TextBox x:Name="T2Cell82"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="6."></Label>
+                    <TextBox x:Name="T2Cell92"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="7."></Label>
+                    <TextBox x:Name="T2Cell102"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="8."></Label>
+                    <TextBox x:Name="T2Cell112"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="КАНАЛЫ СБЫТА (путь до клиента)"></Label>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="1."></Label>
+                    <TextBox x:Name="T2Cell24"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="2."></Label>
+                    <TextBox x:Name="T2Cell34"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="3."></Label>
+                    <TextBox x:Name="T2Cell44"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="4."></Label>
+                    <TextBox x:Name="T2Cell54"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="5."></Label>
+                    <TextBox x:Name="T2Cell64"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="6."></Label>
+                    <TextBox x:Name="T2Cell74"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"
+                        Margin="0,5,0,0">
+                <Label Content="Ранние последователи (первые пользователи/клиенты) (да/нет):"></Label>
+                <TextBox x:Name="T2Cell45"
+                         Width="53"
+                         HorizontalAlignment="Left"
+                         Margin="0,5,0,0"></TextBox>
+            </StackPanel>
+
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="Структура расходов. Основные направления:"></Label>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="1."></Label>
+                    <TextBox x:Name="T2Cell71"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="2."></Label>
+                    <TextBox x:Name="T2Cell81"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="3."></Label>
+                    <TextBox x:Name="T2Cell91"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="4."></Label>
+                    <TextBox x:Name="T2Cell101"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="5."></Label>
+                    <TextBox x:Name="T2Cell111"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="6."></Label>
+                    <TextBox x:Name="T2Cell121"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Margin="0,5,0,0">
+                <Label Content="Потоки выручки. Модель(и) монетизации:"></Label>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="1."></Label>
+                    <TextBox x:Name="T2Cell23"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="2."></Label>
+                    <TextBox x:Name="T2Cell33"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="3."></Label>
+                    <TextBox x:Name="T2Cell43"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="4."></Label>
+                    <TextBox x:Name="T2Cell53"
+                             Width="400"
+                             HorizontalAlignment="Left"
+                             Margin="0,5,0,0"></TextBox>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

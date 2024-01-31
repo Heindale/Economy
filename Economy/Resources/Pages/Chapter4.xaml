@@ -1,0 +1,1239 @@
+﻿<Page x:Class="Economy.Resources.Pages.Chapter4"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Economy.Resources.Pages"
+      mc:Ignorable="d" 
+      Background="White" d:DesignWidth="800"
+      Title="Chapter4" Height="5755"
+      
+      >
+
+    <Grid Name="Page4">
+
+        <Grid.Resources>
+            <Style TargetType="TextBox">
+                <Setter Property="TextWrapping" Value="Wrap"/>
+                <Setter Property="BorderBrush" Value="Black"/>
+            </Style>
+            <Style TargetType="TextBlock">
+                <Setter Property="TextWrapping" Value="Wrap"/>
+            </Style>
+            <Style TargetType="Border">
+                <Setter Property="BorderBrush" Value="Black"/>
+            </Style>
+        </Grid.Resources>
+
+        <StackPanel>
+
+            <StackPanel>
+                <Label Content="4. этап – финансовая модель" HorizontalAlignment="Center" FontWeight="Bold"/>
+                <Label Content="Уточнение названия бизнес-идеи" HorizontalAlignment="Center" FontWeight="Bold"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Название бизнес-идеи:"/>
+                <TextBox x:Name="T411Cell11" Width="400" Margin="5 5 0 0"></TextBox>
+            </StackPanel>
+
+            <StackPanel Margin="0 5 0 0">
+                <Label Content="Выбор основного(ых) товара(ов)/услуг(и)" FontWeight="Bold" HorizontalAlignment="Center"/>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №1:"/>
+                    <TextBox x:Name="T412Cell11" Width="400" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0 5 0 0">
+                    <Label Content="Т/У №2:"/>
+                    <TextBox x:Name="T412Cell21" Width="400" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0 5 0 0">
+                    <Label Content="Т/У №3:"/>
+                    <TextBox x:Name="T412Cell31" Width="400" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Margin="0 5 0 0">
+                <Label Content="Выбор помещения и месторасположения бизнес-проекта" HorizontalAlignment="Center" FontWeight="Bold"/>
+                <Label Content="..." HorizontalAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Margin="0 5 0 0">
+                <Label Content="Определение размера территории, на которой будет продаваться товар/услуга" HorizontalAlignment="Center" FontWeight="Bold"/>
+                <!--<Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="173*"/>
+                        <ColumnDefinition Width="627*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="Микрорайон города:"/>
+
+                    <Label Content="Город:" Grid.Row="1"/>
+
+                    <TextBlock Grid.Row="2" TextWrapping="Wrap" Width="150" HorizontalAlignment="Left" Margin="5,0,0,0">Город и район, а также ближайшие города:</TextBlock>
+
+                    <Label Content="Регион, область:" Grid.Row="3"/>-->
+
+                <ComboBox Margin="8 8 0 0" Grid.Column="1" Grid.RowSpan="8" Height="30" Width="200" HorizontalAlignment="Left">
+                    <Label Content="Микрорайон города"/>
+                    <Label Content="Город"/>
+                    <Label Content="Город и район, а также ближайшие города"/>
+                    <Label Content="Регион, область"/>
+                    <Label Content="Группа регионов"/>
+                    <Label Content="Россия"/>
+                    <Label Content="Страны СНГ (русскоязычные)"/>
+                    <Label Content="Мир"/>
+                </ComboBox>
+
+                <!--<Label Content="Группа регионов:" Grid.Row="4"/>
+
+                    <Label Content="Россия:" Grid.Row="5"/>
+                    
+                    <Label Content="Страны СНГ (русскоязычные):" Grid.Row="6"/>
+
+                    <Label Content="Мир:" Grid.Row="7"/>
+                    
+                </Grid>-->
+            </StackPanel>
+
+            <StackPanel Margin="0 5 0 0">
+                <Label Content="Составление характеристики покупателей" HorizontalAlignment="Center" FontWeight="Bold"/>
+                <Label Content="..." HorizontalAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Margin="0 5 0 0">
+                <Label Content="Выбираем единицу измерения объема продаж" HorizontalAlignment="Center" FontWeight="Bold"/>
+                <TextBlock Margin="7 0 0 0" TextWrapping="Wrap" Width="450" HorizontalAlignment="Left">
+                    Выберите натуральные единицы вашего бизнеса (штуки, количество покупателей, 
+                    количество заказов, количество чеков, количество часов, количество 
+                    абонементов и т.д.
+                    )
+                </TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №1:"/>
+                    <TextBox x:Name="T416Cell11" Width="400" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №2:"/>
+                    <TextBox x:Name="T416Cell21" Width="400" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №3:"/>
+                    <TextBox x:Name="T416Cell31" Width="400" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Margin="0 5 0 0">
+
+                <Label Content="Расчет прогнозного объема продаж (среднего)" HorizontalAlignment="Center" FontWeight="Bold"/>
+
+                <Label Content="Количество товара/услуги приобретаемое одним средним покупателем, нат.ед. товара в месяц (шт.)"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №1:"/>
+                    <TextBox x:Name="T417Cell11" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №2:"/>
+                    <TextBox x:Name="T417Cell12" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №3:"/>
+                    <TextBox x:Name="T417Cell13" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <Label Content="Численность всех покупателей (на территории бизнеса):"/>
+                <Label Content="Варианты:"/>
+                <Label Content="1 - статистика:"/>
+                <Label Content="а) численность жителей"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №1:"/>
+                    <TextBox x:Name="T417Cell21" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №2:"/>
+                    <TextBox x:Name="T417Cell22" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №3:"/>
+                    <TextBox x:Name="T417Cell23" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <Label Content="б) поправочный коэффициент статистики"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №1:"/>
+                    <TextBox x:Name="T417Cell31" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №2:"/>
+                    <TextBox x:Name="T417Cell32" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №3:"/>
+                    <TextBox x:Name="T417Cell33" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <Label Content="в) численность с коэффициентом"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №1:"/>
+                    <TextBox x:Name="T417Cell41" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №2:"/>
+                    <TextBox x:Name="T417Cell42" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №3:"/>
+                    <TextBox x:Name="T417Cell43" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <Label Content="2 - интернет-запросы:"/>
+                <TextBlock Margin="5 0 0 0">
+                    а) количество интернет-запросов клиентов в Яндексе (и/или Google)
+                    <Hyperlink NavigateUri="http://wordstat.yandex.ru/">http://wordstat.yandex.ru/</Hyperlink>
+                </TextBlock>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №1:"/>
+                    <TextBox x:Name="T417Cell51" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №2:"/>
+                    <TextBox x:Name="T417Cell52" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №3:"/>
+                    <TextBox x:Name="T417Cell53" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <Label Content="б) поправочный коэффициент запросов"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №1:"/>
+                    <TextBox x:Name="T417Cell61" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №2:"/>
+                    <TextBox x:Name="T417Cell62" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №3:"/>
+                    <TextBox x:Name="T417Cell63" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <Label Content="в) численность с коэффициентом (п. а умножить на п. б) "/>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №1:"/>
+                    <TextBox x:Name="T417Cell71" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №2:"/>
+                    <TextBox x:Name="T417Cell72" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №3:"/>
+                    <TextBox x:Name="T417Cell73" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <Label Content="3 - итоговое (оптимальное) значение"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №1:"/>
+                    <TextBox x:Name="T417Cell81" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №2:"/>
+                    <TextBox x:Name="T417Cell82" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №3:"/>
+                    <TextBox x:Name="T417Cell83" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <TextBlock Margin="5 0 0 0"> 
+                    <Underline>Общее количество товара/услуги</Underline>, приобретаемое
+                    <Underline>всеми покупателями</Underline> за мес. в нат.ед.
+                </TextBlock>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №1:"/>
+                    <TextBox x:Name="T417Cell91" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №2:"/>
+                    <TextBox x:Name="T417Cell92" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №3:"/>
+                    <TextBox x:Name="T417Cell93" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <TextBlock Margin="5 0 0 0"> 
+                    <Underline>Ваша доля рынка от общего количества товара/услуги, в %</Underline>
+                </TextBlock>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №1:"/>
+                    <TextBox x:Name="T417Cell101" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №2:"/>
+                    <TextBox x:Name="T417Cell102" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №3:"/>
+                    <TextBox x:Name="T417Cell103" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <TextBlock Margin="5 0 0 0"> 
+                    <Underline>Ваш объем продаж (средний)</Underline>, в нат.ед. в месяц
+                </TextBlock>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №1:"/>
+                    <TextBox x:Name="T417Cell111" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №2:"/>
+                    <TextBox x:Name="T417Cell112" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Т/У №3:"/>
+                    <TextBox x:Name="T417Cell113" Width="200" Margin="5 5 0 0"></TextBox>
+                </StackPanel>
+
+            </StackPanel>
+
+            <Label Content="Прогноз объема продаж по месяцам Т/У №1" HorizontalAlignment="Center" FontWeight="Bold" Margin="0 5 0 0"></Label>
+            <StackPanel Margin="5">
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="300*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                        <ColumnDefinition Width="35*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Border BorderBrush="Black" 
+                            BorderThickness="1" 
+                            Grid.RowSpan="2"/>
+                    <TextBlock VerticalAlignment="Center" Grid.RowSpan="2" HorizontalAlignment="Center" FontWeight="Bold">Объем продаж  в разные временные периоды</TextBlock>
+
+                    <Border BorderBrush="Black" 
+                            BorderThickness="0 1 1 1" 
+                            Grid.Column="1" 
+                            Grid.ColumnSpan="12"/>
+                    <TextBlock Grid.Column="1" Grid.ColumnSpan="12" HorizontalAlignment="Center" FontWeight="Bold">Месяц по порядку</TextBlock>
+
+                    <Border BorderBrush="Black" Grid.Row="1" Grid.Column="1" BorderThickness="0 0 1 1"/>
+                    <Border BorderBrush="Black" Grid.Row="1" Grid.Column="2" BorderThickness="0 0 1 1"/>
+                    <Border BorderBrush="Black" Grid.Row="1" Grid.Column="3" BorderThickness="0 0 1 1"/>
+                    <Border BorderBrush="Black" Grid.Row="1" Grid.Column="4" BorderThickness="0 0 1 1"/>
+                    <Border BorderBrush="Black" Grid.Row="1" Grid.Column="5" BorderThickness="0 0 1 1"/>
+                    <Border BorderBrush="Black" Grid.Row="1" Grid.Column="6" BorderThickness="0 0 1 1"/>
+                    <Border BorderBrush="Black" Grid.Row="1" Grid.Column="7" BorderThickness="0 0 1 1"/>
+                    <Border BorderBrush="Black" Grid.Row="1" Grid.Column="8" BorderThickness="0 0 1 1"/>
+                    <Border BorderBrush="Black" Grid.Row="1" Grid.Column="9" BorderThickness="0 0 1 1"/>
+                    <Border BorderBrush="Black" Grid.Row="1" Grid.Column="10" BorderThickness="0 0 1 1"/>
+                    <Border BorderBrush="Black" Grid.Row="1" Grid.Column="11" BorderThickness="0 0 1 1"/>
+                    <Border BorderBrush="Black" Grid.Row="1" Grid.Column="12" BorderThickness="0 0 1 1"/>
+
+                    <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center">1</TextBlock>
+                    <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center">2</TextBlock>
+                    <TextBlock Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center">3</TextBlock>
+                    <TextBlock Grid.Row="1" Grid.Column="4" HorizontalAlignment="Center">4</TextBlock>
+                    <TextBlock Grid.Row="1" Grid.Column="5" HorizontalAlignment="Center">5</TextBlock>
+                    <TextBlock Grid.Row="1" Grid.Column="6" HorizontalAlignment="Center">6</TextBlock>
+                    <TextBlock Grid.Row="1" Grid.Column="7" HorizontalAlignment="Center">7</TextBlock>
+                    <TextBlock Grid.Row="1" Grid.Column="8" HorizontalAlignment="Center">8</TextBlock>
+                    <TextBlock Grid.Row="1" Grid.Column="9" HorizontalAlignment="Center">9</TextBlock>
+                    <TextBlock Grid.Row="1" Grid.Column="10" HorizontalAlignment="Center">10</TextBlock>
+                    <TextBlock Grid.Row="1" Grid.Column="11" HorizontalAlignment="Center">11</TextBlock>
+                    <TextBlock Grid.Row="1" Grid.Column="12" HorizontalAlignment="Center">12</TextBlock>
+
+                    <Border BorderBrush="Black" Grid.Row="2" BorderThickness="1 0 1 1"/>
+                    <StackPanel Grid.Row="2" Margin="5 0 10 0">
+                        <TextBlock TextWrapping="Wrap">
+                            Объем продаж в месяц, нат.ед. (шт.):
+                        </TextBlock>
+                        <TextBlock TextWrapping="Wrap">
+                            1) изменение объема продаж из-за сезонности:
+                        </TextBlock>
+                        <TextBlock TextWrapping="Wrap">
+                            а1) поправочный коэффициент сезонности (в Яндексе  
+                             <Hyperlink NavigateUri="http://wordstat.yandex.ru/">http://wordstat.yandex.ru/</Hyperlink>
+                            (раздел «история запросов») и/или Google)
+                        </TextBlock>
+                    </StackPanel>
+
+                    <TextBox TextWrapping="Wrap" x:Name="C11" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="C12" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="C13" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="C14" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="C15" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="C16" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="C17" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="C18" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="C19" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="C110" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="C111" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="C112" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 30 5 0"></TextBox>
+
+                    <Border BorderBrush="Black" Grid.Row="3" BorderThickness="1 0 1 1"/>
+
+                    <TextBlock Grid.Row="3" Margin="5">б1) объем с учетом сезонности</TextBlock>
+
+                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
+
+                    <Border BorderBrush="Black" Grid.Row="4" BorderThickness="1 0 1 1"/>
+
+                    <StackPanel Margin="5" Grid.Row="4">
+                        <TextBlock TextWrapping="Wrap">
+                            2) изменение объема продаж из-за роста бизнеса:
+                        </TextBlock>
+                        <TextBlock TextWrapping="Wrap">
+                            а2) поправочный коэффициент роста бизнеса (например, прирост 10 % за мес.)
+                        </TextBlock>
+                    </StackPanel>
+
+                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 30 5 0"></TextBox>
+                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 30 5 0"></TextBox>
+                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 30 5 0"></TextBox>
+                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 30 5 0"></TextBox>
+                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 30 5 0"></TextBox>
+                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 30 5 0"></TextBox>
+                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 30 5 0"></TextBox>
+                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 30 5 0"></TextBox>
+                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 30 5 0"></TextBox>
+                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 30 5 0"></TextBox>
+                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 30 5 0"></TextBox>
+                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 30 5 0"></TextBox>
+
+                    <Border BorderBrush="Black" Grid.Row="5" BorderThickness="1 0 1 1"/>
+
+                    <TextBlock Grid.Row="5" Margin="5">б2) объем с учетом роста и сезонности</TextBlock>
+
+                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
+
+                    <Border BorderBrush="Black" Grid.Row="6" BorderThickness="1 0 1 1"/>
+
+                    <TextBlock Grid.Row="6" Margin="5">Объем продаж <Underline>в неделю</Underline>, нат.ед.</TextBlock>
+
+                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
+
+                    <Border BorderBrush="Black" Grid.Row="7" BorderThickness="1 0 1 1"/>
+
+                    <TextBlock Grid.Row="7" Margin="5">Объем продаж <Underline>в день</Underline>, нат.ед.</TextBlock>
+
+                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
+
+                    <Border BorderBrush="Black" Grid.Row="8" BorderThickness="1 0 1 1"/>
+
+                    <TextBlock Grid.Row="8" Margin="5">Объем продаж <Underline>в час</Underline>, нат.ед.</TextBlock>
+
+                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
+                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
+
+                    <Border BorderBrush="Black" Grid.Row="9" BorderThickness="1 0 1 1"/>
+
+                    <TextBlock Grid.Row="9" Margin="5 5 10 5" TextWrapping="Wrap">Выполнимы ли такие объемы продаж (не завышены, не занижены)</TextBlock>
+
+                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 9 5 0"></TextBox>
+                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 9 5 0"></TextBox>
+                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 9 5 0"></TextBox>
+                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 9 5 0"></TextBox>
+                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 9 5 0"></TextBox>
+                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 9 5 0"></TextBox>
+                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 9 5 0"></TextBox>
+                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 9 5 0"></TextBox>
+                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 9 5 0"></TextBox>
+                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 9 5 0"></TextBox>
+                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 9 5 0"></TextBox>
+                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 9 5 0"></TextBox>
+
+                </Grid>
+
+            </StackPanel>
+
+            <StackPanel Margin="5 35 5 5">
+
+                <Label Content="Определение рыночной цены (конкурентов) Т/У №1" HorizontalAlignment="Center" FontWeight="Bold"></Label>
+
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Border BorderThickness="1"></Border>
+                    <Border BorderThickness="0 1 1 1" Grid.Column="1" Grid.ColumnSpan="4"></Border>
+
+                    <TextBlock FontWeight="Bold" HorizontalAlignment="Center">Вопрос:</TextBlock>
+                    <TextBlock FontWeight="Bold" HorizontalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="4">Ваш ответ:</TextBlock>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="1"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Row="1" Grid.Column="1"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Row="1" Grid.Column="2"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Row="1" Grid.Column="3"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Row="1" Grid.Column="4"/>
+
+                    <TextBlock Margin="3" HorizontalAlignment="Center" Grid.Row="1">Виды конкурентов</TextBlock>
+                    <TextBlock Margin="3" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="1">Названия конкурентов</TextBlock>
+                    <TextBlock Margin="3" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="2">Цена у конкурентов (для товара, по которому Вы конкурируете)</TextBlock>
+                    <TextBlock Margin="3" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="3">Конкурентные преимущества конкурентов</TextBlock>
+                    <TextBlock Margin="3" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="4">Доля рынка каждого конкурента и общая сумма, в %</TextBlock>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="2" Grid.RowSpan="6"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Row="2" Grid.RowSpan="3" Grid.Column="4"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Row="6" Grid.Column="4"/>
+
+                    <!--<Border BorderThickness="0 0 1 1" Grid.Row="2" Grid.Column="1"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Row="3" Grid.Column="2"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Row="4" Grid.Column="3"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Row="5" Grid.Column="4"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Row="6" Grid.Column="4"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Row="7" Grid.Column="4"/>-->
+
+                    <TextBlock Margin="3" HorizontalAlignment="Left" Grid.Row="2" Grid.RowSpan="6">1. Прямые конкуренты (Конкуренция в рыночном сегменте)</TextBlock>
+                    <TextBox x:Name="T421C11" BorderThickness="0 0 1 1"  Grid.Row="2" Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C21" BorderThickness="0 0 1 1"  Grid.Row="3" Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C31" BorderThickness="0 0 1 1"  Grid.Row="4" Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C41" BorderThickness="0 0 1 1"  Grid.Row="5" Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C51" BorderThickness="0 0 1 1"  Grid.Row="6" Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C61" BorderThickness="0 0 1 1"  Grid.Row="7" Grid.Column="1"></TextBox>
+
+                    <TextBox x:Name="T421C12" BorderThickness="0 0 1 1"  Grid.Row="2" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T421C22" BorderThickness="0 0 1 1"  Grid.Row="3" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T421C32" BorderThickness="0 0 1 1"  Grid.Row="4" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T421C42" BorderThickness="0 0 1 1"  Grid.Row="5" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T421C52" BorderThickness="0 0 1 1"  Grid.Row="6" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T421C62" BorderThickness="0 0 1 1"  Grid.Row="7" Grid.Column="2"></TextBox>
+
+                    <TextBox x:Name="T421C13" BorderThickness="0 0 1 1"  Grid.Row="2" Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T421C23" BorderThickness="0 0 1 1"  Grid.Row="3" Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T421C33" BorderThickness="0 0 1 1"  Grid.Row="4" Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T421C43" BorderThickness="0 0 1 1"  Grid.Row="5" Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T421C53" BorderThickness="0 0 1 1"  Grid.Row="6" Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T421C63" BorderThickness="0 0 1 1"  Grid.Row="7" Grid.Column="3"></TextBox>
+                    <TextBlock Margin="3" HorizontalAlignment="Center" Grid.Column="4" Grid.Row="2" Grid.RowSpan="3">Общее кол-во прямых конкурентов</TextBlock>
+                    <TextBox x:Name="T421C44" BorderThickness="0 0 1 1" Grid.Column="4" Grid.Row="5"></TextBox>
+                    <TextBlock Margin="3" HorizontalAlignment="Center" Grid.Column="4" Grid.Row="6">Средняя доля конкурента, в % (= 100 / (общее кол-во прямых конкурентов +1))</TextBlock>
+                    <TextBox x:Name="T421C64" BorderThickness="0 0 1 1" Grid.Column="4" Grid.Row="7"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="8" Grid.RowSpan="6"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Row="8" Grid.RowSpan="3" Grid.Column="4"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Row="12" Grid.Column="4"/>
+
+                    <TextBlock Margin="3" HorizontalAlignment="Left" Grid.Row="8" Grid.RowSpan="6">2. Косвенные конкуренты (Отраслевая конкуренция)</TextBlock>
+                    <TextBox x:Name="T421C71" BorderThickness="0 0 1 1"  Grid.Row="8" Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C81" BorderThickness="0 0 1 1"  Grid.Row="9" Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C91" BorderThickness="0 0 1 1"  Grid.Row="10" Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C101" BorderThickness="0 0 1 1"  Grid.Row="11" Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C111" BorderThickness="0 0 1 1"  Grid.Row="12" Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C121" BorderThickness="0 0 1 1"  Grid.Row="13" Grid.Column="1"></TextBox>
+
+                    <TextBox x:Name="T421C72"  BorderThickness="0 0 1 1"  Grid.Row="8" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T421C82"  BorderThickness="0 0 1 1"  Grid.Row="9" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T421C92"  BorderThickness="0 0 1 1"  Grid.Row="10" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T421C102" BorderThickness="0 0 1 1"  Grid.Row="11" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T421C112" BorderThickness="0 0 1 1"  Grid.Row="12" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T421C122" BorderThickness="0 0 1 1"  Grid.Row="13" Grid.Column="2"></TextBox>
+
+                    <TextBox x:Name="T421C73"  BorderThickness="0 0 1 1"  Grid.Row="8" Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T421C83"  BorderThickness="0 0 1 1"  Grid.Row="9" Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T421C93"  BorderThickness="0 0 1 1"  Grid.Row="10" Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T421C103" BorderThickness="0 0 1 1"  Grid.Row="11" Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T421C113" BorderThickness="0 0 1 1"  Grid.Row="12" Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T421C123" BorderThickness="0 0 1 1"  Grid.Row="13" Grid.Column="3"></TextBox>
+                    <TextBlock Margin="3" HorizontalAlignment="Center" Grid.Column="4" Grid.Row="8" Grid.RowSpan="3">Общее кол-во косвенных конкурентов</TextBlock>
+                    <TextBox x:Name="T421C104" BorderThickness="0 0 1 1" Grid.Column="4" Grid.Row="11"></TextBox>
+                    <TextBlock Margin="3" HorizontalAlignment="Center" Grid.Column="4" Grid.Row="12" Grid.RowSpan="2">Средняя доля конкурента, в % (= 100 / (общее кол-во косвенных конкурентов +1))</TextBlock>
+                    <TextBox x:Name="T421C124" BorderThickness="0 0 1 1" Grid.Column="4" Grid.Row="13"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="14"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Row="14" Grid.Column="4"/>
+
+                    <TextBlock Margin="3" HorizontalAlignment="Left" Grid.Row="14">3. Конкуренция за удовлетворение сходных потребностей</TextBlock>
+                    <TextBox x:Name="T421C131" BorderThickness="0 0 1 1" Grid.Row="14" Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C132" BorderThickness="0 0 1 1" Grid.Row="14" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T421C133" BorderThickness="0 0 1 1" Grid.Row="14" Grid.Column="3"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="15"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Row="15" Grid.Column="4"/>
+
+                    <TextBlock Margin="3" HorizontalAlignment="Left" Grid.Row="15">4. Общая конкуренция (конкуренция за деньги потребителей)</TextBlock>
+                    <TextBox x:Name="T421C141" BorderThickness="0 0 1 1" Grid.Row="15" Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C142" BorderThickness="0 0 1 1" Grid.Row="15" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T421C143" BorderThickness="0 0 1 1" Grid.Row="15" Grid.Column="3"></TextBox>
+
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="16" Grid.ColumnSpan="2"/>
+                    <TextBlock Margin="3" HorizontalAlignment="Right" Grid.Row="16" Grid.ColumnSpan="2">Средняя цена конкурентов</TextBlock>
+                    <TextBox x:Name="T421C152" BorderThickness="0 0 1 1" Grid.Row="16" Grid.Column="2"></TextBox>
+
+                </Grid>
+            </StackPanel>
+
+            <StackPanel Margin="5 35 5 5">
+                <StackPanel.Resources>
+                    <Style TargetType="TextBox">
+                        <!--<Setter Property=""/>-->
+                    </Style>
+                </StackPanel.Resources>
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold">Выбор рыночной или измененной цены на основе типа конкуренции</TextBlock>
+
+                <StackPanel Margin="0 10 0 0" Orientation="Horizontal">
+                    <TextBlock Margin="0 10" HorizontalAlignment="Left">Конкуренция ценовая или неценовая</TextBlock>
+                    <ComboBox x:Name="T422C11" Margin="5 0 0 0" Width="200" Height="25">
+                        <Label Content="Ценовая"/>
+                        <Label Content="Неценовая"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 10" Width="210" HorizontalAlignment="Left">Если ценовая, то насколько вы готовы снизить цену от рыночной, чтобы привлечь клиентов, руб.</TextBlock>
+                    <TextBox x:Name="T422C21" Margin="5 0 0 0" Width="200" Height="25"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 10" Width="210" HorizontalAlignment="Left">Если НЕценовая, то укажите причины повышенной цены (т. е. ваши конкурентные преимущества)</TextBlock>
+                    <TextBox x:Name="T422C31" Margin="5 0 0 0" Width="200" Height="25"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 10" Width="210" HorizontalAlignment="Left">Если НЕценовая, то насколько вы готовы повысить цену от рыночной, чтобы увеличить прибыль, руб.</TextBlock>
+                    <TextBox x:Name="T422C41" Margin="5 0 0 0" Width="200" Height="25"></TextBox>
+                </StackPanel>
+
+            </StackPanel>
+
+            <StackPanel Margin="5 35 5 5">
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold">Выбор рыночной или измененной цены на основе уникальности товара/услуги</TextBlock>
+                <TextBlock Margin="0 10" Width="210" HorizontalAlignment="Left">Чего вы хотите добиться, устанавливая именно такую цену на ваш продукт?» (для выбранного ответа поставьте «+»)</TextBlock>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 10" Width="210" HorizontalAlignment="Left">снять сливки с нового рынка</TextBlock>
+                    <ComboBox x:Name="T423C11" Margin="5 0 0 0" Width="50" Height="25">
+                        <Label Content=""/>
+                        <Label Content="+"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 10" Width="210" HorizontalAlignment="Left">пробиться на уже сформировавшийся рынок</TextBlock>
+                    <ComboBox x:Name="T423C21" Margin="5 0 0 0" Width="50" Height="25">
+                        <Label Content=""/>
+                        <Label Content="+"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 10" Width="210" HorizontalAlignment="Left">Цена будет выше цен конкурентов, руб.</TextBlock>
+                    <TextBox x:Name="T423C12" Margin="5 0 0 0" Width="50" Height="25"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 10" Width="210" HorizontalAlignment="Left">Цена будет ниже цен конкурентов, руб.</TextBlock>
+                    <TextBox x:Name="T423C22" Margin="5 0 0 0" Width="50" Height="25"></TextBox>
+                </StackPanel>
+
+            </StackPanel>
+
+            <StackPanel Margin="5 35 5 5">
+
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 5">Определение цены на основе затрат (расчет себестоимости)</TextBlock>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="8*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="4*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Border BorderThickness="1"/>
+                    <Border BorderThickness="0 1 1 1" Grid.Column="1"/>
+                    <Border BorderThickness="0 1 1 1" Grid.Column="2"/>
+                    <Border BorderThickness="0 1 1 1" Grid.Column="3"/>
+                    <Border BorderThickness="0 1 1 1" Grid.Column="4"/>
+
+                    <TextBlock Margin="5">№ п/п</TextBlock>
+                    <TextBlock Margin="5" Grid.Column="1">Наименование издержек, включаемых в себестоимость</TextBlock>
+                    <TextBlock Margin="5" Grid.Column="2">Цена за единицу (покупка+доставка), руб. <Underline>в мес.</Underline></TextBlock>
+                    <TextBlock Margin="5" Grid.Column="3">Количество товара/услуги (за мес.) для обеспечения объема продаж</TextBlock>
+                    <TextBlock Margin="5" Grid.Column="4">Сумма, руб. в мес. (цена * кол-во)</TextBlock>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="1"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Column="1" Grid.Row="1"/>
+
+                    <TextBlock Margin="5" Grid.Row="1" HorizontalAlignment="Center">1</TextBlock>
+                    <TextBlock Margin="5" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left">сырье и/или перепродаваемый товар/услуга</TextBlock>
+                    <TextBox x:Name="T424C11" BorderThickness="0 0 1 1" Padding="5" Grid.Row="1" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T424C12" BorderThickness="0 0 1 1" Padding="5" Grid.Row="1" Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T424C13" BorderThickness="0 0 1 1" Padding="5" Grid.Row="1" Grid.Column="4"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="2"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Column="1" Grid.Row="2"/>
+
+                    <TextBlock Margin="5" Grid.Row="2" HorizontalAlignment="Center">2</TextBlock>
+                    <TextBlock Margin="5" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left">аренда помещения (вкл. коммунальные платежи)</TextBlock>
+                    <TextBox x:Name="T424C21" BorderThickness="0 0 1 1" Padding="5" Grid.Row="2" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T424C22" BorderThickness="0 0 1 1" Padding="5" Grid.Row="2" Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T424C23" BorderThickness="0 0 1 1" Padding="5" Grid.Row="2" Grid.Column="4"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="3"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Column="1" Grid.Row="3"/>
+
+                    <TextBlock Margin="5" Grid.Row="3" HorizontalAlignment="Center">3</TextBlock>
+                    <TextBlock Margin="5" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left">заработная плата ваша и ваших сотрудников</TextBlock>
+                    <TextBox x:Name="T424C31" BorderThickness="0 0 1 1" Padding="5" Grid.Row="3" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T424C32" BorderThickness="0 0 1 1" Padding="5" Grid.Row="3" Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T424C33" BorderThickness="0 0 1 1" Padding="5" Grid.Row="3" Grid.Column="4"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="4"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Column="1" Grid.Row="4"/>
+
+                    <TextBlock Margin="5" Grid.Row="4" HorizontalAlignment="Center">4</TextBlock>
+                    <TextBlock Margin="5" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left">налог на заработную плату вашу и ваших сотрудников (30%)</TextBlock>
+                    <TextBox x:Name="T424C41" BorderThickness="0 0 1 1" Padding="5" Grid.Row="4" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T424C42" BorderThickness="0 0 1 1" Padding="5" Grid.Row="4" Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T424C43" BorderThickness="0 0 1 1" Padding="5" Grid.Row="4" Grid.Column="4"></TextBox>
+                    
+                    <Border BorderThickness="1 0 1 1" Grid.Row="5"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Column="1" Grid.Row="5"/>
+
+                    <TextBlock Margin="5" Grid.Row="5" HorizontalAlignment="Center">5</TextBlock>
+                    <TextBlock Margin="5" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left">общепроизводственные расходы (оборудование)</TextBlock>
+                    <TextBox x:Name="T424C51" BorderThickness="0 0 1 1" Padding="5" Grid.Row="5" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T424C52" BorderThickness="0 0 1 1" Padding="5" Grid.Row="5" Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T424C53" BorderThickness="0 0 1 1" Padding="5" Grid.Row="5" Grid.Column="4"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="6"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Column="1" Grid.Row="6"/>
+
+                    <TextBlock Margin="5" Grid.Row="6" HorizontalAlignment="Center">6</TextBlock>
+                    <TextBlock Margin="5" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left">общехозяйственные расходы (уборка, ремонт, охрана и др.)</TextBlock>
+                    <TextBox x:Name="T424C61" BorderThickness="0 0 1 1" Padding="5" Grid.Row="6" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T424C62" BorderThickness="0 0 1 1" Padding="5" Grid.Row="6" Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T424C63" BorderThickness="0 0 1 1" Padding="5" Grid.Row="6" Grid.Column="4"></TextBox>
+                    
+                    <Border BorderThickness="1 0 1 1" Grid.Row="7"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Column="1" Grid.Row="7"/>
+
+                    <TextBlock Margin="5" Grid.Row="7" HorizontalAlignment="Center">7</TextBlock>
+                    <TextBlock Margin="5" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Left">прочие производственные расходы</TextBlock>
+                    <TextBox x:Name="T424C71" BorderThickness="0 0 1 1" Padding="5" Grid.Row="7" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T424C72" BorderThickness="0 0 1 1" Padding="5" Grid.Row="7" Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T424C73" BorderThickness="0 0 1 1" Padding="5" Grid.Row="7" Grid.Column="4"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="8"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Column="1" Grid.Row="8"/>
+
+                    <TextBlock Margin="5" Grid.Row="8" HorizontalAlignment="Center">8</TextBlock>
+                    <TextBlock Margin="5" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Left">коммерческие расходы (реклама, сайт, вывеска)</TextBlock>
+                    <TextBox x:Name="T424C81" BorderThickness="0 0 1 1" Padding="5" Grid.Row="8" Grid.Column="2"></TextBox>
+                    <TextBox x:Name="T424C82" BorderThickness="0 0 1 1" Padding="5" Grid.Row="8" Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T424C83" BorderThickness="0 0 1 1" Padding="5" Grid.Row="8" Grid.Column="4"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="9"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="9" />
+
+                    <TextBlock Margin="5" Grid.Row="9" HorizontalAlignment="Center">9</TextBlock>
+                    <TextBlock Margin="5" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Left">Непредвиданные расходы</TextBlock>
+                    <TextBox x:Name="T424C93" BorderThickness="0 0 1 1" Padding="5" Grid.Row="9" Grid.Column="4"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="10"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="10" />
+
+                    <TextBlock Margin="5" Grid.Row="10" HorizontalAlignment="Center">10</TextBlock>
+                    <TextBlock Margin="5" Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Left">ВСЕГО * (общая сумма РАСХОДОВ за МЕСЯЦ), руб.ВСЕГО * (общая сумма РАСХОДОВ за МЕСЯЦ), руб.</TextBlock>
+                    <TextBox x:Name="T424C103" BorderThickness="0 0 1 1" Padding="5" Grid.Row="10" Grid.Column="4"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="11"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="11" />
+
+                    <TextBlock Margin="5" Grid.Row="11" HorizontalAlignment="Center">11</TextBlock>
+                    <TextBlock Margin="5" Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Left">Объем продаж в месяц натур.ед. (шт.)</TextBlock>
+                    <TextBox x:Name="T424C113" BorderThickness="0 0 1 1" Padding="5" Grid.Row="11" Grid.Column="4"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="12"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="12" />
+
+                    <TextBlock Margin="5" Grid.Row="12" HorizontalAlignment="Center">12</TextBlock>
+                    <TextBlock Margin="5" Grid.Row="12" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Left">себестоимость 1 натуральной единицы, руб. (строку 10 делим на строку 11)</TextBlock>
+                    <TextBox x:Name="T424C123" BorderThickness="0 0 1 1" Padding="5" Grid.Row="12" Grid.Column="4"></TextBox>
+
+                </Grid>
+
+            </StackPanel>
+
+
+            <StackPanel Margin="5 35 5 5">
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 5">Постановка задач ценообразования</TextBlock>
+                <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="0 0 0 5">Выберите одну стратегию из двух (+)</TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="210" HorizontalAlignment="Left" Margin="0 0 0 5">Покрытие затрат на производство (реализацию) товара / услуги и обеспечение прибыли</TextBlock>
+                    <ComboBox x:Name="T425C11" Width="50" Height="20">
+                        <Label Content=""/>
+                        <Label Content="+"/>
+                    </ComboBox>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="210" HorizontalAlignment="Left" Margin="0 0 0 5">Решение маркетинговых и/или социальных вопросов</TextBlock>
+                    <ComboBox x:Name="T425C21" Width="50" Height="20">
+                        <Label Content=""/>
+                        <Label Content="+"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <TextBlock HorizontalAlignment="Left" FontWeight="Bold" Margin="0 0 0 5">Вариант ответа (руб.)</TextBlock>
+                
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="210" HorizontalAlignment="Left" Margin="0 0 0 5">Цена будет <Underline>выше</Underline> себестоимости и составляет</TextBlock>
+                    <TextBox x:Name="T425C12" Height="20" Width="100"></TextBox>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="210" HorizontalAlignment="Left" Margin="0 0 0 5">Цена будет <Underline>ниже</Underline> цен себестоимости и составляет</TextBlock>
+                    <TextBox x:Name="T425C22" Height="20" Width="100"></TextBox>
+                </StackPanel>
+
+            </StackPanel>
+
+            <StackPanel Margin="5 35 5 5">
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 5">Сравнение себестоимости и средней цены конкурентов Т/У №1</TextBlock>
+                <TextBlock Width="210" HorizontalAlignment="Left">Что больше себестоимость или средняя цена конкурентов?</TextBlock>
+                <TextBox x:Name="T426C11" Margin="0 10" HorizontalAlignment="Left" Width="210" Height="20"></TextBox>
+                <TextBlock Width="210" HorizontalAlignment="Left">Если себестоимость превышает цену, то, как долго (не превышает, пару месяцев, несколько месяцев)</TextBlock>
+                <TextBox x:Name="T426C21" Margin="0 10" HorizontalAlignment="Left" Width="210" Height="20"></TextBox>
+            </StackPanel>
+
+            <StackPanel Margin="5 35 5 5">
+
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 5">Окончательное определение цены реализации Т/У №1</TextBlock>
+
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2.5*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2.5*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Border BorderThickness="1" Grid.ColumnSpan="2"/>
+                    <Border BorderThickness="0 1 1 1" Grid.Column="2" Grid.ColumnSpan="2"/>
+
+                    <TextBlock Grid.ColumnSpan="2" FontWeight="Bold" HorizontalAlignment="Center">Расчет на основе  цен конкурентов</TextBlock>
+                    <TextBlock Grid.Column="2" Grid.ColumnSpan="2" FontWeight="Bold" HorizontalAlignment="Center">Расчет на основе  себестоимости и наценки</TextBlock>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="1"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Column="2" Grid.Row="1"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="1">Средняя цена конкурентов, тыс. руб.</TextBlock>
+                    <TextBox x:Name="T427C11" BorderThickness="0 0 1 1" Grid.Row="1" Grid.Column="1"></TextBox>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="2">Себестоимость 1 натуральной единицы, тыс. руб.</TextBlock>
+                    <TextBox x:Name="T427C12" BorderThickness="0 0 1 1" Grid.Row="1" Grid.Column="3"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="2"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Column="2" Grid.Row="2"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="2">На сколько % цена будет выше или ниже цен конкурентов, в %</TextBlock>
+                    <TextBox x:Name="T427C21" BorderThickness="0 0 1 1" Grid.Row="2" Grid.Column="1"></TextBox>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="2" Grid.Column="2">Наценка / надбавка, тыс. руб.</TextBlock>
+                    <TextBox x:Name="T427C22" BorderThickness="0 0 1 1" Grid.Row="2" Grid.Column="3"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="3"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Column="2" Grid.Row="3"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="3">Цена реализации вашего товара/услуги с учетом цен конкурентов (средняя цена * %), тыс. руб.</TextBlock>
+                    <TextBox x:Name="T427C31" BorderThickness="0 0 1 1" Grid.Row="3" Grid.Column="1"></TextBox>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="3" Grid.Column="2">Цена реализации вашего товара/услуги с себестоимостью (себестоимость * цена), тыс. руб.</TextBlock>
+                    <TextBox x:Name="T427C32" BorderThickness="0 0 1 1" Grid.Row="3" Grid.Column="3"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="4"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Column="2" Grid.Row="4"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="4">Ценовая конкуренция (+/-)</TextBlock>
+                    <TextBox x:Name="T427C41" BorderThickness="0 0 1 1" Grid.Row="4" Grid.Column="1"></TextBox>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="4" Grid.Column="2">НЕценовая конкуренция (+/-)</TextBlock>
+                    <TextBox x:Name="T427C42" BorderThickness="0 0 1 1" Grid.Row="4" Grid.Column="3"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="5"/>
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="5">Окончательная цена реализации, тыс. руб.</TextBlock>
+                    <TextBox x:Name="T427C51" BorderThickness="0 0 1 1" Grid.Row="5" Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T427C52" BorderThickness="0 0 1 1" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2"></TextBox>
+                </Grid>
+
+            </StackPanel>
+
+            <StackPanel Margin="5 35 5 5">
+
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 5">Прогноз выручки от реализации товаров / услуг</TextBlock>
+
+            </StackPanel>
+
+            <StackPanel Margin="5 35 5 5">
+
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 5">Инвестиционные издержки (прогнозные)</TextBlock>
+
+            </StackPanel>
+
+            <StackPanel Margin="5 35 5 5">
+
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 5">Стоимость регистрации ООО</TextBlock>
+
+                <Grid>
+                    
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Border BorderThickness="1"/>
+                    <Border BorderThickness="0 1 1 1" Grid.Column="1"/>
+
+                    <TextBlock HorizontalAlignment="Center" FontWeight="Bold">Статья расходов</TextBlock>
+                    <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Grid.Column="1">Стоимость, руб.</TextBlock>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="1"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="1">Государственная пошлина за регистрацию</TextBlock>
+                    <TextBox x:Name="T4412C11" BorderThickness="0 0 1 1" Grid.Row="1" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="2"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="2">Нотариальное засвидетельствование подписи заявителя, представляющего документы в регистрационный орган, на заявлении о регистрации (из них техническая работа)</TextBlock>
+                    <TextBox x:Name="T4412C21" BorderThickness="0 0 1 1" Grid.Row="2" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="3"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="3">Изготовление и оснастка печати</TextBlock>
+                    <TextBox x:Name="T4412C31" BorderThickness="0 0 1 1" Grid.Row="3" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="4"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="4">Открытие банковского счета</TextBlock>
+                    <TextBox x:Name="T4412C41" BorderThickness="0 0 1 1" Grid.Row="4" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="5" Grid.ColumnSpan="2"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Center" Grid.Row="5" Grid.ColumnSpan="2">Нотариальное удостоверение копии учредительных документов</TextBlock>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="6"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="6">Устав (из них техническая работа)</TextBlock>
+                    <TextBox x:Name="T4412C61" BorderThickness="0 0 1 1" Grid.Row="6" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="7"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="7">Засвидетельствование подлинности подписи на банковской карточке (с каждого лица)</TextBlock>
+                    <TextBox x:Name="T4412C71" BorderThickness="0 0 1 1" Grid.Row="7" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="8" Grid.ColumnSpan="2"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Center" Grid.Row="8" Grid.ColumnSpan="2">Нотариальное засвидетельствование верности копий документов</TextBlock>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="9"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="9">Свидетельство ОГРН</TextBlock>
+                    <TextBox x:Name="T4412C91" BorderThickness="0 0 1 1" Grid.Row="9" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="10"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="10">Свидетельство ИНН</TextBlock>
+                    <TextBox x:Name="T4412C101" BorderThickness="0 0 1 1" Grid.Row="10" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="11"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="11">Выписка из ЕГРЮЛ</TextBlock>
+                    <TextBox x:Name="T4412C111" BorderThickness="0 0 1 1" Grid.Row="11" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="12"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="12" FontWeight="Bold">Итого</TextBlock>
+                    <TextBox x:Name="T4412C121" BorderThickness="0 0 1 1" Grid.Row="12" Grid.Column="1"></TextBox>
+
+                </Grid>
+                
+            </StackPanel>
+
+            <StackPanel Margin="5 35 5 5">
+
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 5">Стоимость регистрации в качестве индивидуального предпринимателя</TextBlock>
+
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Border BorderThickness="1"/>
+                    <Border BorderThickness="0 1 1 1" Grid.Column="1"/>
+
+                    <TextBlock HorizontalAlignment="Center" FontWeight="Bold">Статья расходов</TextBlock>
+                    <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Grid.Column="1">Стоимость, руб.</TextBlock>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="1"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="1">Государственная пошлина за регистрацию</TextBlock>
+                    <TextBox x:Name="T4413C11" BorderThickness="0 0 1 1" Grid.Row="1" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="2"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="2">Нотариальное засвидетельствование подписи заявителя, представляющего документы в регистрационный орган, на заявлении о регистрации (из них техническая работа)</TextBlock>
+                    <TextBox x:Name="T4413C21" BorderThickness="0 0 1 1" Grid.Row="2" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="3"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="3">Изготовление и оснастка печати</TextBlock>
+                    <TextBox x:Name="T4413C31" BorderThickness="0 0 1 1" Grid.Row="3" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="4"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="4">Открытие банковского счета</TextBlock>
+                    <TextBox x:Name="T4413C41" BorderThickness="0 0 1 1" Grid.Row="4" Grid.Column="1"></TextBox>
+
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="5"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="5">Засвидетельствование подлинности подписи на банковской карточке (с каждого лица)</TextBlock>
+                    <TextBox x:Name="T4413C51" BorderThickness="0 0 1 1" Grid.Row="5" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="6" Grid.ColumnSpan="2"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Center" Grid.Row="6" Grid.ColumnSpan="2">Засвидетельствование верности копий документов</TextBlock>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="7"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="7">Свидетельство</TextBlock>
+                    <TextBox x:Name="T4413C61" BorderThickness="0 0 1 1" Grid.Row="7" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="8"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="8">Выписка из ЕГРИП</TextBlock>
+                    <TextBox x:Name="T4413C71" BorderThickness="0 0 1 1" Grid.Row="8" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="9"/>
+
+                    <TextBlock Margin="5" HorizontalAlignment="Left" Grid.Row="9" FontWeight="Bold">Итого</TextBlock>
+                    <TextBox x:Name="T4413C81" BorderThickness="0 0 1 1" Grid.Row="9" Grid.Column="1"></TextBox>
+
+                </Grid>
+
+            </StackPanel>
+
+            <StackPanel Margin="5 35 5 5">
+
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 5">Текущие (ежемесячные) издержки</TextBlock>
+
+            </StackPanel>
+
+            <StackPanel Margin="5 35 5 5">
+
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 5">План о движении денежных средств</TextBlock>
+
+            </StackPanel>
+
+        </StackPanel>
+        
+
+    </Grid>
+</Page>
