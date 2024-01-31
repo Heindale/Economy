@@ -10,7 +10,7 @@
         MinWidth="600"
         WindowStyle="None"
         MinHeight="300"
-        Height="450"
+        Height="1283"
         Width="800"
         >
     <WindowChrome.WindowChrome>
@@ -59,7 +59,7 @@
             </ColumnDefinition>
 
             <ColumnDefinition x:Name="MenuBar"
-                              Width="75">
+                              Width="85">
             </ColumnDefinition>
 
             <ColumnDefinition x:Name="PageContainer"
@@ -86,23 +86,36 @@
                         Background="#8FA5F3"
                         >
 
-
-                <Button x:Name="Chapter1"
+                <Button x:Name="Welcome"
                         Style="{StaticResource MenuButton}"
-                        Width="50"
-                        Height="50"
-                        Margin="0,10,0,0"
-                        Click="Chapter1_Click">
-                    <Image Width="30">
+                        Width="60"
+                        Height="60"
+                        Margin="0,10,0,0">
+                    <Image Width="45" Height="43">
                         <Image.Style>
                             <Style TargetType="{x:Type Image}">
                                 <Style.Triggers>
-                                    <DataTrigger Binding="{Binding IsPressed, ElementName=Chapter1}" Value="True">
-                                        <Setter Property="Source" Value="/Resources/Images/BublClick.png"/>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Welcome}" Value="True">
+                                        <Setter Property="Source" Value="/Resources/Images/ActvWelcome.png"/>
                                     </DataTrigger>
-                                    <DataTrigger Binding="{Binding IsPressed, ElementName=Chapter1}" Value="False">
-                                        <Setter Property="Source" Value="/Resources/Images/Bubl.png"/>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Welcome}" Value="False">
+                                        <Setter Property="Source" Value="/Resources/Images/Welcome.png"/>
                                     </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
+                </Button>
+                <Button x:Name="Chapter1"
+                        Style="{StaticResource MenuButton}"
+                        Width="60"
+                        Height="60"
+                        Margin="0,10,0,0"
+                        Click="Chapter1_Click">
+                    <Image Width="50">
+                        <Image.Style>
+                            <Style TargetType="{x:Type Image}">
+                                <Style.Triggers>
                                     <DataTrigger Binding="{Binding IsMouseOver, ElementName=Chapter1}" Value="True">
                                         <Setter Property="Source" Value="/Resources/Images/ActvBubl.png"/>
                                     </DataTrigger>
@@ -117,20 +130,14 @@
 
                 <Button x:Name="Chapter2"
                         Style="{StaticResource MenuButton}"
-                        Width="50"
-                        Height="50"
+                        Width="60"
+                        Height="60"
                         Margin="0,10,0,0"
                         Click="Chapter2_Click">
-                    <Image Width="40">
+                    <Image Width="57">
                         <Image.Style>
                             <Style TargetType="{x:Type Image}">
                                 <Style.Triggers>
-                                    <DataTrigger Binding="{Binding IsPressed, ElementName=Chapter2}" Value="True">
-                                        <Setter Property="Source" Value="/Resources/Images/ActvModel.png"/>
-                                    </DataTrigger>
-                                    <DataTrigger Binding="{Binding IsPressed, ElementName=Chapter2}" Value="False">
-                                        <Setter Property="Source" Value="/Resources/Images/Model.png"/>
-                                    </DataTrigger>
                                     <DataTrigger Binding="{Binding IsMouseOver, ElementName=Chapter2}" Value="True">
                                         <Setter Property="Source" Value="/Resources/Images/ActvModel.png"/>
                                     </DataTrigger>
@@ -145,42 +152,137 @@
 
                 </Button>
                  <Button x:Name="Chapter3"
-                         Width="50"
-                         Height="50"
-                         Content="Раздел 3"
+                         Style="{StaticResource MenuButton}"
+                         Width="60"
+                         Height="60"
                          Margin="0,10,0,0"
                          Click="Chapter3_Click">
-                 </Button>
+                    <Image Width="57">
+                        <Image.Style>
+                            <Style TargetType="{x:Type Image}">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Chapter3}" Value="True">
+                                        <Setter Property="Source" Value="/Resources/Images/ActvPpl.png"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Chapter3}" Value="False">
+                                        <Setter Property="Source" Value="/Resources/Images/Ppl.png"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
+                </Button>
                  <Button x:Name="Chapter4"
-                         Width="50"
-                         Height="50"
-                         Content="Раздел 4"
+                         Style="{StaticResource MenuButton}"
+                         Width="60"
+                         Height="60"
                          Margin="0,10,0,0"
                          Click="Chapter4_Click">
-                 </Button>
+                    <Image Width="55">
+                        <Image.Style>
+                            <Style TargetType="{x:Type Image}">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Chapter4}" Value="True">
+                                        <Setter Property="Source" Value="/Resources/Images/ActvMoney.png"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Chapter4}" Value="False">
+                                        <Setter Property="Source" Value="/Resources/Images/Money.png"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
+                </Button>
+                <Button  x:Name="Chapter5"
+                         Style="{StaticResource MenuButton}"
+                         Width="60"
+                         Height="60"
+                         Margin="0,10,0,0"
+                         >
+                    <Image Width="40">
+                        <Image.Style>
+                            <Style TargetType="{x:Type Image}">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Chapter5}" Value="True">
+                                        <Setter Property="Source" Value="/Resources/Images/ActvPlan.png"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Chapter5}" Value="False">
+                                        <Setter Property="Source" Value="/Resources/Images/Plan.png"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
+
+                </Button>
                  <Button x:Name="Save"
-                         Width="50"
-                         Height="50"
-                         Content="Сохранение"
+                         Style="{StaticResource MenuButton}"
+                         Width="60"
+                         Height="60"
                          Margin="0,10,0,0"
                          Click="Save_Click">
-                 </Button>
+                    <Image Width="50">
+                        <Image.Style>
+                            <Style TargetType="{x:Type Image}">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Save}" Value="True">
+                                        <Setter Property="Source" Value="/Resources/Images/ActvSave.png"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Save}" Value="False">
+                                        <Setter Property="Source" Value="/Resources/Images/Save.png"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
+
+
+                </Button>
                  <Button x:Name="Load"
-                         Width="50"
-                         Height="50"
-                         Content="Загрузка"
+                         Style="{StaticResource MenuButton}"
+                         Width="60"
+                         Height="60"
                          Margin="0,10,0,0"
                          Click="Load_Click">
-                 </Button>
+                    <Image Width="50">
+                        <Image.Style>
+                            <Style TargetType="{x:Type Image}">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Load}" Value="True">
+                                        <Setter Property="Source" Value="/Resources/Images/ActvLoad.png"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=Load}" Value="False">
+                                        <Setter Property="Source" Value="/Resources/Images/Load.png"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
+                </Button>
 
 
                 <Button x:Name="GenerateDocxButton"
                         Style="{StaticResource MenuButton}"
-                        Width="50"
-                        Height="50"
-                        Content="Экспорт"
+                        Width="60"
+                        Height="60"
                         Margin="0,10,0,0" Click="GenerateDocxButton_Click">
+                    <Image Width="40">
+                        <Image.Style>
+                            <Style TargetType="{x:Type Image}">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=GenerateDocxButton}" Value="True">
+                                        <Setter Property="Source" Value="/Resources/Images/ActvExport.png"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsMouseOver, ElementName=GenerateDocxButton}" Value="False">
+                                        <Setter Property="Source" Value="/Resources/Images/Export.png"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Image.Style>
+                    </Image>
                 </Button>
+                
+
             </StackPanel>
         </ScrollViewer>
         <ScrollViewer Grid.Column="2" Grid.Row="2">
