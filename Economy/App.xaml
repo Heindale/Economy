@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:Economy"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
     </Application.Resources>
 </Application>

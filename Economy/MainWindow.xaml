@@ -92,7 +92,7 @@
                         Height="60"
                         Click="Title_Click"
                         Margin="0,10,0,0">
-                    <Image Width="45" Height="43">
+                    <Image Width="45" Height="43"  RenderOptions.BitmapScalingMode="HighQuality">
                         <Image.Style>
                             <Style TargetType="{x:Type Image}">
                                 <Style.Triggers>
@@ -113,7 +113,7 @@
                         Height="60"
                         Margin="0,10,0,0"
                         Click="Chapter1_Click">
-                    <Image Width="50">
+                    <Image Width="50" RenderOptions.BitmapScalingMode="HighQuality">
                         <Image.Style>
                             <Style TargetType="{x:Type Image}">
                                 <Style.Triggers>
@@ -135,7 +135,7 @@
                         Height="60"
                         Margin="0,10,0,0"
                         Click="Chapter2_Click">
-                    <Image Width="57">
+                    <Image Width="57" RenderOptions.BitmapScalingMode="HighQuality">
                         <Image.Style>
                             <Style TargetType="{x:Type Image}">
                                 <Style.Triggers>
@@ -158,7 +158,7 @@
                          Height="60"
                          Margin="0,10,0,0"
                          Click="Chapter3_Click">
-                    <Image Width="57">
+                    <Image Width="57" RenderOptions.BitmapScalingMode="HighQuality">
                         <Image.Style>
                             <Style TargetType="{x:Type Image}">
                                 <Style.Triggers>
@@ -179,7 +179,7 @@
                          Height="60"
                          Margin="0,10,0,0"
                          Click="Chapter4_Click">
-                    <Image Width="55">
+                    <Image Width="55" RenderOptions.BitmapScalingMode="HighQuality" >
                         <Image.Style>
                             <Style TargetType="{x:Type Image}">
                                 <Style.Triggers>
@@ -200,7 +200,7 @@
                          Height="60"
                          Margin="0,10,0,0"
                          >
-                    <Image Width="40">
+                    <Image Width="40" RenderOptions.BitmapScalingMode="HighQuality">
                         <Image.Style>
                             <Style TargetType="{x:Type Image}">
                                 <Style.Triggers>
@@ -222,7 +222,7 @@
                          Height="60"
                          Margin="0,10,0,0"
                          Click="Save_Click">
-                    <Image Width="50">
+                    <Image Width="50" RenderOptions.BitmapScalingMode="HighQuality">
                         <Image.Style>
                             <Style TargetType="{x:Type Image}">
                                 <Style.Triggers>
@@ -245,7 +245,7 @@
                          Height="60"
                          Margin="0,10,0,0"
                          Click="Load_Click">
-                    <Image Width="50">
+                    <Image Width="50" RenderOptions.BitmapScalingMode="HighQuality">
                         <Image.Style>
                             <Style TargetType="{x:Type Image}">
                                 <Style.Triggers>
@@ -267,7 +267,7 @@
                         Width="60"
                         Height="60"
                         Margin="0,10,0,0" Click="GenerateDocxButton_Click">
-                    <Image Width="40">
+                    <Image Width="40" RenderOptions.BitmapScalingMode="HighQuality">
                         <Image.Style>
                             <Style TargetType="{x:Type Image}">
                                 <Style.Triggers>

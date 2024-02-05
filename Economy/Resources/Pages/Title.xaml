@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Economy.Resources.Pages"
       mc:Ignorable="d" 
       Background="White" d:DesignWidth="800"
-      Title="Title" Height="1834">
+      Title="Title" Height="1074">
 
     <Grid>
         <Grid.RowDefinitions>
