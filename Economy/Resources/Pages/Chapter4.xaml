@@ -3,10 +3,10 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Economy.Resources.Pages"
+      xmlns:local="clr-namespace:Economy.Resources.Pages" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
       Background="White" d:DesignWidth="800"
-      Title="Chapter4" Height="5755"
+      Title="Chapter4" Height="6529"
       
       >
 
@@ -53,9 +53,115 @@
                 </StackPanel>
             </StackPanel>
 
-            <StackPanel Margin="0 5 0 0">
+            <StackPanel Margin="5 35 5 5">
                 <Label Content="Выбор помещения и месторасположения бизнес-проекта" HorizontalAlignment="Center" FontWeight="Bold"/>
-                <Label Content="..." HorizontalAlignment="Center"/>
+
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Border BorderThickness="1" Grid.RowSpan="2"/>
+                    <Border BorderThickness="0 1 1 1" Grid.Column="1" Grid.ColumnSpan="2"/>
+
+                    <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Grid.RowSpan="2">Вопрос: какое помещение нужно?</TextBlock>
+                    <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Grid.Column="1" Grid.ColumnSpan="2">Ваш ответ</TextBlock>
+
+                    <Border BorderThickness="0 0 1 1" Grid.Column="1" Grid.Row="1"/>
+                    <Border BorderThickness="0 0 1 1" Grid.Column="2" Grid.Row="1"/>
+                    
+                    <StackPanel Grid.Column="1" Grid.Row="1">
+                        <TextBlock HorizontalAlignment="Center" FontWeight="Bold">Необходимое количество</TextBlock>
+                        <TextBlock HorizontalAlignment="Center">(цифрой – 1, 2 и т.д., 0 – не надо)</TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2" Grid.Row="1">
+                        
+                        <TextBlock HorizontalAlignment="Center"><Bold>Адрес (город, район, микрорайон, улица, дом)</Bold> Искать помещение по ссылке:</TextBlock>
+                        <TextBlock Margin="5 0 10 0">1. Для <Bold>крупных</Bold> городов 
+                            <Hyperlink Click="Hyperlink_Click_1">
+                                https://navigator.smbn.ru/realty/13
+                            </Hyperlink>
+                        </TextBlock>
+
+                        <TextBlock Margin="5 0 10 0">2. Для <Bold>малых</Bold> городов
+                            <StackPanel>
+                                <TextBlock>
+                                    а) льготная недвижимость для бизнеса
+                                    <Hyperlink Click="Hyperlink_Click_2">
+                                        http://corpmsp.ru/infrastruktura-podderzhki/imushchestvennaya-infrastruktura/ 
+                                    </Hyperlink>
+                                </TextBlock>
+                                <TextBlock>
+                                    б) популярные в вашем городе сайты и газеты по продаже недвижимости
+                                </TextBlock>
+                            </StackPanel>
+                        </TextBlock>
+
+                    </StackPanel>
+
+                    <Border Grid.Row="2" BorderThickness="1 0 1 1"/>
+                    <Border Grid.Row="2" Grid.Column="1" BorderThickness="0 0 1 1"/>
+                    <Border Grid.Row="2" Grid.Column="2" BorderThickness="0 0 1 1"/>
+
+                    <TextBlock HorizontalAlignment="Center" Grid.Row="2">1</TextBlock>
+                    <TextBlock HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1">2</TextBlock>
+                    <TextBlock HorizontalAlignment="Center" Grid.Row="2" Grid.Column="2">3</TextBlock>
+
+                    <Border Grid.Row="3" BorderThickness="1 0 1 1"/>
+
+                    <TextBlock Margin="5 0 0 0" Grid.Row="3">Точка продаж</TextBlock>
+                    <TextBox x:Name="T413Cell11" Grid.Row="3" Grid.Column="1" BorderThickness="0 0 1 1"></TextBox>
+                    <TextBox x:Name="T413Cell12" Grid.Row="3" Grid.Column="2" BorderThickness="0 0 1 1"></TextBox>
+
+                    <Border Grid.Row="4" BorderThickness="1 0 1 1"/>
+
+                    <TextBlock Margin="5 0 0 0" Grid.Row="4">Точка производства</TextBlock>
+                    <TextBox x:Name="T413Cell21" Grid.Row="4" Grid.Column="1" BorderThickness="0 0 1 1"></TextBox>
+                    <TextBox x:Name="T413Cell22" Grid.Row="4" Grid.Column="2" BorderThickness="0 0 1 1"></TextBox>
+
+                    <Border Grid.Row="5" BorderThickness="1 0 1 1"/>
+
+                    <TextBlock Margin="5 0 0 0" Grid.Row="5">Офис</TextBlock>
+                    <TextBox x:Name="T413Cell31" Grid.Row="5" Grid.Column="1" BorderThickness="0 0 1 1"></TextBox>
+                    <TextBox x:Name="T413Cell32" Grid.Row="5" Grid.Column="2" BorderThickness="0 0 1 1"></TextBox>
+
+                    <Border Grid.Row="6" BorderThickness="1 0 1 1"/>
+
+                    <TextBlock Margin="5 0 0 0" Grid.Row="6">Склад</TextBlock>
+                    <TextBox x:Name="T413Cell41" Grid.Row="6" Grid.Column="1" BorderThickness="0 0 1 1"></TextBox>
+                    <TextBox x:Name="T413Cell42" Grid.Row="6" Grid.Column="2" BorderThickness="0 0 1 1"></TextBox>
+
+                    <TextBox x:Name="T413Cell50" Padding="3 0 0 0" Grid.Row="7" BorderThickness="1 0 1 1" materialDesign:HintAssist.Hint="РАБОТАЙ"  materialDesign:HintAssist.IsFloating="True"></TextBox>
+                    <TextBox x:Name="T413Cell51" Grid.Row="7" Grid.Column="1" BorderThickness="0 0 1 1"></TextBox>
+                    <TextBox x:Name="T413Cell52" Grid.Row="7" Grid.Column="2" BorderThickness="0 0 1 1"></TextBox>
+
+                    <TextBox x:Name="T413Cell60" Padding="3 0 0 0" Grid.Row="8" BorderThickness="1 0 1 1" materialDesign:HintAssist.Hint="РАБОТАЙ"  materialDesign:HintAssist.IsFloating="True"></TextBox>
+                    <TextBox x:Name="T413Cell61" Grid.Row="8" Grid.Column="1" BorderThickness="0 0 1 1"></TextBox>
+                    <TextBox x:Name="T413Cell62" Grid.Row="8" Grid.Column="2" BorderThickness="0 0 1 1"></TextBox>
+
+                    <TextBox x:Name="T413Cell70" Padding="3 0 0 0" Grid.Row="9" BorderThickness="1 0 1 1" materialDesign:HintAssist.Hint="РАБОТАЙ"  materialDesign:HintAssist.IsFloating="True"></TextBox>
+                    <TextBox x:Name="T413Cell71" Grid.Row="9" Grid.Column="1" BorderThickness="0 0 1 1"></TextBox>
+                    <TextBox x:Name="T413Cell72" Grid.Row="9" Grid.Column="2" BorderThickness="0 0 1 1"></TextBox>
+
+                </Grid>
+                
             </StackPanel>
 
             <StackPanel Margin="0 5 0 0">
@@ -106,9 +212,99 @@
                 </Grid>-->
             </StackPanel>
 
-            <StackPanel Margin="0 5 0 0">
+            <StackPanel Margin="5 35 5 5">
                 <Label Content="Составление характеристики покупателей" HorizontalAlignment="Center" FontWeight="Bold"/>
-                <Label Content="..." HorizontalAlignment="Center"/>
+
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Border BorderThickness="1"/>
+                    <Border BorderThickness="0 1 1 1" Grid.Column="1"/>
+
+                    <TextBlock FontWeight="Bold" HorizontalAlignment="Center">Вопрос</TextBlock>
+                    <TextBlock FontWeight="Bold" HorizontalAlignment="Center" Grid.Column="1">Ваш ответ (по результатам опроса)</TextBlock>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="1"/>
+
+                    <TextBlock Margin="5 0 0 0" Grid.Row="1">1) Существуют ли покупатели в месторасположении вашего бизнес-проекта?</TextBlock>
+                    <TextBox x:Name="T415Cell11" Padding="5 0 0 0" BorderThickness="0 0 1 1" Grid.Row="1" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="2"/>
+
+                    <TextBlock Margin="5 0 0 0" Grid.Row="2">2) Нужна ли им именно ваша продукция, и если да, то почему?</TextBlock>
+                    <TextBox x:Name="T415Cell21" Padding="5 0 0 0" BorderThickness="0 0 1 1" Grid.Row="2" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="3" Grid.ColumnSpan="2"/>
+
+                    <TextBlock Margin="5 0 0 0" Grid.Row="3" Grid.ColumnSpan="2">3) Кто ваши покупатели по критериям:</TextBlock>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="4"/>
+
+                    <TextBlock Margin="20 0 0 0" Grid.Row="4">- пол</TextBlock>
+                    <TextBox x:Name="T415Cell31" Padding="5 0 0 0" BorderThickness="0 0 1 1" Grid.Row="4" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="5"/>
+
+                    <TextBlock Margin="20 0 0 0" Grid.Row="5">- возраст (например, от … до …)</TextBlock>
+                    <TextBox x:Name="T415Cell41" Padding="5 0 0 0" BorderThickness="0 0 1 1" Grid.Row="5" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="6"/>
+
+                    <TextBlock Margin="20 0 0 0" Grid.Row="6">- уровень дохода (например, от … до …)</TextBlock>
+                    <TextBox x:Name="T415Cell51" Padding="5 0 0 0" BorderThickness="0 0 1 1" Grid.Row="6" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="7"/>
+
+                    <TextBlock Margin="20 0 0 0" Grid.Row="7">- вид основной деятельности (специальность)</TextBlock>
+                    <TextBox x:Name="T415Cell61" Padding="5 0 0 0" BorderThickness="0 0 1 1" Grid.Row="7" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="8"/>
+
+                    <TextBlock Margin="20 0 0 0" Grid.Row="8">- семейное положение</TextBlock>
+                    <TextBox x:Name="T415Cell71" Padding="5 0 0 0" BorderThickness="0 0 1 1" Grid.Row="8" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="9"/>
+
+                    <TextBlock Margin="20 0 0 0" Grid.Row="9">- образование</TextBlock>
+                    <TextBox x:Name="T415Cell81" Padding="5 0 0 0" BorderThickness="0 0 1 1" Grid.Row="9" Grid.Column="1"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="10"/>
+
+                    <TextBlock Margin="20 0 0 0" Grid.Row="10">- увлечения</TextBlock>
+                    <TextBox x:Name="T415Cell91" Padding="5 0 0 0" BorderThickness="0 0 1 1" Grid.Row="10" Grid.Column="1"></TextBox>
+
+                    <TextBox x:Name="T415Cell100" Padding="5 0 0 0" BorderThickness="1 0 1 1" Grid.Row="11"></TextBox>
+                    <TextBox x:Name="T415Cell101" Padding="5 0 0 0" BorderThickness="0 0 1 1" Grid.Row="11" Grid.Column="1"></TextBox>
+
+                    <TextBox x:Name="T415Cell110" Padding="5 0 0 0" BorderThickness="1 0 1 1" Grid.Row="12"></TextBox>
+                    <TextBox x:Name="T415Cell111" Padding="5 0 0 0" BorderThickness="0 0 1 1" Grid.Row="12" Grid.Column="1"></TextBox>
+
+                    <TextBox x:Name="T415Cell120" Padding="5 0 0 0" BorderThickness="1 0 1 1" Grid.Row="13"></TextBox>
+                    <TextBox x:Name="T415Cell121" Padding="5 0 0 0" BorderThickness="0 0 1 1" Grid.Row="13" Grid.Column="1"></TextBox>
+
+                </Grid>
+
             </StackPanel>
 
             <StackPanel Margin="0 5 0 0">
@@ -211,7 +407,7 @@
                 <Label Content="2 - интернет-запросы:"/>
                 <TextBlock Margin="5 0 0 0">
                     а) количество интернет-запросов клиентов в Яндексе (и/или Google)
-                    <Hyperlink NavigateUri="http://wordstat.yandex.ru/">http://wordstat.yandex.ru/</Hyperlink>
+                    <Hyperlink Click="hyperlink_Click">http://wordstat.yandex.ru/</Hyperlink>
                 </TextBlock>
 
                 <StackPanel Orientation="Horizontal">
@@ -425,35 +621,35 @@
                         </TextBlock>
                     </StackPanel>
 
-                    <TextBox TextWrapping="Wrap" x:Name="C11" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 30 5 0"></TextBox>
-                    <TextBox x:Name="C12" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 30 5 0"></TextBox>
-                    <TextBox x:Name="C13" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 30 5 0"></TextBox>
-                    <TextBox x:Name="C14" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 30 5 0"></TextBox>
-                    <TextBox x:Name="C15" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 30 5 0"></TextBox>
-                    <TextBox x:Name="C16" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 30 5 0"></TextBox>
-                    <TextBox x:Name="C17" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 30 5 0"></TextBox>
-                    <TextBox x:Name="C18" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 30 5 0"></TextBox>
-                    <TextBox x:Name="C19" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 30 5 0"></TextBox>
-                    <TextBox x:Name="C110" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 30 5 0"></TextBox>
-                    <TextBox x:Name="C111" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 30 5 0"></TextBox>
-                    <TextBox x:Name="C112" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="C11" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C12" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C13" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C14" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C15" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C16" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C17" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C18" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C19" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C110" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C111" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C112" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 30 5 0"></TextBox>
 
                     <Border BorderBrush="Black" Grid.Row="3" BorderThickness="1 0 1 1"/>
 
                     <TextBlock Grid.Row="3" Margin="5">б1) объем с учетом сезонности</TextBlock>
 
-                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C21" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C22" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C23" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C24" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C25" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C26" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C27" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C28" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C29" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C210" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C211" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C212" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
 
                     <Border BorderBrush="Black" Grid.Row="4" BorderThickness="1 0 1 1"/>
 
@@ -466,103 +662,103 @@
                         </TextBlock>
                     </StackPanel>
 
-                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 30 5 0"></TextBox>
-                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 30 5 0"></TextBox>
-                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 30 5 0"></TextBox>
-                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 30 5 0"></TextBox>
-                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 30 5 0"></TextBox>
-                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 30 5 0"></TextBox>
-                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 30 5 0"></TextBox>
-                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 30 5 0"></TextBox>
-                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 30 5 0"></TextBox>
-                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 30 5 0"></TextBox>
-                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 30 5 0"></TextBox>
-                    <TextBox Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C31"  Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C32"  Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C33"  Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C34"  Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C35"  Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C36"  Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C37"  Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C38"  Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C39"  Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C310" Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C311" Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 30 5 0"></TextBox>
+                    <TextBox x:Name="T418C312" Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 30 5 0"></TextBox>
 
                     <Border BorderBrush="Black" Grid.Row="5" BorderThickness="1 0 1 1"/>
 
                     <TextBlock Grid.Row="5" Margin="5">б2) объем с учетом роста и сезонности</TextBlock>
 
-                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C41"  Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C42"  Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C43"  Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C44"  Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C45"  Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C46"  Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C47"  Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C48"  Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C49"  Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C410" Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C411" Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C412" Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
 
                     <Border BorderBrush="Black" Grid.Row="6" BorderThickness="1 0 1 1"/>
 
                     <TextBlock Grid.Row="6" Margin="5">Объем продаж <Underline>в неделю</Underline>, нат.ед.</TextBlock>
 
-                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C51"  Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C52"  Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C53"  Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C54"  Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C55"  Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C56"  Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C57"  Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C58"  Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C59"  Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C510" Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C511" Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C512" Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
 
                     <Border BorderBrush="Black" Grid.Row="7" BorderThickness="1 0 1 1"/>
 
                     <TextBlock Grid.Row="7" Margin="5">Объем продаж <Underline>в день</Underline>, нат.ед.</TextBlock>
 
-                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C61"  Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C62"  Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C63"  Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C64"  Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C65"  Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C66"  Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C67"  Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C68"  Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C69"  Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C610" Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C611" Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C612" Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
 
                     <Border BorderBrush="Black" Grid.Row="8" BorderThickness="1 0 1 1"/>
 
                     <TextBlock Grid.Row="8" Margin="5">Объем продаж <Underline>в час</Underline>, нат.ед.</TextBlock>
 
-                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
-                    <TextBox Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C71"  Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C72"  Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C73"  Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C74"  Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C75"  Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C76"  Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C77"  Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C78"  Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C79"  Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C710" Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C711" Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
+                    <TextBox x:Name="T418C712" Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
 
                     <Border BorderBrush="Black" Grid.Row="9" BorderThickness="1 0 1 1"/>
 
                     <TextBlock Grid.Row="9" Margin="5 5 10 5" TextWrapping="Wrap">Выполнимы ли такие объемы продаж (не завышены, не занижены)</TextBlock>
 
-                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 9 5 0"></TextBox>
-                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 9 5 0"></TextBox>
-                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 9 5 0"></TextBox>
-                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 9 5 0"></TextBox>
-                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 9 5 0"></TextBox>
-                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 9 5 0"></TextBox>
-                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 9 5 0"></TextBox>
-                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 9 5 0"></TextBox>
-                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 9 5 0"></TextBox>
-                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 9 5 0"></TextBox>
-                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 9 5 0"></TextBox>
-                    <TextBox Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 9 5 0"></TextBox>
+                    <TextBox x:Name="T418C81"  Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 9 5 0"></TextBox>
+                    <TextBox x:Name="T418C82"  Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 9 5 0"></TextBox>
+                    <TextBox x:Name="T418C83"  Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 9 5 0"></TextBox>
+                    <TextBox x:Name="T418C84"  Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 9 5 0"></TextBox>
+                    <TextBox x:Name="T418C85"  Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 9 5 0"></TextBox>
+                    <TextBox x:Name="T418C86"  Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 9 5 0"></TextBox>
+                    <TextBox x:Name="T418C87"  Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 9 5 0"></TextBox>
+                    <TextBox x:Name="T418C88"  Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 9 5 0"></TextBox>
+                    <TextBox x:Name="T418C89"  Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 9 5 0"></TextBox>
+                    <TextBox x:Name="T418C810" Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 9 5 0"></TextBox>
+                    <TextBox x:Name="T418C811" Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 9 5 0"></TextBox>
+                    <TextBox x:Name="T418C812" Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 9 5 0"></TextBox>
 
                 </Grid>
 
@@ -1037,6 +1233,233 @@
             <StackPanel Margin="5 35 5 5">
 
                 <TextBlock HorizontalAlignment="Center" FontWeight="Bold" Margin="0 0 0 5">Прогноз выручки от реализации товаров / услуг</TextBlock>
+
+                <!--<StackPanel Margin="5">
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="300*"/>
+                            <ColumnDefinition Width="35*"/>
+                            <ColumnDefinition Width="35*"/>
+                            <ColumnDefinition Width="35*"/>
+                            <ColumnDefinition Width="35*"/>
+                            <ColumnDefinition Width="35*"/>
+                            <ColumnDefinition Width="35*"/>
+                            <ColumnDefinition Width="35*"/>
+                            <ColumnDefinition Width="35*"/>
+                            <ColumnDefinition Width="35*"/>
+                            <ColumnDefinition Width="35*"/>
+                            <ColumnDefinition Width="35*"/>
+                            <ColumnDefinition Width="35*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Border BorderBrush="Black" 
+                BorderThickness="1" 
+                Grid.RowSpan="2"/>
+                        <TextBlock VerticalAlignment="Center" Grid.RowSpan="2" HorizontalAlignment="Center" FontWeight="Bold">Объем продаж  в разные временные периоды</TextBlock>
+
+                        <Border BorderBrush="Black" 
+                BorderThickness="0 1 1 1" 
+                Grid.Column="1" 
+                Grid.ColumnSpan="12"/>
+                        <TextBlock Grid.Column="1" Grid.ColumnSpan="12" HorizontalAlignment="Center" FontWeight="Bold">Месяц по порядку</TextBlock>
+
+                        <Border BorderBrush="Black" Grid.Row="1" Grid.Column="1" BorderThickness="0 0 1 1"/>
+                        <Border BorderBrush="Black" Grid.Row="1" Grid.Column="2" BorderThickness="0 0 1 1"/>
+                        <Border BorderBrush="Black" Grid.Row="1" Grid.Column="3" BorderThickness="0 0 1 1"/>
+                        <Border BorderBrush="Black" Grid.Row="1" Grid.Column="4" BorderThickness="0 0 1 1"/>
+                        <Border BorderBrush="Black" Grid.Row="1" Grid.Column="5" BorderThickness="0 0 1 1"/>
+                        <Border BorderBrush="Black" Grid.Row="1" Grid.Column="6" BorderThickness="0 0 1 1"/>
+                        <Border BorderBrush="Black" Grid.Row="1" Grid.Column="7" BorderThickness="0 0 1 1"/>
+                        <Border BorderBrush="Black" Grid.Row="1" Grid.Column="8" BorderThickness="0 0 1 1"/>
+                        <Border BorderBrush="Black" Grid.Row="1" Grid.Column="9" BorderThickness="0 0 1 1"/>
+                        <Border BorderBrush="Black" Grid.Row="1" Grid.Column="10" BorderThickness="0 0 1 1"/>
+                        <Border BorderBrush="Black" Grid.Row="1" Grid.Column="11" BorderThickness="0 0 1 1"/>
+                        <Border BorderBrush="Black" Grid.Row="1" Grid.Column="12" BorderThickness="0 0 1 1"/>
+
+                        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center">1</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center">2</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center">3</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="4" HorizontalAlignment="Center">4</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="5" HorizontalAlignment="Center">5</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="6" HorizontalAlignment="Center">6</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="7" HorizontalAlignment="Center">7</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="8" HorizontalAlignment="Center">8</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="9" HorizontalAlignment="Center">9</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="10" HorizontalAlignment="Center">10</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="11" HorizontalAlignment="Center">11</TextBlock>
+                        <TextBlock Grid.Row="1" Grid.Column="12" HorizontalAlignment="Center">12</TextBlock>
+
+                        <Border BorderBrush="Black" Grid.Row="2" BorderThickness="1 0 1 1"/>
+                        <StackPanel Grid.Row="2" Margin="5 0 10 0">
+                            <TextBlock TextWrapping="Wrap">
+                Объем продаж в месяц, нат.ед. (шт.):
+                            </TextBlock>
+                            <TextBlock TextWrapping="Wrap">
+                1) изменение объема продаж из-за сезонности:
+                            </TextBlock>
+                            <TextBlock TextWrapping="Wrap">
+                а1) поправочный коэффициент сезонности (в Яндексе  
+                 <Hyperlink NavigateUri="http://wordstat.yandex.ru/">http://wordstat.yandex.ru/</Hyperlink>
+                (раздел «история запросов») и/или Google)
+                            </TextBlock>
+                        </StackPanel>
+
+                        <TextBox x:Name="C11" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C12" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C13" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C14" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C15" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C16" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C17" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C18" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C19" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C110" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C111" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C112" Grid.Row="2" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 30 5 0"></TextBox>
+
+                        <Border BorderBrush="Black" Grid.Row="3" BorderThickness="1 0 1 1"/>
+
+                        <TextBlock Grid.Row="3" Margin="5">б1) объем с учетом сезонности</TextBlock>
+
+                        <TextBox x:Name="T418C21" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C22" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C23" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C24" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C25" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C26" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C27" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C28" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C29" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C210" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C211" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C212" Grid.Row="3" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
+
+                        <Border BorderBrush="Black" Grid.Row="4" BorderThickness="1 0 1 1"/>
+
+                        <StackPanel Margin="5" Grid.Row="4">
+                            <TextBlock TextWrapping="Wrap">
+                2) изменение объема продаж из-за роста бизнеса:
+                            </TextBlock>
+                            <TextBlock TextWrapping="Wrap">
+                а2) поправочный коэффициент роста бизнеса (например, прирост 10 % за мес.)
+                            </TextBlock>
+                        </StackPanel>
+
+                        <TextBox x:Name="T418C31"  Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C32"  Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C33"  Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C34"  Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C35"  Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C36"  Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C37"  Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C38"  Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C39"  Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C310" Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C311" Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 30 5 0"></TextBox>
+                        <TextBox x:Name="T418C312" Grid.Row="4" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 30 5 0"></TextBox>
+
+                        <Border BorderBrush="Black" Grid.Row="5" BorderThickness="1 0 1 1"/>
+
+                        <TextBlock Grid.Row="5" Margin="5">б2) объем с учетом роста и сезонности</TextBlock>
+
+                        <TextBox x:Name="T418C41"  Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C42"  Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C43"  Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C44"  Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C45"  Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C46"  Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C47"  Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C48"  Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C49"  Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C410" Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C411" Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C412" Grid.Row="5" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
+
+                        <Border BorderBrush="Black" Grid.Row="6" BorderThickness="1 0 1 1"/>
+
+                        <TextBlock Grid.Row="6" Margin="5">Объем продаж <Underline>в неделю</Underline>, нат.ед.</TextBlock>
+
+                        <TextBox x:Name="T418C51"  Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C52"  Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C53"  Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C54"  Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C55"  Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C56"  Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C57"  Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C58"  Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C59"  Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C510" Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C511" Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C512" Grid.Row="6" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
+
+                        <Border BorderBrush="Black" Grid.Row="7" BorderThickness="1 0 1 1"/>
+
+                        <TextBlock Grid.Row="7" Margin="5">Объем продаж <Underline>в день</Underline>, нат.ед.</TextBlock>
+
+                        <TextBox x:Name="T418C61"  Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C62"  Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C63"  Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C64"  Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C65"  Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C66"  Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C67"  Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C68"  Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C69"  Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C610" Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C611" Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C612" Grid.Row="7" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
+
+                        <Border BorderBrush="Black" Grid.Row="8" BorderThickness="1 0 1 1"/>
+
+                        <TextBlock Grid.Row="8" Margin="5">Объем продаж <Underline>в час</Underline>, нат.ед.</TextBlock>
+
+                        <TextBox x:Name="T418C71"  Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C72"  Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C73"  Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C74"  Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C75"  Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C76"  Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C77"  Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C78"  Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C79"  Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C710" Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C711" Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 5 5 0"></TextBox>
+                        <TextBox x:Name="T418C712" Grid.Row="8" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 5 5 0"></TextBox>
+
+                        <Border BorderBrush="Black" Grid.Row="9" BorderThickness="1 0 1 1"/>
+
+                        <TextBlock Grid.Row="9" Margin="5 5 10 5" TextWrapping="Wrap">Выполнимы ли такие объемы продаж (не завышены, не занижены)</TextBlock>
+
+                        <TextBox x:Name="T418C81"  Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="1" Padding="5 9 5 0"></TextBox>
+                        <TextBox x:Name="T418C82"  Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="2" Padding="5 9 5 0"></TextBox>
+                        <TextBox x:Name="T418C83"  Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="3" Padding="5 9 5 0"></TextBox>
+                        <TextBox x:Name="T418C84"  Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="4" Padding="5 9 5 0"></TextBox>
+                        <TextBox x:Name="T418C85"  Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="5" Padding="5 9 5 0"></TextBox>
+                        <TextBox x:Name="T418C86"  Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="6" Padding="5 9 5 0"></TextBox>
+                        <TextBox x:Name="T418C87"  Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="7" Padding="5 9 5 0"></TextBox>
+                        <TextBox x:Name="T418C88"  Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="8" Padding="5 9 5 0"></TextBox>
+                        <TextBox x:Name="T418C89"  Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="9" Padding="5 9 5 0"></TextBox>
+                        <TextBox x:Name="T418C810" Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="10" Padding="5 9 5 0"></TextBox>
+                        <TextBox x:Name="T418C811" Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="11" Padding="5 9 5 0"></TextBox>
+                        <TextBox x:Name="T418C812" Grid.Row="9" BorderBrush="Black" BorderThickness="0 0 1 1" Grid.Column="12" Padding="5 9 5 0"></TextBox>
+
+                    </Grid>
+
+                </StackPanel>-->
 
             </StackPanel>
 
