@@ -24,5 +24,6 @@ namespace Economy.Resources.Pages
         {
             InitializeComponent();
         }
+
     }
 }

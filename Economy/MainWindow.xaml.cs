@@ -22,7 +22,7 @@ namespace Economy
             this.page3 = new Chapter3();
             this.page4 = new Chapter4();
             
-            this.document = DocX.Load("..\\..\\..\\Resources\\TemplateVersionSecond.docx");
+            //this.document = DocX.Load("..\\..\\..\\Resources\\TemplateVersionSecond.docx");
         }
 
         public DocX document { get; set; }

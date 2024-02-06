@@ -205,7 +205,7 @@
                             <Style TargetType="{x:Type Image}">
                                 <Style.Triggers>
                                     <DataTrigger Binding="{Binding IsMouseOver, ElementName=Chapter5}" Value="True">
-                                        <Setter Property="Source" Value="/Resources/Images/ActvPlan.png"/>
+                                        <Setter Property="Source" Value="/Resources/Images/ActvPlan.png"/>   
                                     </DataTrigger>
                                     <DataTrigger Binding="{Binding IsMouseOver, ElementName=Chapter5}" Value="False">
                                         <Setter Property="Source" Value="/Resources/Images/Plan.png"/>
