@@ -58,6 +58,35 @@ namespace Economy.Resources.UserControls
             }
         }
 
+        public System.Windows.VerticalAlignment VerticalContentAligment
+        {
+            get { return textBox.VerticalContentAlignment; }
+            set
+            {
+                textBox.VerticalContentAlignment = value;
+            }
+        }
+
+        public System.Windows.TextAlignment TextAlignment
+        {
+            get { return textBox.TextAlignment; }
+            set
+            {
+                textBox.TextAlignment = value;
+            }
+        }
+
+        public System.Windows.TextAlignment HintAlignment
+        {
+            get { return hintTextBlock.TextAlignment; }
+            set
+            {
+                hintTextBlock.TextAlignment = value;
+            }
+        }
+
+
+
         public TextWrapping TextWrapping
         {
             get { return textBox.TextWrapping; }
