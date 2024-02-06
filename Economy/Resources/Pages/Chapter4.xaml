@@ -190,7 +190,7 @@
 
                     <Label Content="Регион, область:" Grid.Row="3"/>-->
 
-                <ComboBox Margin="8 8 0 0" Grid.Column="1" Grid.RowSpan="8" Height="30" Width="200" HorizontalAlignment="Left">
+                <ComboBox x:Name="T414Cell11" Margin="8 8 0 0" Grid.Column="1" Grid.RowSpan="8" Height="30" Width="200" HorizontalAlignment="Left">
                     <Label Content="Микрорайон города"/>
                     <Label Content="Город"/>
                     <Label Content="Город и район, а также ближайшие города"/>
