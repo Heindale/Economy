@@ -25,10 +25,10 @@
     <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFABAdB3"/>
     <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="#FF7EB4EA"/>
     <SolidColorBrush x:Key="TextBox.Focus.Border" Color="#FF569DE5"/>
-    
-    
-    
-    <Style x:Key="TextBoxBlueLine" TargetType="{x:Type TextBox}">
+
+
+
+    <Style x:Key="BlueLineTextBox" TargetType="{x:Type TextBox}">
         <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
         <Setter Property="BorderBrush" Value="{StaticResource TextBox.Static.Border}"/>
         <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
@@ -71,7 +71,7 @@
                             <Setter Property="Fill" TargetName="rectangle" Value="#8FA5F3"/>
                         </Trigger>
                         <Trigger Property="IsKeyboardFocused" Value="true">
-                            <Setter Property="BorderBrush" TargetName="border" Value="#8FA5F3"/>
+                            <Setter Property="Fill" TargetName="rectangle" Value="#8FA5F3"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
