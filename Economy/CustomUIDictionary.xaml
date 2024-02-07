@@ -4,6 +4,7 @@
 
     <Style x:Key="BlueBorderTextBox" TargetType="TextBox">
         <Setter Property="BorderBrush" Value="#4A5C9C"/>
+        <Setter Property="Background" Value="Transparent"/>
         <Style.Triggers>
             <Trigger Property="IsFocused" Value="True">
                 <Setter Property="BorderBrush" Value="#8FA5F3"/>
@@ -29,7 +30,7 @@
 
 
     <Style x:Key="BlueLineTextBox" TargetType="{x:Type TextBox}">
-        <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+        <Setter Property="Background" Value="Transparent"/>
         <Setter Property="BorderBrush" Value="{StaticResource TextBox.Static.Border}"/>
         <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
         <Setter Property="BorderThickness" Value="1"/>
