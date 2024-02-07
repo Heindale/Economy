@@ -19,7 +19,6 @@
     </Page.Resources>
 
     <Grid Name="Page2">
-
         <Grid.Resources>
             <Style TargetType="TextBox"
                    BasedOn="{StaticResource BlueLineTextBox}" />

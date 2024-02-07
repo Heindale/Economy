@@ -9,8 +9,19 @@
       Background="White"
       Height="4034"
       Title="Chapter3">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Economy;component/CustomUIDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
 
     <Grid x:Name="Page3">
+        <Grid.Resources>
+            <Style TargetType="TextBox"
+                   BasedOn="{StaticResource BlueLineTextBox}" />
+        </Grid.Resources>
         <StackPanel RenderTransformOrigin="0.5,0.5">
             <StackPanel.RenderTransform>
                 <TransformGroup>
@@ -62,6 +73,10 @@
 
             <StackPanel Orientation="Horizontal"
                         Margin="5 10 0 0">
+                <StackPanel.Resources>
+                    <Style TargetType="TextBox"
+                           BasedOn="{StaticResource BlueBorderTextBox}" />
+                </StackPanel.Resources>
                 <TextBlock>
                 <Run Text="1.5. Примерный план интервью: " />
                 <LineBreak />
@@ -243,11 +258,18 @@
                        HorizontalAlignment="Left"
                        TextWrapping="Wrap"
                        Text="2.4. Дополнительные вопросы: a) вопросы о местонахождении b) вопросы о конкурентах (К2) c) вопросы о качестве (К3) d) вопросы о клиентах (К4), отвечающих на анкету (уточнение социально-экономических, демографических параметров)" />
-            <TextBox x:Name="T32Cell111"
-                     Margin="5 0"
-                     HorizontalAlignment="Left"
-                     Height="100"
-                     Width="400" />
+
+            <StackPanel>
+                <StackPanel.Resources>
+                    <Style TargetType="TextBox"
+                           BasedOn="{StaticResource BlueBorderTextBox}" />
+                </StackPanel.Resources>
+                <TextBox x:Name="T32Cell111"
+                         Margin="5 0"
+                         HorizontalAlignment="Left"
+                         Height="100"
+                         Width="400" />
+            </StackPanel>
 
             <Label Content="2.5. Заключительная часть анкеты: благодарность " />
             <TextBox x:Name="T32Cell121"
@@ -263,22 +285,34 @@
                        HorizontalAlignment="Left"
                        TextWrapping="Wrap"
                        Text="3.1. Отражение целей опроса: вопросы позволяют выявить (+/-): конкретное количество (К1) спроса, цену в рублях (Ц1), по которой готовы покупать, конкурентов (К2), качество (К3), клиентов (К4)" />
-            <TextBox x:Name="T32Cell131"
-                     Margin="5 0"
-                     HorizontalAlignment="Left"
-                     Height="100"
-                     Width="400" />
+            <StackPanel>
+                <StackPanel.Resources>
+                    <Style TargetType="TextBox"
+                           BasedOn="{StaticResource BlueBorderTextBox}" />
+                </StackPanel.Resources>
+                <TextBox x:Name="T32Cell131"
+                         Margin="5 0"
+                         HorizontalAlignment="Left"
+                         Height="100"
+                         Width="400" />
+            </StackPanel>
 
             <TextBlock Width="400"
                        Padding="5"
                        HorizontalAlignment="Left"
                        TextWrapping="Wrap"
                        Text="3.2. Соответствие правилам составление (+/-), понятные формулировки,понятное оформление анкеты (подсказки, место для ответа), вопросы содержат варианты ответов, выбраны правильные типы вопросов (один из списка или несколько из списка и т. д.), правильная орфография и пунктуация" />
-            <TextBox x:Name="T32Cell141"
-                     Margin="5 0"
-                     HorizontalAlignment="Left"
-                     Height="100"
-                     Width="400" />
+            <StackPanel>
+                <StackPanel.Resources>
+                    <Style TargetType="TextBox"
+                           BasedOn="{StaticResource BlueBorderTextBox}" />
+                </StackPanel.Resources>
+                <TextBox x:Name="T32Cell141"
+                         Margin="5 0"
+                         HorizontalAlignment="Left"
+                         Height="100"
+                         Width="400" />
+            </StackPanel>
 
             <Label Content="3.3. Интернет-ссылка на подготовленную анкету " />
             <TextBox x:Name="T32Cell151"
@@ -372,11 +406,17 @@
                        HorizontalAlignment="Left"
                        TextWrapping="Wrap"
                        Text="1.2. Персонаж: имя, возраст, место работы, должность и зарплата, семейное положение, место проживания, автомобиль, когда, где и с кем был последний раз в отпуске, как проводит выходные/как хотел бы их проводить, как проводит вечера, любимое блюдо, занимается ли спортом, играет ли в компьютерные игры " />
-            <TextBox x:Name="T33Cell21"
-                     Margin="5 0"
-                     HorizontalAlignment="Left"
-                     Height="100"
-                     Width="400" />
+            <StackPanel>
+                <StackPanel.Resources>
+                    <Style TargetType="TextBox"
+                           BasedOn="{StaticResource BlueBorderTextBox}" />
+                </StackPanel.Resources>
+                <TextBox x:Name="T33Cell21"
+                         Margin="5 0"
+                         HorizontalAlignment="Left"
+                         Height="100"
+                         Width="400" />
+            </StackPanel>
 
             <TextBlock Width="400"
                        Padding="5"
