@@ -2853,6 +2853,25 @@
                                    Grid.Column="12"
                                    HorizontalAlignment="Center">12</TextBlock>
 
+                        <TextBlock Grid.Row="2"
+                                   Grid.ColumnSpan="13"
+                                   Padding="5"
+                                   Text="[название 1-го товара/услуги (группы схожих товаров)] "
+                                   Grid.Column="0">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Visibility"
+                                            Value="Hidden" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Text , ElementName=T43C1}"
+                                                     Value="">
+                                            <Setter Property="Visibility"
+                                                    Value="Visible" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
                         <TextBox x:Name="T43C1"
                                  Grid.Row="2"
                                  Grid.ColumnSpan="13"
@@ -3138,6 +3157,25 @@
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
 
+                        <TextBlock Grid.Row="6"
+                                   Grid.ColumnSpan="13"
+                                   Padding="5"
+                                   Text="[ название 2-го товара/услуги] "
+                                   Grid.Column="0">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Visibility"
+                                            Value="Hidden" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Text , ElementName=T43C2}"
+                                                     Value="">
+                                            <Setter Property="Visibility"
+                                                    Value="Visible" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
                         <TextBox x:Name="T43C2"
                                  Grid.Row="6"
                                  Grid.ColumnSpan="13"
@@ -3424,6 +3462,25 @@
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
 
+                        <TextBlock Grid.Row="10"
+                                   Grid.ColumnSpan="13"
+                                   Padding="5"
+                                   Text="[ название 3-го товара/услуги] "
+                                   Grid.Column="0">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="Visibility"
+                                            Value="Hidden" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Text , ElementName=T43C3}"
+                                                     Value="">
+                                            <Setter Property="Visibility"
+                                                    Value="Visible" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
                         <TextBox x:Name="T43C3"
                                  Grid.Row="10"
                                  Grid.ColumnSpan="13"
@@ -4226,6 +4283,25 @@
                     <TextBlock Margin="5"
                                Grid.Row="13"
                                HorizontalAlignment="Center">13</TextBlock>
+
+                    <TextBlock Grid.Row="13"
+                               Padding="5"
+                               Text="[и др.] "
+                               Grid.Column="1">
+                        <TextBlock.Style>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="Visibility"
+                                        Value="Hidden" />
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding Text , ElementName=T4411C130}"
+                                                 Value="">
+                                        <Setter Property="Visibility"
+                                                Value="Visible" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
                     <TextBox x:Name="T4411C130"
                              BorderThickness="0 0 1 1"
                              Padding="5"
@@ -5071,6 +5147,25 @@
                     <TextBlock Margin="5"
                                Grid.Row="12"
                                HorizontalAlignment="Center">11</TextBlock>
+
+                    <TextBlock Grid.Row="12"
+                               Padding="5"
+                               Text="[и др.] "
+                               Grid.Column="1">
+                        <TextBlock.Style>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="Visibility"
+                                        Value="Hidden" />
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding Text , ElementName=T442C110}"
+                                                 Value="">
+                                        <Setter Property="Visibility"
+                                                Value="Visible" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
                     <TextBox x:Name="T442C110"
                              BorderThickness="0 0 1 1"
                              Padding="5"
