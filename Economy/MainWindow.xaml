@@ -10,7 +10,8 @@
         MinWidth="600"
         WindowStyle="None"
         MinHeight="300"
-        Height="680"
+        x:Name="Window1"
+        Height="804"
         Width="800"
         >
     <WindowChrome.WindowChrome>
@@ -42,6 +43,19 @@
             </RowDefinition>
             <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition>
+                <RowDefinition.Style>
+                    <Style TargetType="RowDefinition">
+                        <Setter Property="Height" Value="0"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding WindowState, RelativeSource={RelativeSource AncestorType=Window}}" Value="Maximized">
+                                <Setter Property="Height" Value="48"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </RowDefinition.Style>
+            </RowDefinition>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -83,6 +97,7 @@
         <ScrollViewer Grid.Column="1" Grid.Row="2" VerticalScrollBarVisibility="Hidden">
             <StackPanel Name="Menu"
                         Orientation="Vertical"
+                        Height="auto"
                         Background="#8FA5F3"
                         >
 
@@ -282,11 +297,39 @@
                         </Image.Style>
                     </Image>
                 </Button>
-                
+
+               
+
+
 
             </StackPanel>
+            
+            
         </ScrollViewer>
-        <ScrollViewer Grid.Column="2" Grid.Row="2">
+        <StackPanel Grid.Row="3" Grid.Column="1" Background="#8FA5F3">
+            <Button x:Name="DevInfo" 
+                  Style="{StaticResource MenuButton}"
+                  Width="40"
+                  Height="40"
+                  Background="Transparent"
+                  VerticalAlignment="Bottom"
+                  Click="DevInfo_Click">
+                <Image Width="40" Height="40" RenderOptions.BitmapScalingMode="HighQuality">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Setter Property="Source" Value="/Resources/Images/info.png"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsMouseOver, ElementName=DevInfo}" Value="True">
+                                    <Setter Property="Source" Value="/Resources/Images/Actvinfo.png"/>
+
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
+            </Button>
+        </StackPanel>
+        <ScrollViewer Grid.Column="2" Grid.Row="2" Grid.RowSpan="2">
             <Frame x:Name="CurrentPage"
                    NavigationUIVisibility="Hidden"
                    Width="auto"

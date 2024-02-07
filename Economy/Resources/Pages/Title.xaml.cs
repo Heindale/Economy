@@ -20,10 +20,37 @@ namespace Economy.Resources.Pages
     /// </summary>
     public partial class Title : Page
     {
-        public Title()
+        private MainWindow mainWindow;
+        public Title(MainWindow mainWindow)
         {
             InitializeComponent();
+            this.mainWindow = mainWindow;
+            
         }
 
+        private void ToChapter1_Click(object sender, RoutedEventArgs e)
+        {
+            mainWindow.CurrentPage.Navigate(mainWindow.page1);    
+        }
+
+        private void ToChapter2_Click(object sender, RoutedEventArgs e)
+        {
+            mainWindow.CurrentPage.Navigate(mainWindow.page2);
+        }
+
+        private void ToChapter3_Click(object sender, RoutedEventArgs e)
+        {
+            mainWindow.CurrentPage.Navigate(mainWindow.page3);
+        }
+
+        private void ToChapter4_Click(object sender, RoutedEventArgs e)
+        {
+            mainWindow.CurrentPage.Navigate(mainWindow.page4);
+        }
+
+        private void ToChapter5_Click(object sender, RoutedEventArgs e)
+        {
+            mainWindow.CurrentPage.Navigate(mainWindow.page5);
+        }
     }
 }
