@@ -20,11 +20,17 @@
             <RowDefinition Height="29*"/>
             <RowDefinition Height="196*"/>
         </Grid.RowDefinitions>
+       
         <StackPanel Grid.RowSpan="2">
-            <TextBlock FontSize="20"  TextWrapping="Wrap" TextAlignment="Center" Text="Добро пожаловать в тренажёр для практического применения при разработке бизнес-проекта!"
+            <TextBlock FontSize="20" Margin="5"  TextWrapping="Wrap" TextAlignment="Center" Text="Добро пожаловать в тренажёр для практического применения при разработке бизнес-проекта!"
         FontWeight="ExtraBold"
         HorizontalAlignment="Center" Foreground="#FF374474">
             </TextBlock>
+            <TextBox Style="{DynamicResource BlueBorderTextBox}" Width="400" Height="40" FontSize="30">
+
+            </TextBox>
+            <Expander Style="{DynamicResource UberExpander}" Header="Описание программы" Foreground="#FF674D4D" >
+                <StackPanel>    
             <TextBlock  Margin="10,0,10,0"
              Text="  Тренажёр предназначен для студентов, обучающихся основам предпринимательства. "
              TextWrapping="Wrap">   
@@ -37,14 +43,14 @@
             <Image Width="700" Source="/Resources/Images/MeMchik2025.png" Margin="10">
 
             </Image>
-            <TextBlock
-    Margin="10,0,10,0"
-    Text="
-        Выполняя задания, практикум научит находить ответы на основные вопросы, стоящие пе-
-ред начинающим предпринимателем и позволит приобрести практические знания и умения, не-
-обходимые в предпринимательской деятельности:" TextWrapping="Wrap">
+                <TextBlock
+                Margin="10,0,10,0"
+                Text="
+                    Выполняя задания, практикум научит находить ответы на основные вопросы, стоящие пе-
+            ред начинающим предпринимателем и позволит приобрести практические знания и умения, не-
+            обходимые в предпринимательской деятельности:" TextWrapping="Wrap">
 
-            </TextBlock >
+                </TextBlock >
             <TextBlock  Margin="10,0,10,0" Text="1. Какой бизнес создавать? "/>
             <TextBlock  Margin="10,0,10,0" Text="2. Что потребуется для создания бизнеса? "/>
             <TextBlock  Margin="10,0,10,0" Text="3. Будут ли покупать?"/>
@@ -57,6 +63,8 @@
             <TextBlock  Margin="10,0,10,0" Text="4. составление финансовой модели;"/>
             <TextBlock  Margin="10,0,10,0" Text="5. разработка бизнес-плана;" />
             <TextBlock  Margin="10,20,10,0" Text="  Формирование предпринимательских компетенций может способствовать активизации положительных эффектов от развития собственного предпринимательского потенциала: инициативные граждане быстрее и эффективнее найдут приложение своим предпринимательским способностям, сформируют более адекватные ожидания от занятий собственным бизнесом." TextWrapping="Wrap"/>
+                </StackPanel>
+            </Expander>
             <Label Margin="0,20,0,0" Content="Инструкция по использованию тренажёра" Foreground="#FF374474" FontWeight="ExtraBold" HorizontalAlignment="Center"/>
 
 
