@@ -21,6 +21,7 @@ namespace Economy
             this.page2 = new Chapter2();
             this.page3 = new Chapter3();
             this.page4 = new Chapter4();
+            this.page5 = new Chapter5();
             
             this.document = DocX.Load("..\\..\\..\\Resources\\TemplateVersionSecond.docx");
         }
@@ -32,6 +33,7 @@ namespace Economy
         public Chapter2 page2 { get; set; }
         public Chapter3 page3 { get; set; }
         public Chapter4 page4 { get; set; }
+        public Chapter5 page5 { get; set; }
 
         private static void ReplacePlaceholder(DocX document, string placeholder, string value)
         {
@@ -88,7 +90,10 @@ namespace Economy
         {
             CurrentPage.Navigate(this.page4);
         }
-
+        private void Chapter5_Click(object sender, RoutedEventArgs e)
+        {
+            CurrentPage.Navigate(this.page5);
+        }
         private void Close_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
@@ -272,8 +277,6 @@ namespace Economy
         {
             App.Current.MainWindow.DragMove();
         }
-
-        
     }
 
     [Serializable]
