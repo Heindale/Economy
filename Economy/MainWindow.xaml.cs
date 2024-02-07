@@ -1,4 +1,5 @@
 ﻿using Economy.Resources.Pages;
+using Economy.Resources.Windows;
 using Microsoft.Win32;
 using System.IO;
 using System.Windows;
@@ -22,8 +23,7 @@ namespace Economy
             this.page3 = new Chapter3();
             this.page4 = new Chapter4();
             this.page5 = new Chapter5();
-            
-            this.document = DocX.Load("..\\..\\..\\Resources\\TemplateVersionSecond.docx");
+
         }
 
         public DocX document { get; set; }
@@ -34,6 +34,7 @@ namespace Economy
         public Chapter3 page3 { get; set; }
         public Chapter4 page4 { get; set; }
         public Chapter5 page5 { get; set; }
+        public string LastLoadFile;
 
         private static void ReplacePlaceholder(DocX document, string placeholder, string value)
         {
@@ -119,28 +120,30 @@ namespace Economy
                 }
             }
         }
-
-        private void GenerateDocxButton_Click(object sender, RoutedEventArgs e)
+        private async void GenerateDocxButton_Click(object sender, RoutedEventArgs e)
         {
-            OpenFolderDialog folderBrowser = new OpenFolderDialog();
-            string path = "";
-            ChangePage1();
-            ChangePage2();
-            ChangePage3();
-            ChangePage4();
-
+            this.document = DocX.Load("..\\..\\..\\Resources\\TemplateVersionSecond.docx");
+            SaveFileDialog folderBrowser = new SaveFileDialog();
+            folderBrowser.Filter = "Word documents (*.docx)|*.docx";
             if (folderBrowser.ShowDialog() == true)
             {
-                path = folderBrowser.FolderName;
+                ChangePage1();
+                ChangePage2();
+                ChangePage3();
+                ChangePage4();
+                this.document.SaveAs(folderBrowser.FileName);
+                MessageBox.Show("DOCX файл успешно сгенерирован!");
             }
-            this.document.SaveAs($"{path}\\Документ");
-
-            MessageBox.Show("DOCX файл успешно сгенерирован!");
         }
 
         private void Load_Click(object sender, RoutedEventArgs e)
         {
-            LoadDataAllPage();
+            OpenFileDialog folderBrowser = new OpenFileDialog();
+            if (folderBrowser.ShowDialog() == true)
+            {
+                LastLoadFile = folderBrowser.FileName;
+                LoadDataAllPage();
+            }
         }
 
         private void LoadDataAllPage()
@@ -153,40 +156,38 @@ namespace Economy
 
         private void LoadDataOfPage(Grid xamlpage, byte t)
         {
-            // Проверка наличия файла
-            if (File.Exists("textBoxDataList.xml"))
+
+            // Создайте сериализатор XML
+            XmlSerializer serializer = new XmlSerializer(typeof(List<TextBoxData>));
+
+            // Десериализуйте коллекцию из файла
+            using (TextReader reader = new StreamReader(LastLoadFile))
             {
-                // Создайте сериализатор XML
-                XmlSerializer serializer = new XmlSerializer(typeof(List<TextBoxData>));
-
-                // Десериализуйте коллекцию из файла
-                using (TextReader reader = new StreamReader("textBoxDataList.xml"))
+                textBoxDataList = ((List<TextBoxData>)serializer.Deserialize(reader));
+            }
+            var filteredList = textBoxDataList.Where(data => data.TextBoxName.Contains($"T{t}")).ToList();
+            // Проход по коллекции и установка текста в соответствующие TextBox
+            foreach (var textBoxData in filteredList)
+            {
+                if (textBoxData.Type == typeof(TextBox).Name)
                 {
-                    textBoxDataList = ((List<TextBoxData>)serializer.Deserialize(reader));
-                }
-                var filteredList = textBoxDataList.Where(data => data.TextBoxName.Contains($"T{t}")).ToList();
-                // Проход по коллекции и установка текста в соответствующие TextBox
-                foreach (var textBoxData in filteredList)
-                {
-                    if (textBoxData.Type == typeof(TextBox).Name)
-                    {
-                        TextBox textBox = (TextBox)xamlpage.FindName(textBoxData.TextBoxName);
+                    TextBox textBox = (TextBox)xamlpage.FindName(textBoxData.TextBoxName);
 
-                        if (textBox != null)
-                        {
-                            textBox.Text = textBoxData.Text;
-                        }
-                    }
-                    else
+                    if (textBox != null)
                     {
-                        ComboBox textBox = (ComboBox)xamlpage.FindName(textBoxData.TextBoxName);
-
-                        if (textBox != null)
-                        {
-                            textBox.Text = textBoxData.Text;
-                        }
+                        textBox.Text = textBoxData.Text;
                     }
                 }
+                else
+                {
+                    ComboBox textBox = (ComboBox)xamlpage.FindName(textBoxData.TextBoxName);
+
+                    if (textBox != null)
+                    {
+                        textBox.Text = textBoxData.Text;
+                    }
+                }
+
             }
         }
 
@@ -216,22 +217,27 @@ namespace Economy
 
         private void SaveAllPage()
         {
-            textBoxDataList.Clear();
-            File.Delete("textBoxDataList.xml");
-            SavePage(page1.Page1);
-            SavePage(page2.Page2);
-            SavePage(page3.Page3);
-            SavePage(page4.Page4);
-            SaveFile();
-            MessageBox.Show("Файл успешно сохранен!");
+            SaveFileDialog folderBrowser = new SaveFileDialog();
+            folderBrowser.Filter = "XML files (*.xml)|*.xml";
+            if (folderBrowser.ShowDialog() == true)
+            {
+                string path = folderBrowser.FileName;
+                textBoxDataList.Clear();
+                SavePage(page1.Page1);
+                SavePage(page2.Page2);
+                SavePage(page3.Page3);
+                SavePage(page4.Page4);
+                SaveFile(path);
+                MessageBox.Show("Файл успешно сохранен!");
+            }
         }
 
-        private void SaveFile()
+        private void SaveFile(string path)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(List<TextBoxData>));
 
             // Сериализуйте коллекцию и сохраните в файл
-            using (TextWriter writer = new StreamWriter("textBoxDataList.xml"))
+            using (TextWriter writer = new StreamWriter(path))
             {
                 serializer.Serialize(writer, textBoxDataList);
             }
@@ -263,6 +269,7 @@ namespace Economy
 
         private void SetText(DependencyObject xamlpage)
         {
+
             foreach (var textBox in FindVisualChildren<TextBox>(xamlpage))
             {
                 ReplacePlaceholder(document, $"<{textBox.Name}>", textBox.Text);
