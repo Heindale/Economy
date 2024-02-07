@@ -69,6 +69,10 @@ namespace Economy
         {
             SetText(page4.Page4);
         }
+        private void ChangePage5()
+        {
+            SetText(page5.Page5);
+        }
         private void Title_Click(object sender, RoutedEventArgs e)
         {
             CurrentPage.Navigate(this.title);
@@ -133,14 +137,23 @@ namespace Economy
                 ChangePage2();
                 ChangePage3();
                 ChangePage4();
-                this.document.SaveAs(folderBrowser.FileName);
-                MessageBox.Show("DOCX файл успешно сгенерирован!");
+                ChangePage5();
+                try
+                {
+                    this.document.SaveAs(folderBrowser.FileName);
+                    MessageBox.Show("DOCX файл успешно сгенерирован!");
+                }
+                catch
+                {
+                    MessageBox.Show("Возможно у вас открыт документ. Проверьте ни открыт ли у вас сохраняемый документ и закройте его.");
+                }
             }
         }
 
         private void Load_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog folderBrowser = new OpenFileDialog();
+            folderBrowser.Filter = "XML files (*.xml)|*.xml";
             if (folderBrowser.ShowDialog() == true)
             {
                 LastLoadFile = folderBrowser.FileName;
@@ -154,6 +167,7 @@ namespace Economy
             LoadDataOfPage(page2.Page2, 2);
             LoadDataOfPage(page3.Page3, 3);
             LoadDataOfPage(page4.Page4, 4);
+            LoadDataOfPage(page5.Page5, 5);
         }
 
         private void LoadDataOfPage(Grid xamlpage, byte t)
@@ -229,6 +243,7 @@ namespace Economy
                 SavePage(page2.Page2);
                 SavePage(page3.Page3);
                 SavePage(page4.Page4);
+                SavePage(page5.Page5);
                 SaveFile(path);
                 MessageBox.Show("Файл успешно сохранен!");
             }

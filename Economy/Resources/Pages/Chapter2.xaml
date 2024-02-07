@@ -13,12 +13,22 @@
     <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Economy;component/CustomUIDictionary.xaml"/>
+                <ResourceDictionary Source="/Economy;component/CustomUIDictionary.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
 
     <Grid Name="Page2">
+        <Grid.Resources>
+            <Style TargetType="TextBox"
+                   BasedOn="{StaticResource BlueLineTextBox}" />
+            <Style TargetType="TextBlock">
+                <Style.Setters>
+                    <Setter Property="Background"
+                            Value="#F3F6FF" />
+                </Style.Setters>
+            </Style>
+        </Grid.Resources>
         <StackPanel x:Name="StackPanel">
             <StackPanel>
                 <Label Content="2. Что потребуется для создания бизнеса? (этап №2 - бизнес-модель)"
@@ -33,35 +43,35 @@
             <StackPanel Margin="0,5,0,0">
                 <Label Content="ПРОБЛЕМЫ потребителей. 3 главные проблемы клиента, из-за которых он будет покупать:">
                 </Label>
-                <ComboBox>
+                <ComboBox Margin="5 0">
                     <ComboBoxItem>1</ComboBoxItem>
                     <ComboBoxItem>Вертолёт</ComboBoxItem>
                     <ComboBoxItem>Оранжевый</ComboBoxItem>
                 </ComboBox>
-                
+
                 <StackPanel Orientation="Horizontal">
                     <Label Content="1."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell11"
+                    <TextBox x:Name="T2Cell11"
                              Width="400"
                              TextWrapping="NoWrap"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="2."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell21"
-                                              TextWrapping="NoWrap"
+                    <TextBox x:Name="T2Cell21"
+                             TextWrapping="NoWrap"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="3."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell31"
-                                              TextWrapping="NoWrap"
+                    <TextBox x:Name="T2Cell31"
+                             TextWrapping="NoWrap"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
             </StackPanel>
 
@@ -70,72 +80,80 @@
                 </Label>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="1."></Label>
-                    <userControls:HintTextBox Width="400"
-                                              TextWrapping="NoWrap"
+                    <TextBox Width="400"
+                             TextWrapping="NoWrap"
                              x:Name="T2Cell12"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="2."></Label>
-                    <userControls:HintTextBox Width="400"
-                                              TextWrapping="NoWrap"
+                    <TextBox Width="400"
+                             TextWrapping="NoWrap"
                              x:Name="T2Cell22"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="3."></Label>
-                    <userControls:HintTextBox Width="400"
-                                              TextWrapping="NoWrap"
+                    <TextBox Width="400"
+                             TextWrapping="NoWrap"
                              x:Name="T2Cell32"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
             </StackPanel>
 
             <StackPanel Margin="0,5,0,0">
+                <StackPanel.Resources>
+                    <Style TargetType="TextBox"
+                           BasedOn="{StaticResource BlueBorderTextBox}" />
+                </StackPanel.Resources>
                 <Label Content="Уникальная ценность предложения">
                 </Label>
-                <userControls:HintTextBox x:Name="T2Cell13"
+                <TextBox x:Name="T2Cell13"
                          Width="400"
                          TextWrapping="Wrap"
                          HorizontalAlignment="Left"
                          Margin="19,5,0,0"
-                         Height="86"></userControls:HintTextBox>
+                         Height="86"></TextBox>
             </StackPanel>
             <StackPanel Margin="0,5,0,0">
+                <StackPanel.Resources>
+                    <Style TargetType="TextBox"
+                           BasedOn="{StaticResource BlueBorderTextBox}" />
+                </StackPanel.Resources>
                 <Label Content="Конкуретные преимущества:">
                 </Label>
-                <userControls:HintTextBox Width="400"
+                <TextBox Width="400"
                          x:Name="T2Cell14"
                          TextWrapping="Wrap"
                          HorizontalAlignment="Left"
                          Margin="19,5,0,0"
-                         Height="86"></userControls:HintTextBox>
+                         Height="86"></TextBox>
             </StackPanel>
             <StackPanel Margin="0,5,0,0">
                 <Label Content="Группы целевых клиентов (пользователей)"></Label>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="1."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell15"
+                    <TextBox x:Name="T2Cell15"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="2."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell25"
+                    <TextBox x:Name="T2Cell25"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="3."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell35"
+                    <TextBox x:Name="T2Cell35"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
             </StackPanel>
 
@@ -143,24 +161,24 @@
                 <Label Content="Конкуренты:"></Label>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Прямые (количество)."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell41"
+                    <TextBox x:Name="T2Cell41"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Названия основных."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell51"
+                    <TextBox x:Name="T2Cell51"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Косвенные (количество)."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell61"
+                    <TextBox x:Name="T2Cell61"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
             </StackPanel>
 
@@ -168,59 +186,59 @@
                 <Label Content="КЛЮЧЕВЫЕ  РЕСУРСЫ. Что нужно будет купить для начала деятельности?"></Label>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="1."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell42"
+                    <TextBox x:Name="T2Cell42"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="2."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell52"
+                    <TextBox x:Name="T2Cell52"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="3."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell62"
+                    <TextBox x:Name="T2Cell62"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="4."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell72"
+                    <TextBox x:Name="T2Cell72"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="5."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell82"
+                    <TextBox x:Name="T2Cell82"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="6."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell92"
+                    <TextBox x:Name="T2Cell92"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="7."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell102"
+                    <TextBox x:Name="T2Cell102"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="8."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell112"
+                    <TextBox x:Name="T2Cell112"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
             </StackPanel>
 
@@ -228,100 +246,103 @@
                 <Label Content="КАНАЛЫ СБЫТА (путь до клиента)"></Label>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="1."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell24"
+                    <TextBox x:Name="T2Cell24"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="2."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell34"
+                    <TextBox x:Name="T2Cell34"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="3."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell44"
+                    <TextBox x:Name="T2Cell44"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="4."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell54"
+                    <TextBox x:Name="T2Cell54"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="5."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell64"
+                    <TextBox x:Name="T2Cell64"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="6."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell74"
+                    <TextBox x:Name="T2Cell74"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal"
                         Margin="0,5,0,0">
                 <Label Content="Ранние последователи (первые пользователи/клиенты) (да/нет):"></Label>
-                <userControls:HintTextBox x:Name="T2Cell45"
-                         Width="53"
-                         HorizontalAlignment="Left"
-                         Margin="0,5,0,0"></userControls:HintTextBox>
+                <ComboBox x:Name="T2Cell45"
+                          Width="53"
+                          HorizontalAlignment="Left"
+                          Margin="0,5,0,0">
+                    <ComboBoxItem>Да</ComboBoxItem>
+                    <ComboBoxItem>Нет</ComboBoxItem>
+                </ComboBox>
             </StackPanel>
 
             <StackPanel Margin="0,5,0,0">
                 <Label Content="Структура расходов. Основные направления:"></Label>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="1."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell71"
+                    <TextBox x:Name="T2Cell71"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="2."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell81"
+                    <TextBox x:Name="T2Cell81"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="3."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell91"
+                    <TextBox x:Name="T2Cell91"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="4."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell101"
+                    <TextBox x:Name="T2Cell101"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="5."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell111"
+                    <TextBox x:Name="T2Cell111"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="6."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell121"
+                    <TextBox x:Name="T2Cell121"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
             </StackPanel>
 
@@ -329,31 +350,31 @@
                 <Label Content="Потоки выручки. Модель(и) монетизации:"></Label>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="1."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell23"
+                    <TextBox x:Name="T2Cell23"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="2."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell33"
+                    <TextBox x:Name="T2Cell33"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="3."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell43"
+                    <TextBox x:Name="T2Cell43"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="4."></Label>
-                    <userControls:HintTextBox x:Name="T2Cell53"
+                    <TextBox x:Name="T2Cell53"
                              Width="400"
                              HorizontalAlignment="Left"
-                             Margin="0,5,0,0"></userControls:HintTextBox>
+                             Margin="0,5,0,0"></TextBox>
                 </StackPanel>
             </StackPanel>
         </StackPanel>
