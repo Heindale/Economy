@@ -21,13 +21,13 @@
             <RowDefinition Height="196*"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.RowSpan="2">
-            <Label Content="Добро пожаловать в тренажёр для практического применения при разработке бизнес-проекта!"
+            <TextBlock FontSize="20"  TextWrapping="Wrap" TextAlignment="Center" Text="Добро пожаловать в тренажёр для практического применения при разработке бизнес-проекта!"
         FontWeight="ExtraBold"
         HorizontalAlignment="Center" Foreground="#FF374474">
-            </Label>
+            </TextBlock>
             <TextBlock  Margin="10,0,10,0"
-     Text="  Тренажёр предназначен для студентов, обучающихся основам предпринимательства. "
-     TextWrapping="Wrap">
+             Text="  Тренажёр предназначен для студентов, обучающихся основам предпринимательства. "
+             TextWrapping="Wrap">   
             </TextBlock>
             <TextBlock
                 Margin="10,0,10,0"
