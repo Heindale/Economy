@@ -911,7 +911,7 @@
                         <RowDefinition />
                     </Grid.RowDefinitions>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             BorderThickness="1"
                             Grid.RowSpan="2" />
                     <TextBlock VerticalAlignment="Center"
@@ -919,7 +919,7 @@
                                HorizontalAlignment="Center"
                                FontWeight="Bold">Объем продаж  в разные временные периоды</TextBlock>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             BorderThickness="0 1 1 1"
                             Grid.Column="1"
                             Grid.ColumnSpan="12" />
@@ -928,51 +928,51 @@
                                HorizontalAlignment="Center"
                                FontWeight="Bold">Месяц по порядку</TextBlock>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="1"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="2"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="3"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="4"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="5"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="6"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="7"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="8"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="9"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="10"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="11"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="12"
                             BorderThickness="0 0 1 1" />
@@ -1014,7 +1014,7 @@
                                Grid.Column="12"
                                HorizontalAlignment="Center">12</TextBlock>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="2"
                             BorderThickness="1 0 1 1" />
                     <StackPanel Grid.Row="2"
@@ -1034,78 +1034,78 @@
 
                     <TextBox x:Name="T418C11"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="1"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C12"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="2"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C13"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="3"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C14"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="4"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C15"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="5"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C16"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="6"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C17"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="7"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C18"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="8"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C19"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="9"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C110"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="10"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C111"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="11"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C112"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="12"
                              Padding="5 30 5 0"></TextBox>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="3"
                             BorderThickness="1 0 1 1" />
 
@@ -1114,78 +1114,78 @@
 
                     <TextBox x:Name="T418C21"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="1"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C22"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="2"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C23"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="3"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C24"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="4"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C25"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="5"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C26"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="6"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C27"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="7"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C28"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="8"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C29"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="9"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C210"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="10"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C211"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="11"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C212"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="12"
                              Padding="5 5 5 0"></TextBox>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="4"
                             BorderThickness="1 0 1 1" />
 
@@ -1201,78 +1201,78 @@
 
                     <TextBox x:Name="T418C31"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="1"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C32"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="2"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C33"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="3"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C34"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="4"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C35"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="5"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C36"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="6"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C37"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="7"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C38"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="8"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C39"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="9"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C310"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="10"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C311"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="11"
                              Padding="5 30 5 0"></TextBox>
                     <TextBox x:Name="T418C312"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="12"
                              Padding="5 30 5 0"></TextBox>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="5"
                             BorderThickness="1 0 1 1" />
 
@@ -1281,78 +1281,78 @@
 
                     <TextBox x:Name="T418C41"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="1"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C42"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="2"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C43"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="3"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C44"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="4"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C45"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="5"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C46"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="6"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C47"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="7"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C48"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="8"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C49"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="9"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C410"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="10"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C411"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="11"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C412"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="12"
                              Padding="5 5 5 0"></TextBox>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="6"
                             BorderThickness="1 0 1 1" />
 
@@ -1361,78 +1361,78 @@
 
                     <TextBox x:Name="T418C51"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="1"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C52"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="2"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C53"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="3"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C54"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="4"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C55"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="5"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C56"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="6"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C57"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="7"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C58"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="8"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C59"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="9"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C510"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="10"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C511"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="11"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C512"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="12"
                              Padding="5 5 5 0"></TextBox>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="7"
                             BorderThickness="1 0 1 1" />
 
@@ -1441,78 +1441,78 @@
 
                     <TextBox x:Name="T418C61"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="1"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C62"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="2"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C63"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="3"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C64"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="4"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C65"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="5"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C66"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="6"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C67"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="7"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C68"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="8"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C69"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="9"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C610"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="10"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C611"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="11"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C612"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="12"
                              Padding="5 5 5 0"></TextBox>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="8"
                             BorderThickness="1 0 1 1" />
 
@@ -1521,78 +1521,78 @@
 
                     <TextBox x:Name="T418C71"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="1"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C72"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="2"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C73"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="3"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C74"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="4"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C75"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="5"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C76"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="6"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C77"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="7"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C78"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="8"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C79"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="9"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C710"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="10"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C711"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="11"
                              Padding="5 5 5 0"></TextBox>
                     <TextBox x:Name="T418C712"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="12"
                              Padding="5 5 5 0"></TextBox>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="9"
                             BorderThickness="1 0 1 1" />
 
@@ -1602,73 +1602,73 @@
 
                     <TextBox x:Name="T418C81"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="1"
                              Padding="5 9 5 0"></TextBox>
                     <TextBox x:Name="T418C82"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="2"
                              Padding="5 9 5 0"></TextBox>
                     <TextBox x:Name="T418C83"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="3"
                              Padding="5 9 5 0"></TextBox>
                     <TextBox x:Name="T418C84"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="4"
                              Padding="5 9 5 0"></TextBox>
                     <TextBox x:Name="T418C85"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="5"
                              Padding="5 9 5 0"></TextBox>
                     <TextBox x:Name="T418C86"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="6"
                              Padding="5 9 5 0"></TextBox>
                     <TextBox x:Name="T418C87"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="7"
                              Padding="5 9 5 0"></TextBox>
                     <TextBox x:Name="T418C88"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="8"
                              Padding="5 9 5 0"></TextBox>
                     <TextBox x:Name="T418C89"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="9"
                              Padding="5 9 5 0"></TextBox>
                     <TextBox x:Name="T418C810"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="10"
                              Padding="5 9 5 0"></TextBox>
                     <TextBox x:Name="T418C811"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="11"
                              Padding="5 9 5 0"></TextBox>
                     <TextBox x:Name="T418C812"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="12"
                              Padding="5 9 5 0"></TextBox>
@@ -1805,7 +1805,7 @@
                              BorderThickness="0 0 1 1"
                              Grid.Row="3"
                              Grid.Column="3"></TextBox>
-                    
+
                     <TextBox x:Name="T421C31"
                              BorderThickness="0 0 1 1"
                              Grid.Row="4"
@@ -1848,7 +1848,7 @@
                              BorderThickness="0 0 1 1"
                              Grid.Row="6"
                              Grid.Column="3"></TextBox>
-                    
+
                     <TextBox x:Name="T421C61"
                              BorderThickness="0 0 1 1"
                              Grid.Row="7"
@@ -1904,7 +1904,7 @@
                              BorderThickness="0 0 1 1"
                              Grid.Row="8"
                              Grid.Column="3"></TextBox>
-                    
+
                     <TextBox x:Name="T421C81"
                              BorderThickness="0 0 1 1"
                              Grid.Row="9"
@@ -1917,7 +1917,7 @@
                              BorderThickness="0 0 1 1"
                              Grid.Row="9"
                              Grid.Column="3"></TextBox>
-                    
+
                     <TextBox x:Name="T421C91"
                              BorderThickness="0 0 1 1"
                              Grid.Row="10"
@@ -1930,7 +1930,7 @@
                              BorderThickness="0 0 1 1"
                              Grid.Row="10"
                              Grid.Column="3"></TextBox>
-                    
+
                     <TextBox x:Name="T421C101"
                              BorderThickness="0 0 1 1"
                              Grid.Row="11"
@@ -1947,7 +1947,7 @@
                              BorderThickness="0 0 1 1"
                              Grid.Column="4"
                              Grid.Row="11"></TextBox>
-                    
+
                     <TextBox x:Name="T421C111"
                              BorderThickness="0 0 1 1"
                              Grid.Row="12"
@@ -2131,7 +2131,7 @@
 
                     <Border BorderThickness="0 0 1 1" Grid.Row="1" Grid.Column="1"></Border>
                     <TextBlock Padding="5" Grid.Row="1" Grid.Column="1">снять сливки с нового рынка</TextBlock>
-                    <ComboBox x:Name="T423C11" Grid.Row="1" Grid.Column="2">
+                    <ComboBox x:Name="T423C11" Grid.Row="1" Grid.Column="2" BorderThickness="0,0,1,1">
                         <ComboBoxItem Content=""/>
                         <ComboBoxItem Content="+"/>
                     </ComboBox>
@@ -2142,7 +2142,7 @@
 
                     <Border BorderThickness="0 0 1 1" Grid.Row="2" Grid.Column="1"></Border>
                     <TextBlock Padding="5" Grid.Row="2" Grid.Column="1">пробиться на уже сформировавшийся рыно</TextBlock>
-                    <ComboBox x:Name="T423C21" Grid.Row="2" Grid.Column="2">
+                    <ComboBox x:Name="T423C21" Grid.Row="2" Grid.Column="2" BorderThickness="0 0 1 1">
                         <ComboBoxItem Content=""/>
                         <ComboBoxItem Content="+"/>
                     </ComboBox>
@@ -2549,7 +2549,7 @@
 
                     <Border BorderThickness="1 0 1 1" Grid.Row="1"/>
                     <TextBlock Padding="5" Grid.Row="1">Покрытие затрат на производство (реализацию) товара / услуги и обеспечение прибыли</TextBlock>
-                    <ComboBox x:Name="T425C11" Grid.Row="1" Grid.Column="1">
+                    <ComboBox x:Name="T425C11" Grid.Row="1" Grid.Column="1" BorderThickness="0 0 1 1">
                         <ComboBoxItem Content=""/>
                         <ComboBoxItem Content="+"/>
                     </ComboBox>
@@ -2560,7 +2560,7 @@
 
                     <Border BorderThickness="1 0 1 1" Grid.Row="2"/>
                     <TextBlock Padding="5" Grid.Row="2">Решение маркетинговых и/или социальных вопросов</TextBlock>
-                    <ComboBox x:Name="T425C21" Grid.Row="2" Grid.Column="1">
+                    <ComboBox x:Name="T425C21" Grid.Row="2" Grid.Column="1" BorderThickness="0 0 1 1">
                         <ComboBoxItem Content=""/>
                         <ComboBoxItem Content="+"/>
                     </ComboBox>
@@ -2786,7 +2786,7 @@
                             <RowDefinition />
                         </Grid.RowDefinitions>
 
-                        <Border BorderBrush="Black"
+                        <Border 
                                 BorderThickness="1"
                                 Grid.RowSpan="2" />
                         <TextBlock VerticalAlignment="Center"
@@ -2794,7 +2794,7 @@
                                    HorizontalAlignment="Center"
                                    FontWeight="Bold">Показатель</TextBlock>
 
-                        <Border BorderBrush="Black"
+                        <Border 
                                 BorderThickness="0 1 1 1"
                                 Grid.Column="1"
                                 Grid.ColumnSpan="12" />
@@ -2803,51 +2803,51 @@
                                    HorizontalAlignment="Center"
                                    FontWeight="Bold">Месяц по порядку</TextBlock>
 
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="1"
                                 Grid.Column="1"
                                 BorderThickness="0 0 1 1" />
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="1"
                                 Grid.Column="2"
                                 BorderThickness="0 0 1 1" />
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="1"
                                 Grid.Column="3"
                                 BorderThickness="0 0 1 1" />
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="1"
                                 Grid.Column="4"
                                 BorderThickness="0 0 1 1" />
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="1"
                                 Grid.Column="5"
                                 BorderThickness="0 0 1 1" />
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="1"
                                 Grid.Column="6"
                                 BorderThickness="0 0 1 1" />
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="1"
                                 Grid.Column="7"
                                 BorderThickness="0 0 1 1" />
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="1"
                                 Grid.Column="8"
                                 BorderThickness="0 0 1 1" />
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="1"
                                 Grid.Column="9"
                                 BorderThickness="0 0 1 1" />
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="1"
                                 Grid.Column="10"
                                 BorderThickness="0 0 1 1" />
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="1"
                                 Grid.Column="11"
                                 BorderThickness="0 0 1 1" />
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="1"
                                 Grid.Column="12"
                                 BorderThickness="0 0 1 1" />
@@ -2915,7 +2915,7 @@
                                  Padding="5"
                                  BorderThickness="1 0 1 1"></TextBox>
 
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="3"
                                 BorderThickness="1 0 1 1" />
                         <TextBlock Grid.Row="3"
@@ -2925,90 +2925,90 @@
 
                         <TextBox x:Name="T43C11"
                                  Grid.Row="3"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="1"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C12"
                                  Grid.Row="3"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="2"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C13"
                                  Grid.Row="3"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="3"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C14"
                                  Grid.Row="3"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="4"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C15"
                                  Grid.Row="3"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="5"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C16"
                                  Grid.Row="3"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="6"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C17"
                                  Grid.Row="3"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="7"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C18"
                                  Grid.Row="3"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="8"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C19"
                                  Grid.Row="3"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="9"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C110"
                                  Grid.Row="3"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="10"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C111"
                                  Grid.Row="3"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="11"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C112"
                                  Grid.Row="3"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="12"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
 
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="4"
                                 BorderThickness="1 0 1 1" />
 
@@ -3017,90 +3017,90 @@
 
                         <TextBox x:Name="T43C21"
                                  Grid.Row="4"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="1"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C22"
                                  Grid.Row="4"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="2"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C23"
                                  Grid.Row="4"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="3"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C24"
                                  Grid.Row="4"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="4"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C25"
                                  Grid.Row="4"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="5"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C26"
                                  Grid.Row="4"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="6"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C27"
                                  Grid.Row="4"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="7"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C28"
                                  Grid.Row="4"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="8"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C29"
                                  Grid.Row="4"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="9"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C210"
                                  Grid.Row="4"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="10"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C211"
                                  Grid.Row="4"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="11"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C212"
                                  Grid.Row="4"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="12"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
 
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="5"
                                 BorderThickness="1 0 1 1" />
 
@@ -3111,84 +3111,84 @@
 
                         <TextBox x:Name="T43C31"
                                  Grid.Row="5"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="1"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C32"
                                  Grid.Row="5"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="2"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C33"
                                  Grid.Row="5"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="3"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C34"
                                  Grid.Row="5"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="4"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C35"
                                  Grid.Row="5"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="5"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C36"
                                  Grid.Row="5"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="6"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C37"
                                  Grid.Row="5"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="7"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C38"
                                  Grid.Row="5"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="8"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C39"
                                  Grid.Row="5"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="9"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C310"
                                  Grid.Row="5"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="10"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C311"
                                  Grid.Row="5"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="11"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C312"
                                  Grid.Row="5"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="12"
                                  TextAlignment="Center"
@@ -3220,7 +3220,7 @@
                                  Padding="5"
                                  BorderThickness="1 0 1 1"></TextBox>
 
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="7"
                                 BorderThickness="1 0 1 1" />
 
@@ -3231,90 +3231,90 @@
 
                         <TextBox x:Name="T43C41"
                                  Grid.Row="7"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="1"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C42"
                                  Grid.Row="7"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="2"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C43"
                                  Grid.Row="7"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="3"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C44"
                                  Grid.Row="7"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="4"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C45"
                                  Grid.Row="7"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="5"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C46"
                                  Grid.Row="7"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="6"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C47"
                                  Grid.Row="7"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="7"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C48"
                                  Grid.Row="7"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="8"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C49"
                                  Grid.Row="7"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="9"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C410"
                                  Grid.Row="7"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="10"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C411"
                                  Grid.Row="7"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="11"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C412"
                                  Grid.Row="7"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="12"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
 
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="8"
                                 BorderThickness="1 0 1 1" />
 
@@ -3323,90 +3323,90 @@
 
                         <TextBox x:Name="T43C51"
                                  Grid.Row="8"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="1"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C52"
                                  Grid.Row="8"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="2"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C53"
                                  Grid.Row="8"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="3"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C54"
                                  Grid.Row="8"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="4"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C55"
                                  Grid.Row="8"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="5"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C56"
                                  Grid.Row="8"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="6"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C57"
                                  Grid.Row="8"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="7"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C58"
                                  Grid.Row="8"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="8"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C59"
                                  Grid.Row="8"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="9"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C510"
                                  Grid.Row="8"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="10"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C511"
                                  Grid.Row="8"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="11"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C512"
                                  Grid.Row="8"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="12"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
 
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="9"
                                 BorderThickness="1 0 1 1" />
 
@@ -3417,84 +3417,84 @@
 
                         <TextBox x:Name="T43C61"
                                  Grid.Row="9"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="1"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C62"
                                  Grid.Row="9"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="2"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C63"
                                  Grid.Row="9"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="3"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C64"
                                  Grid.Row="9"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="4"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C65"
                                  Grid.Row="9"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="5"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C66"
                                  Grid.Row="9"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="6"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C67"
                                  Grid.Row="9"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="7"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C68"
                                  Grid.Row="9"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="8"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C69"
                                  Grid.Row="9"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="9"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C610"
                                  Grid.Row="9"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="10"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C611"
                                  Grid.Row="9"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="11"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C612"
                                  Grid.Row="9"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="12"
                                  TextAlignment="Center"
@@ -3526,7 +3526,7 @@
                                  Padding="5"
                                  BorderThickness="1 0 1 1"></TextBox>
 
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="11"
                                 BorderThickness="1 0 1 1" />
 
@@ -3537,90 +3537,90 @@
 
                         <TextBox x:Name="T43C71"
                                  Grid.Row="11"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="1"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C72"
                                  Grid.Row="11"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="2"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C73"
                                  Grid.Row="11"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="3"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C74"
                                  Grid.Row="11"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="4"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C75"
                                  Grid.Row="11"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="5"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C76"
                                  Grid.Row="11"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="6"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C77"
                                  Grid.Row="11"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="7"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C78"
                                  Grid.Row="11"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="8"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C79"
                                  Grid.Row="11"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="9"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C710"
                                  Grid.Row="11"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="10"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C711"
                                  Grid.Row="11"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="11"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C712"
                                  Grid.Row="11"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="12"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
 
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="12"
                                 BorderThickness="1 0 1 1" />
 
@@ -3629,90 +3629,90 @@
 
                         <TextBox x:Name="T43C81"
                                  Grid.Row="12"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="1"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C82"
                                  Grid.Row="12"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="2"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C83"
                                  Grid.Row="12"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="3"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C84"
                                  Grid.Row="12"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="4"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C85"
                                  Grid.Row="12"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="5"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C86"
                                  Grid.Row="12"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="6"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C87"
                                  Grid.Row="12"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="7"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C88"
                                  Grid.Row="12"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="8"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C89"
                                  Grid.Row="12"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="9"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C810"
                                  Grid.Row="12"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="10"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C811"
                                  Grid.Row="12"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="11"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C812"
                                  Grid.Row="12"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="12"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
 
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="13"
                                 BorderThickness="1 0 1 1" />
 
@@ -3723,90 +3723,90 @@
 
                         <TextBox x:Name="T43C91"
                                  Grid.Row="13"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="1"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C92"
                                  Grid.Row="13"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="2"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C93"
                                  Grid.Row="13"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="3"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C94"
                                  Grid.Row="13"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="4"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C95"
                                  Grid.Row="13"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="5"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C96"
                                  Grid.Row="13"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="6"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C97"
                                  Grid.Row="13"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="7"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C98"
                                  Grid.Row="13"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="8"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C99"
                                  Grid.Row="13"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="9"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C910"
                                  Grid.Row="13"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="10"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C911"
                                  Grid.Row="13"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="11"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C912"
                                  Grid.Row="13"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="12"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
 
-                        <Border BorderBrush="Black"
+                        <Border 
                                 Grid.Row="14"
                                 BorderThickness="1 0 1 1" />
 
@@ -3815,84 +3815,84 @@
 
                         <TextBox x:Name="T43C101"
                                  Grid.Row="14"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="1"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C102"
                                  Grid.Row="14"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="2"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C103"
                                  Grid.Row="14"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="3"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C104"
                                  Grid.Row="14"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="4"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C105"
                                  Grid.Row="14"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="5"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C106"
                                  Grid.Row="14"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="6"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C107"
                                  Grid.Row="14"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="7"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C108"
                                  Grid.Row="14"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="8"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C109"
                                  Grid.Row="14"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="9"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C1010"
                                  Grid.Row="14"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="10"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C1011"
                                  Grid.Row="14"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="11"
                                  TextAlignment="Center"
                                  VerticalContentAlignment="Center"></TextBox>
                         <TextBox x:Name="T43C1012"
                                  Grid.Row="14"
-                                 BorderBrush="Black"
+                                 
                                  BorderThickness="0 0 1 1"
                                  Grid.Column="12"
                                  TextAlignment="Center"
@@ -5410,7 +5410,7 @@
                         <RowDefinition />
                     </Grid.RowDefinitions>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             BorderThickness="1"
                             Grid.RowSpan="2" />
                     <TextBlock VerticalAlignment="Center"
@@ -5418,7 +5418,7 @@
                                HorizontalAlignment="Center"
                                FontWeight="Bold">Денежные потоки проекта</TextBlock>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             BorderThickness="0 1 1 1"
                             Grid.Column="1"
                             Grid.ColumnSpan="13" />
@@ -5427,55 +5427,55 @@
                                HorizontalAlignment="Center"
                                FontWeight="Bold">Месяц</TextBlock>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="1"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="2"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="3"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="4"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="5"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="6"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="7"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="8"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="9"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="10"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="11"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="12"
                             BorderThickness="0 0 1 1" />
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="1"
                             Grid.Column="13"
                             BorderThickness="0 0 1 1" />
@@ -5520,7 +5520,7 @@
                                Grid.Column="13"
                                HorizontalAlignment="Center">12</TextBlock>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="2"
                             BorderThickness="1 0 1 1" />
                     <TextBlock Margin="5"
@@ -5538,90 +5538,90 @@
                                VerticalAlignment="Center">-</TextBlock>
                     <TextBox x:Name="T45C12"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="2"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C13"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="3"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C14"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="4"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C15"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="5"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C16"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="6"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C17"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="7"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C18"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="8"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C19"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="9"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C110"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="10"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C111"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="11"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C112"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="12"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C113"
                              Grid.Row="2"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="13"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="3"
                             BorderThickness="1 0 1 1" />
 
@@ -5638,90 +5638,90 @@
                                VerticalAlignment="Center">-</TextBlock>
                     <TextBox x:Name="T45C22"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="2"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C23"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="3"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C24"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="4"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C25"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="5"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C26"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="6"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C27"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="7"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C28"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="8"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C29"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="9"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C210"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="10"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C211"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="11"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C212"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="12"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C213"
                              Grid.Row="3"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="13"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="4"
                             BorderThickness="1 0 1 1" />
 
@@ -5732,97 +5732,97 @@
 
                     <TextBox x:Name="T45C31"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="1"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C32"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="2"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C33"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="3"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C34"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="4"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C35"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="5"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C36"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="6"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C37"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="7"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C38"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="8"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C39"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="9"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C310"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="10"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C311"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="11"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C312"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="12"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C313"
                              Grid.Row="4"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="13"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="5"
                             BorderThickness="1 0 1 1" />
 
@@ -5831,97 +5831,97 @@
 
                     <TextBox x:Name="T45C41"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="1"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C42"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="2"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C43"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="3"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C44"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="4"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C45"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="5"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C46"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="6"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C47"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="7"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C48"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="8"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C49"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="9"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C410"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="10"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C411"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="11"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C412"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="12"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C413"
                              Grid.Row="5"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="13"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="6"
                             BorderThickness="1 0 1 1" />
 
@@ -5930,97 +5930,97 @@
 
                     <TextBox x:Name="T45C51"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="1"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C52"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="2"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C53"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="3"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C54"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="4"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C55"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="5"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C56"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="6"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C57"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="7"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C58"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="8"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C59"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="9"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C510"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="10"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C511"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="11"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C512"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="12"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C513"
                              Grid.Row="6"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="13"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="7"
                             BorderThickness="1 0 1 1" />
 
@@ -6029,97 +6029,97 @@
 
                     <TextBox x:Name="T45C61"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="1"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C62"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="2"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C63"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="3"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C64"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="4"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C65"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="5"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C66"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="6"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C67"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="7"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C68"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="8"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C69"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="9"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C610"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="10"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C611"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="11"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C612"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="12"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C613"
                              Grid.Row="7"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="13"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="8"
                             BorderThickness="1 0 1 1" />
 
@@ -6129,97 +6129,97 @@
 
                     <TextBox x:Name="T45C71"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="1"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C72"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="2"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C73"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="3"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C74"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="4"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C75"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="5"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C76"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="6"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C77"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="7"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C78"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="8"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C79"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="9"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C710"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="10"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C711"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="11"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C712"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="12"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C713"
                              Grid.Row="8"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="13"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="9"
                             BorderThickness="1 0 1 1" />
 
@@ -6237,90 +6237,90 @@
                                VerticalAlignment="Center">-</TextBlock>
                     <TextBox x:Name="T45C82"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="2"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C83"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="3"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C84"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="4"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C85"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="5"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C86"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="6"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C87"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="7"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C88"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="8"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C89"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="9"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C810"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="10"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C811"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="11"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C812"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="12"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C813"
                              Grid.Row="9"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="13"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
 
-                    <Border BorderBrush="Black"
+                    <Border 
                             Grid.Row="10"
                             BorderThickness="1 0 1 1" />
 
@@ -6330,91 +6330,91 @@
 
                     <TextBox x:Name="T45C91"
                              Grid.Row="10"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="1"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C92"
                              Grid.Row="10"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="2"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C93"
                              Grid.Row="10"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="3"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C94"
                              Grid.Row="10"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="4"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C95"
                              Grid.Row="10"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="5"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C96"
                              Grid.Row="10"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="6"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C97"
                              Grid.Row="10"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="7"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C98"
                              Grid.Row="10"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="8"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C99"
                              Grid.Row="10"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="9"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C910"
                              Grid.Row="10"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="10"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C911"
                              Grid.Row="10"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="11"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C912"
                              Grid.Row="10"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="12"
                              TextAlignment="Center"
                              VerticalContentAlignment="Center"></TextBox>
                     <TextBox x:Name="T45C913"
                              Grid.Row="10"
-                             BorderBrush="Black"
+                             
                              BorderThickness="0 0 1 1"
                              Grid.Column="13"
                              TextAlignment="Center"
