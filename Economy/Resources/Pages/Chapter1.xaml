@@ -456,24 +456,7 @@
                                Grid.Column="0"
                                Text="2. Составьте список из 3 товаров/услуг (бизнес-идей), которые Вы недавно выгодно КУПИЛИ ИЛИ СОЗДАЛИ " />
                 </Border>
-                <TextBlock x:Name="Hint1"  
-                Padding="5"
-                Background="Transparent"
-                Text="Это хинт"
-                Grid.Row="10"
-                Grid.Column="0" >
-                    <TextBlock.Style>
-                        <Style TargetType="TextBlock">
-                            <Setter Property="Visibility" Value="Hidden"/>
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding Text , ElementName=T11Cell41}" Value="">
-                                    <Setter Property="Visibility" Value="Visible"/>
-                                </DataTrigger>
-                            </Style.Triggers>
-                        </Style>
-                    </TextBlock.Style>
 
-                </TextBlock>
                 <TextBox TextWrapping="Wrap"
                          x:Name="T11Cell41"
                          Padding="5"
