@@ -1,0 +1,180 @@
+﻿<Page x:Class="Economy.Resources.Pages.Title"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Economy.Resources.Pages"
+      xmlns:userControls="clr-namespace:Economy.Resources.UserControls"
+      xmlns:gif="http://wpfanimatedgif.codeplex.com"
+      mc:Ignorable="d" 
+      Background="White" d:DesignWidth="800" d:Height="3000"
+      Title="Title">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Economy;component/CustomUIDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="196*"/>
+        </Grid.RowDefinitions>
+       
+        <StackPanel Grid.RowSpan="2">
+            <StackPanel.Resources>
+                <Style TargetType="TextBox" BasedOn="{StaticResource BlueLineTextBox}">
+                    
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock FontSize="20" Margin="5,5,5,20"  TextWrapping="Wrap" TextAlignment="Center" Text="Добро пожаловать в тренажёр для практического применения при разработке бизнес-проекта!"
+                FontWeight="ExtraBold"
+                HorizontalAlignment="Center" Foreground="#FF374474">
+            </TextBlock>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock FontSize="30" Margin="150,0,0,0" VerticalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" Text="Начнем!"
+                    FontWeight="Light"
+                    HorizontalAlignment="Center" Foreground="#FF374474">
+
+                </TextBlock>
+                <Image RenderOptions.BitmapScalingMode="HighQuality" Width="150" gif:ImageBehavior.AnimatedSource="/Resources/Images/PaperPlane.gif" gif:ImageBehavior.RepeatBehavior="1" gif:ImageBehavior.AnimateInDesignMode="True">
+
+            </Image>
+
+           
+            </StackPanel>
+
+            <Expander Style="{DynamicResource UberExpander}" Margin="5" Header="Навигация" FontSize="30" FontWeight="Light" IsExpanded="True">
+                <StackPanel Margin="15">
+                    <StackPanel.Resources>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="FontSize" Value="17"/>
+                            <Setter Property="FontWeight" Value="Light"/>
+                        </Style>
+                    </StackPanel.Resources>
+                    <Button x:Name="ToChapter1" Click="ToChapter1_Click" Height="50" Width="600" Style="{StaticResource MenuButton}" Margin="10">
+                        <StackPanel Orientation="Horizontal">
+
+                            <TextBlock Text="Этап №1 Бизнес-идея" Foreground="#555050" Background="Transparent" FontSize="17" FontWeight="Medium" VerticalAlignment="Center"/>
+
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="ToChapter2" Click="ToChapter2_Click" Height="50" Width="600" Style="{StaticResource MenuButton}" Margin="10">
+                        <StackPanel Orientation="Horizontal">
+
+                            <TextBlock Text="Этап №2 Бизнес-модель" Foreground="#555050" Background="Transparent" FontSize="17" FontWeight="Medium" VerticalAlignment="Center"/>
+
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="ToChapter3" Click="ToChapter3_Click" Height="50" Width="600" Style="{StaticResource MenuButton}" Margin="10">
+                        <StackPanel Orientation="Horizontal">
+
+                            <TextBlock Text="Этап №3 Маркетинговый опрос" Foreground="#555050" Background="Transparent" FontSize="17" FontWeight="Medium" VerticalAlignment="Center"/>
+
+                        </StackPanel>
+                    </Button>
+
+                    <Button x:Name="ToChapter4" Click="ToChapter4_Click" Height="50" Width="600" Style="{StaticResource MenuButton}" Margin="10">
+                        <StackPanel Orientation="Horizontal">
+
+                            <TextBlock Text="Этап №4 Финансовая модель" Foreground="#555050" Background="Transparent" FontSize="17" FontWeight="Medium" VerticalAlignment="Center"/>
+
+                        </StackPanel>
+                    </Button>
+
+                    <Button x:Name="ToChapter5" Click="ToChapter5_Click" Height="50" Width="600" Style="{StaticResource MenuButton}" Margin="10">
+                        <StackPanel Orientation="Horizontal">
+
+                            <TextBlock Text="Этап №5 Бизнес-план" Foreground="#555050" Background="Transparent" FontSize="17" FontWeight="Medium" VerticalAlignment="Center"/>
+
+                        </StackPanel>
+                    </Button>
+
+
+
+
+
+                </StackPanel>
+            </Expander>
+
+
+
+            <Expander Style="{DynamicResource UberExpander}" Margin="5" Header="Описание программы" FontSize="30" FontWeight="Light">
+                <StackPanel>
+                    <StackPanel.Resources>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="FontSize" Value="17"/>
+                            <Setter Property="FontWeight" Value="Light"/>
+                        </Style>
+                    </StackPanel.Resources>
+            <TextBlock  Margin="10,0,10,0"
+             Text="  Тренажёр предназначен для студентов, обучающихся основам предпринимательства. "
+             TextWrapping="Wrap">   
+            </TextBlock>
+            <TextBlock
+                Margin="10,0,10,0"
+                Text="  Цель тренажёра состоит в том, чтобы познакомить студентов с содержанием предпринимательской деятельности и сформировать умения производить необходимые подготовительные действия по организации предпринимательства, расчеты, регистрационные процедуры, выстраивание бизнес-процессов и последующее совершенствование бизнеса." TextWrapping="Wrap">
+
+            </TextBlock>
+            <Image Width="500" Source="/Resources/Images/MeMchik2025.png" Margin="10">
+
+            </Image>
+                <TextBlock
+                Margin="10,0,10,0"
+                Text="    Выполняя задания, практикум научит находить ответы на основные вопросы, стоящие перед начинающим предпринимателем и позволит приобрести практические знания и умения, необходимые в предпринимательской деятельности:" TextWrapping="Wrap">
+
+                </TextBlock >
+            <TextBlock  Margin="10,0,10,0" Text="1. Какой бизнес создавать? "/>
+            <TextBlock  Margin="10,0,10,0" Text="2. Что потребуется для создания бизнеса? "/>
+            <TextBlock  Margin="10,0,10,0" Text="3. Будут ли покупать?"/>
+            <TextBlock  Margin="10,0,10,0" Text="4. Будет ли бизнес прибыльным?"/>
+            <TextBlock  Margin="10,0,10,0" Text="5. Как будет работать бизнес?" />
+            <TextBlock  Margin="10,20,10,0" Text="Последовательное продвижение по разделам программы позволит студенту разработать и оформить собственный бизнес-проект:"/>
+            <TextBlock  Margin="10,0,10,0" Text="1. поиск, оценка и выбор бизнес-идеи;"/>
+            <TextBlock  Margin="10,0,10,0" Text="2. составление бизнес-модели;"/>
+            <TextBlock  Margin="10,0,10,0" Text="3. исследование рынка;"/>
+            <TextBlock  Margin="10,0,10,0" Text="4. составление финансовой модели;"/>
+            <TextBlock  Margin="10,0,10,0" Text="5. разработка бизнес-плана;" />
+            <TextBlock  Margin="10,20,10,0" Text="  Формирование предпринимательских компетенций может способствовать активизации положительных эффектов от развития собственного предпринимательского потенциала: инициативные граждане быстрее и эффективнее найдут приложение своим предпринимательским способностям, сформируют более адекватные ожидания от занятий собственным бизнесом." TextWrapping="Wrap"/>
+                </StackPanel>
+            </Expander>
+
+            <Expander Style="{DynamicResource UberExpander}" Margin="5" Header="Инструкция по использованию" FontSize="30" FontWeight="Light">
+                <StackPanel Margin="10">
+                    <StackPanel.Resources>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Foreground" Value="Black"/>
+                            <Setter Property="FontSize" Value="17"/>
+                            <Setter Property="FontWeight" Value="Light"/>
+                            <Setter Property="TextWrapping" Value="Wrap"/>
+                        </Style>
+                    </StackPanel.Resources>
+                    <TextBlock Text="   Для выполнения работы по разработке своего бизнес-проекта, вам необходимо заполнить данные в 5 формах, после чего выбрать папку компьютера, куда будет экспортирован документ (пункт 6 на рисунке)."/>
+                    <TextBlock Text="   Перемещаться по формами Вы можете как через раздел “Навигация” в главном меню, так и через боковую панель слева."/>
+                    <Border Margin="15" BorderBrush="red" BorderThickness="3">
+                        <Image Source="/Resources/Images/Manual1.png" />
+                    </Border>
+
+                    <TextBlock Text="   При заполнении форм, обратите внимание, что некоторые поля заполняются автоматически, на основе введенных данных, при нажатии на кнопку."/>
+                    <Border Margin="15" BorderBrush="red" BorderThickness="3">
+                        <Image Source="/Resources/Images/Manual2.png" />
+                    </Border>
+
+                    <TextBlock Text="   Вы можете сохранить введенные данные в программе, чтобы потом продолжить потом работу с места, на котором Вы остановились. Для этого воспользуйтесь кнопками, показаными на рисунке."/>
+                    <Border Margin="15" BorderBrush="red" BorderThickness="3">
+                        <Image Source="/Resources/Images/Manual3.png" />
+                    </Border>
+
+
+
+
+
+                </StackPanel>
+            </Expander>
+            
+        </StackPanel>
+    </Grid>
+</Page>

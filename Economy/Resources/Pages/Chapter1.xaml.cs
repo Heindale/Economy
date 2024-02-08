@@ -85,5 +85,5 @@ namespace Economy.Resources.Pages
 			}
 			return "";
 		}
-	}
+    }
 }

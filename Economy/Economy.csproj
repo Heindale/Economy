@@ -6,28 +6,86 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x86</Platforms>
+    <PackageIcon>Icon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Resources\Images\ActvBubl.png" />
+    <None Remove="Resources\Images\ActvExport.png" />
+    <None Remove="Resources\Images\Actvinfo.png" />
+    <None Remove="Resources\Images\ActvLoad.png" />
     <None Remove="Resources\Images\ActvModel.png" />
+    <None Remove="Resources\Images\ActvMoney.png" />
+    <None Remove="Resources\Images\ActvPlan.png" />
+    <None Remove="Resources\Images\ActvPpl.png" />
+    <None Remove="Resources\Images\ActvSave.png" />
+    <None Remove="Resources\Images\ActvWelcome.png" />
     <None Remove="Resources\Images\Bubl.png" />
     <None Remove="Resources\Images\BublClick.png" />
     <None Remove="Resources\Images\close.png" />
+    <None Remove="Resources\Images\Export.png" />
+    <None Remove="Resources\Images\Icon.ico" />
     <None Remove="Resources\Images\IconBIG.png" />
+    <None Remove="Resources\Images\info.png" />
+    <None Remove="Resources\Images\Load.png" />
+    <None Remove="Resources\Images\Manual1.png" />
+    <None Remove="Resources\Images\Manual2.png" />
+    <None Remove="Resources\Images\Manual3.png" />
     <None Remove="Resources\Images\max.png" />
+    <None Remove="Resources\Images\MeMchik2025.png" />
     <None Remove="Resources\Images\min.png" />
     <None Remove="Resources\Images\Model.png" />
+    <None Remove="Resources\Images\Money.png" />
+    <None Remove="Resources\Images\PaperPlane.gif" />
+    <None Remove="Resources\Images\Plan.png" />
+    <None Remove="Resources\Images\Ppl.png" />
+    <None Remove="Resources\Images\Save.png" />
+    <None Remove="Resources\Images\ukrtbPrikol.png" />
+    <None Remove="Resources\Images\Welcome.png" />
     <None Remove="Resources\Images\win.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Desktop\PC-condition\Downloads\Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="DocumentFormat.OpenXml" Version="3.0.1" />
     <PackageReference Include="DocX" Version="3.0.0" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Resources\Images\ActvBubl.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ActvExport.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Actvinfo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ActvLoad.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ActvMoney.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ActvPlan.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ActvPpl.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ActvSave.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ActvWelcome.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\Bubl.png">
@@ -39,10 +97,34 @@
     <Resource Include="Resources\Images\close.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Images\Export.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Icon.ico">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Images\IconBIG.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Images\info.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Load.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Manual1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Manual2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Manual3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Images\max.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\MeMchik2025.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\min.png">
@@ -54,13 +136,30 @@
     <Resource Include="Resources\Images\ActvModel.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Images\Money.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\PaperPlane.gif">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Plan.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Ppl.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Save.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ukrtbPrikol.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Welcome.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Images\win.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Resources\UserControls\" />
   </ItemGroup>
 
 </Project>

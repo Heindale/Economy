@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,21 @@ namespace Economy.Resources.Pages
         public Chapter4()
         {
             InitializeComponent();
+        }
+
+        void hyperlink_Click(object sender, RoutedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("http://wordstat.yandex.ru/") { UseShellExecute = true });
+        }
+
+        private void Hyperlink_Click_1(object sender, RoutedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("https://navigator.smbn.ru/realty/13") { UseShellExecute = true });
+        }
+
+        private void Hyperlink_Click_2(object sender, RoutedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo("http://corpmsp.ru/infrastruktura-podderzhki/imushchestvennaya-infrastruktura/") { UseShellExecute = true });
         }
     }
 }
