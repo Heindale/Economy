@@ -239,7 +239,7 @@
 
 
                 </Button>
-                 <Button x:Name="Load"
+                <Button x:Name="Load"
                          Style="{StaticResource MenuButton}"
                          Width="60"
                          Height="60"
@@ -260,7 +260,6 @@
                         </Image.Style>
                     </Image>
                 </Button>
-
 
                 <Button x:Name="GenerateDocxButton"
                         Style="{StaticResource MenuButton}"

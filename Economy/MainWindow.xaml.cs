@@ -2,6 +2,7 @@
 using Economy.Resources.Windows;
 using Microsoft.Win32;
 using System.IO;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -13,6 +14,7 @@ namespace Economy
     public partial class MainWindow : Window
     {
         private List<TextBoxData> textBoxDataList = new List<TextBoxData>();
+        private List<TextBoxDataWord> textBoxDataListWord = new List<TextBoxDataWord>();
 
         public MainWindow()
         {
@@ -43,6 +45,22 @@ namespace Economy
                 if (paragraph.Text.Contains(placeholder))
                 {
                     paragraph.ReplaceText(placeholder, value);
+                }
+            }
+        }
+
+        private void ReplacePlaceholderVersionSecond(DocX document, List<TextBoxDataWord> textBoxDataListWords)
+        {
+            int i = 0;
+            foreach (var paragraph in document.Paragraphs)
+            {
+                if (textBoxDataListWords.Count > i) 
+                { 
+                    if (paragraph.Text.Contains($"<{textBoxDataListWords[i].placeholder}>"))
+                    {
+                        paragraph.ReplaceText($"<{textBoxDataListWords[i].placeholder}>", textBoxDataListWords[i].value);
+                        i++;
+                    }
                 }
             }
         }
@@ -124,6 +142,41 @@ namespace Economy
                 }
             }
         }
+
+        private void FindVisualChildrenVersionSecond(DependencyObject depObj)
+        {
+            if (depObj != null)
+            {
+                for (int i = 0; i < VisualTreeHelper.GetChildrenCount(depObj); i++)
+                {
+                    DependencyObject child = VisualTreeHelper.GetChild(depObj, i);
+                    var textboxdatawords = new TextBoxDataWord();
+                    if (child != null && child is TextBox)
+                    {
+                        TextBox textBox = (TextBox)child;
+                        if (textBox.Name != "") { 
+                            textboxdatawords.placeholder = textBox.Name;
+                            textboxdatawords.value = textBox.Text;
+                            textBoxDataListWord.Add(textboxdatawords);
+                        }
+                    } else if (child != null && child is ComboBox)
+                    {
+                        ComboBox comboBox = (ComboBox)child;
+                        if (comboBox.Name != "")
+                        {
+                            textboxdatawords.placeholder = comboBox.Name;
+                            textboxdatawords.value = comboBox.Text;
+                            textBoxDataListWord.Add(textboxdatawords);
+                        }
+                    }
+                    if (VisualTreeHelper.GetChildrenCount(child) != 0 && (child is Grid || child is StackPanel || child is Border)) 
+                    { 
+                        FindVisualChildrenVersionSecond(child);
+                    }
+                }
+            }
+        }
+
         private async void GenerateDocxButton_Click(object sender, RoutedEventArgs e)
         {
             this.document = DocX.Load("..\\..\\..\\Resources\\TemplateVersionSecond.docx");
@@ -131,11 +184,13 @@ namespace Economy
             folderBrowser.Filter = "Word documents (*.docx)|*.docx";
             if (folderBrowser.ShowDialog() == true)
             {
+                textBoxDataListWord.Clear();
                 ChangePage1();
                 ChangePage2();
                 ChangePage3();
                 ChangePage4();
                 ChangePage5();
+                ReplacePlaceholderVersionSecond(document, textBoxDataListWord);
                 try
                 {
                     this.document.SaveAs(folderBrowser.FileName);
@@ -284,15 +339,15 @@ namespace Economy
 
         private void SetText(DependencyObject xamlpage)
         {
-
-            foreach (var textBox in FindVisualChildren<TextBox>(xamlpage))
-            {
-                ReplacePlaceholder(document, $"<{textBox.Name}>", textBox.Text);
-            }
-            foreach (var comboBox in FindVisualChildren<ComboBox>(xamlpage))
-            {
-                ReplacePlaceholder(document, $"<{comboBox.Name}>", comboBox.Text);
-            }
+            FindVisualChildrenVersionSecond(xamlpage);
+            //foreach (var textBox in FindVisualChildren<TextBox>(xamlpage))
+            //{
+            //    ReplacePlaceholder(document, $"<{textBox.Name}>", textBox.Text);
+            //}
+            //foreach (var comboBox in FindVisualChildren<ComboBox>(xamlpage))
+            //{
+            //    ReplacePlaceholder(document, $"<{comboBox.Name}>", comboBox.Text);
+            //}
         }
 
         private void TitleBar_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
@@ -307,5 +362,10 @@ namespace Economy
         public string Text { get; set; }
         public string TextBoxName { get; set; }
         public string Type { get; set; }
+    }
+    public class TextBoxDataWord
+    {
+        public string placeholder { get; set; }
+        public string value { get; set; }
     }
 }
