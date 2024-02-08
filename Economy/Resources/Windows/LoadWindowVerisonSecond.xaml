@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Economy.Resources.Windows"
         mc:Ignorable="d"
-        Title="LoadWindowVerisonSecond" Height="150" Width="300">
+        Title="LoadWindowVerisonSecond"
+        Height="150"
+        Width="300">
     <Grid>
-        <ProgressBar Name="pbStatus" Minimum="0" Maximum="100" Width="200" Height="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <StackPanel Margin="10">
+            <Label>Данные экспортируются...</Label>
+            <Label>Пожалуйста подождите.</Label>
+            <ProgressBar Margin="10"
+                         Name="pbStatus"
+                         Minimum="0"
+                         Maximum="100"
+                         Width="200"
+                         Height="20"
+                         VerticalAlignment="Center"
+                         HorizontalAlignment="Center" />
+        </StackPanel>
     </Grid>
 </Window>
