@@ -27,6 +27,9 @@
     <None Remove="Resources\Images\IconBIG.png" />
     <None Remove="Resources\Images\info.png" />
     <None Remove="Resources\Images\Load.png" />
+    <None Remove="Resources\Images\Manual1.png" />
+    <None Remove="Resources\Images\Manual2.png" />
+    <None Remove="Resources\Images\Manual3.png" />
     <None Remove="Resources\Images\max.png" />
     <None Remove="Resources\Images\MeMchik2025.png" />
     <None Remove="Resources\Images\min.png" />
@@ -95,6 +98,15 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\Load.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Manual1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Manual2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Manual3.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\max.png">

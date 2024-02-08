@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Economy.Resources.Pages"
       mc:Ignorable="d" d:DesignWidth="800"
       Title="Chapter5"
-      Background="White" Height="5104">
+      Background="White">
 
     <Page.Resources>
         <ResourceDictionary>

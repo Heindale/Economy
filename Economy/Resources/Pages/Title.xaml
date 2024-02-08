@@ -7,7 +7,7 @@
       xmlns:userControls="clr-namespace:Economy.Resources.UserControls"
       xmlns:gif="http://wpfanimatedgif.codeplex.com"
       mc:Ignorable="d" 
-      Background="White" d:DesignWidth="800" d:Height="2000"
+      Background="White" d:DesignWidth="800" d:Height="3000"
       Title="Title">
     <Page.Resources>
         <ResourceDictionary>
@@ -143,14 +143,30 @@
             </Expander>
 
             <Expander Style="{DynamicResource UberExpander}" Margin="5" Header="Инструкция по использованию" FontSize="30" FontWeight="Light">
-                <StackPanel>
+                <StackPanel Margin="10">
                     <StackPanel.Resources>
                         <Style TargetType="TextBlock">
                             <Setter Property="Foreground" Value="Black"/>
                             <Setter Property="FontSize" Value="17"/>
                             <Setter Property="FontWeight" Value="Light"/>
+                            <Setter Property="TextWrapping" Value="Wrap"/>
                         </Style>
                     </StackPanel.Resources>
+                    <TextBlock Text="   Для выполнения работы по разработке своего бизнес-проекта, вам необходимо заполнить данные в 5 формах, после чего выбрать папку компьютера, куда будет экспортирован документ (пункт 6 на рисунке)."/>
+                    <TextBlock Text="   Перемещаться по формами Вы можете как через раздел “Навигация” в главном меню, так и через боковую панель слева."/>
+                    <Border Margin="15" BorderBrush="red" BorderThickness="3">
+                        <Image Source="/Resources/Images/Manual1.png" />
+                    </Border>
+
+                    <TextBlock Text="   При заполнении форм, обратите внимание, что некоторые поля заполняются автоматически, на основе введенных данных, при нажатии на кнопку."/>
+                    <Border Margin="15" BorderBrush="red" BorderThickness="3">
+                        <Image Source="/Resources/Images/Manual2.png" />
+                    </Border>
+
+                    <TextBlock Text="   Вы можете сохранить введенные данные в программе, чтобы потом продолжить потом работу с места, на котором Вы остановились. Для этого воспользуйтесь кнопками, показаными на рисунке."/>
+                    <Border Margin="15" BorderBrush="red" BorderThickness="3">
+                        <Image Source="/Resources/Images/Manual3.png" />
+                    </Border>
 
 
 
