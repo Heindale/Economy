@@ -11,7 +11,7 @@
         WindowStyle="None"
         MinHeight="300"
         x:Name="Window1"
-        Height="804"
+        Height="720"
         Width="800"
         Icon="/Resources/Images/Icon.ico"
 
