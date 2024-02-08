@@ -243,6 +243,25 @@
                              Grid.Column="2"
                              BorderThickness="0 0 1 1"></TextBox>
 
+                    <TextBlock 
+                        Padding="5"
+                        Background="Transparent"
+                        Text="Другой вариант:"
+                        Foreground="Gray"
+                        Grid.Row="7"
+                        Grid.Column="0">
+                        <TextBlock.Style>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="Visibility" Value="Hidden"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding Text , ElementName=T413Cell50}" Value="">
+                                        <Setter Property="Visibility" Value="Visible"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+
                     <TextBox x:Name="T413Cell50"
                              Padding="3 0 0 0"
                              Grid.Row="7"
@@ -491,8 +510,27 @@
                              Grid.Row="10"
                              Grid.Column="1"></TextBox>
 
+                    <TextBlock 
+                        Padding="20 0 0 0"
+                        Background="Transparent"
+                        Text="- и др. (важные для вашего товара/услуги) "
+                        Foreground="Gray"
+                        Grid.Row="11"
+                        Grid.Column="0">
+                        <TextBlock.Style>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="Visibility" Value="Hidden"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding Text , ElementName=T415Cell100}" Value="">
+                                        <Setter Property="Visibility" Value="Visible"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+
                     <TextBox x:Name="T415Cell100"
-                             Padding="5 0 0 0"
+                             Padding="20 0 0 0"
                              BorderThickness="1 0 1 1"
                              Grid.Row="11"></TextBox>
                     <TextBox x:Name="T415Cell101"
@@ -502,7 +540,7 @@
                              Grid.Column="1"></TextBox>
 
                     <TextBox x:Name="T415Cell110"
-                             Padding="5 0 0 0"
+                             Padding="20 0 0 0"
                              BorderThickness="1 0 1 1"
                              Grid.Row="12"></TextBox>
                     <TextBox x:Name="T415Cell111"
@@ -512,7 +550,7 @@
                              Grid.Column="1"></TextBox>
 
                     <TextBox x:Name="T415Cell120"
-                             Padding="5 0 0 0"
+                             Padding="20 0 0 0"
                              BorderThickness="1 0 1 1"
                              Grid.Row="13"></TextBox>
                     <TextBox x:Name="T415Cell121"
@@ -2854,6 +2892,7 @@
                         <TextBlock Grid.Row="2"
                                    Grid.ColumnSpan="13"
                                    Padding="5"
+                                   Foreground="Gray"
                                    Text="[название 1-го товара/услуги (группы схожих товаров)] "
                                    Grid.Column="0">
                             <TextBlock.Style>
@@ -3158,7 +3197,8 @@
                         <TextBlock Grid.Row="6"
                                    Grid.ColumnSpan="13"
                                    Padding="5"
-                                   Text="[ название 2-го товара/услуги] "
+                                   Foreground="Gray"
+                                   Text="[название 2-го товара/услуги] "
                                    Grid.Column="0">
                             <TextBlock.Style>
                                 <Style TargetType="TextBlock">
@@ -3463,7 +3503,8 @@
                         <TextBlock Grid.Row="10"
                                    Grid.ColumnSpan="13"
                                    Padding="5"
-                                   Text="[ название 3-го товара/услуги] "
+                                   Foreground="Gray"
+                                   Text="[название 3-го товара/услуги] "
                                    Grid.Column="0">
                             <TextBlock.Style>
                                 <Style TargetType="TextBlock">
@@ -4284,6 +4325,7 @@
 
                     <TextBlock Grid.Row="13"
                                Padding="5"
+                               Foreground="Gray"
                                Text="[и др.] "
                                Grid.Column="1">
                         <TextBlock.Style>
@@ -5148,7 +5190,8 @@
 
                     <TextBlock Grid.Row="12"
                                Padding="5"
-                               Text="[и др.] "
+                               Foreground="Gray"
+                               Text="[и др.]"
                                Grid.Column="1">
                         <TextBlock.Style>
                             <Style TargetType="TextBlock">

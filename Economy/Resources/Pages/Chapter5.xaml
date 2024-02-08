@@ -472,6 +472,7 @@
                         TextAlignment="Center"
                         VerticalAlignment="Center"
                         Background="Transparent"
+                        Foreground="Gray"
                         TextWrapping="Wrap"
                         Text="[на самого предпринимателя]"
                         Grid.Row="1">
@@ -496,6 +497,7 @@
                         TextAlignment="Center"
                         VerticalAlignment="Center"
                         Background="Transparent"
+                        Foreground="Gray"
                         TextWrapping="Wrap"
                         Text="[каждого работника по отдельности]"
                         Grid.Row="2">
@@ -594,6 +596,7 @@
                         VerticalAlignment="Center"
                         Background="Transparent"
                         TextWrapping="Wrap"
+                        Foreground="Gray"
                         Text="[на самого предпринимателя]"
                         Grid.Row="1"
                         Grid.Column="1">
@@ -623,6 +626,7 @@
                         VerticalAlignment="Center"
                         Background="Transparent"
                         TextWrapping="Wrap"
+                        Foreground="Gray"
                         Text="[каждого работника по отдельности]"
                         Grid.Row="2"
                         Grid.Column="1">
@@ -942,6 +946,7 @@
                     <TextBlock 
                         Padding="5"
                         Background="Transparent"
+                        Foreground="Gray"
                         Text="Название  конкурента №1"
                         TextAlignment="Center"
                         HorizontalAlignment="Center"
@@ -963,6 +968,7 @@
                     <TextBlock 
                         Padding="5"
                         Background="Transparent"
+                        Foreground="Gray"
                         Text="Название  конкурента №2"
                         TextAlignment="Center"
                         HorizontalAlignment="Center"
@@ -984,6 +990,7 @@
                     <TextBlock 
                         Padding="5"
                         Background="Transparent"
+                        Foreground="Gray"
                         Text="Название  конкурента №3"
                         TextAlignment="Center"
                         HorizontalAlignment="Center"
@@ -1005,6 +1012,7 @@
                     <TextBlock 
                         Padding="5"
                         Background="Transparent"
+                        Foreground="Gray"
                         Text="Название Вашей фирмы"
                         TextAlignment="Center"
                         HorizontalAlignment="Center"
@@ -1667,6 +1675,7 @@
                         <TextBlock 
                             Padding="5"
                             Background="Transparent"
+                            Foreground="Gray"
                             Text="[название 1-го товара/услуги (группы схожих товаров)]"
                             Grid.Row="2" 
                             Grid.ColumnSpan="13"
@@ -1741,6 +1750,7 @@
                         <TextBlock 
                             Padding="5"
                             Background="Transparent"
+                            Foreground="Gray"
                             Text="[название 2-го товара/услуги]"
                             Grid.Row="6" 
                             Grid.ColumnSpan="13"
@@ -1816,6 +1826,7 @@
                         <TextBlock 
                             Padding="5"
                             Background="Transparent"
+                            Foreground="Gray"
                             Text="[название 3-го товара/услуги]"
                             Grid.Row="10" 
                             Grid.ColumnSpan="13"
@@ -2073,6 +2084,7 @@
                     <TextBlock 
                         Padding="5"
                         Background="Transparent"
+                        Foreground="Gray"
                         Text="[и др.]"
                         Grid.Row="13"
                         Grid.Column="1">
@@ -2351,6 +2363,7 @@
                     <TextBlock 
                         Padding="5"
                         Background="Transparent"
+                        Foreground="Gray"
                         Text="[и др.]"
                         Grid.Row="18"
                         Grid.Column="1">
