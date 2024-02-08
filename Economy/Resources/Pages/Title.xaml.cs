@@ -28,6 +28,11 @@ namespace Economy.Resources.Pages
             
         }
 
+        public void SetButtonMark()
+        {
+            //mainWindow.Title.Background =   
+        }
+
         private void ToChapter1_Click(object sender, RoutedEventArgs e)
         {
             mainWindow.CurrentPage.Navigate(mainWindow.page1);    
