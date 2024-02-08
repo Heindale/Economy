@@ -20,9 +20,12 @@ namespace Economy.Resources.Pages
     /// </summary>
     public partial class Chapter5 : Page
     {
+        //private MainWindow mainWindow;
         public Chapter5()
         {
             InitializeComponent();
+            //this.mainWindow = mainWindow;
         }
+
     }
 }

@@ -91,33 +91,46 @@ namespace Economy
         {
             SetText(page5.Page5);
         }
-        private void Title_Click(object sender, RoutedEventArgs e)
+        public void Title_Click(object sender, RoutedEventArgs e)
         {
             CurrentPage.Navigate(this.title);
+            UnsetButtonMarks();
+            SetButtonMark(Title);
+            
         }
 
-        private void Chapter1_Click(object sender, RoutedEventArgs e)
+        public void Chapter1_Click(object sender, RoutedEventArgs e)
         {
             CurrentPage.Navigate(this.page1);
+            UnsetButtonMarks();
+            SetButtonMark(Chapter1);
         }
 
-        private void Chapter2_Click(object sender, RoutedEventArgs e)
+        public void Chapter2_Click(object sender, RoutedEventArgs e)
         {
             CurrentPage.Navigate(this.page2);
+            UnsetButtonMarks();
+            SetButtonMark(Chapter2);
         }
 
-        private void Chapter3_Click(object sender, RoutedEventArgs e)
+        public void Chapter3_Click(object sender, RoutedEventArgs e)
         {
             CurrentPage.Navigate(this.page3);
+            UnsetButtonMarks();
+            SetButtonMark(Chapter3);
         }
 
-        private void Chapter4_Click(object sender, RoutedEventArgs e)
+        public void Chapter4_Click(object sender, RoutedEventArgs e)
         {
             CurrentPage.Navigate(this.page4);
+            UnsetButtonMarks();
+            SetButtonMark(Chapter4);
         }
-        private void Chapter5_Click(object sender, RoutedEventArgs e)
+        public void Chapter5_Click(object sender, RoutedEventArgs e)
         {
             CurrentPage.Navigate(this.page5);
+            UnsetButtonMarks();
+            SetButtonMark(Chapter5);
         }
         private void Close_Click(object sender, RoutedEventArgs e)
         {
@@ -361,6 +374,22 @@ namespace Economy
         {
             CurrentPage.Navigate(this.devInfo);
 
+        }
+
+        private void UnsetButtonMarks()
+        {
+            Brush Brushie = new SolidColorBrush(Color.FromArgb(255, 227, 233, 255));
+            Title.Background = Brushie;
+            Chapter1.Background = Brushie;
+            Chapter2.Background = Brushie;
+            Chapter3.Background = Brushie;
+            Chapter4.Background = Brushie;
+            Chapter5.Background = Brushie;
+        }
+        private void SetButtonMark(Button button)
+        {
+            Brush Brushie = new SolidColorBrush(Color.FromArgb(255, 239, 218, 255));
+            button.Background = Brushie;
         }
     }
 

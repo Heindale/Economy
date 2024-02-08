@@ -21,10 +21,14 @@ namespace Economy.Resources.Pages
     /// </summary>
     public partial class Chapter4 : Page
     {
+        //private MainWindow mainWindow;
         public Chapter4()
         {
             InitializeComponent();
+            //this.mainWindow = mainWindow;
         }
+
+      
 
         void hyperlink_Click(object sender, RoutedEventArgs e)
         {

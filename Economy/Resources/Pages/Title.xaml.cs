@@ -29,33 +29,38 @@ namespace Economy.Resources.Pages
         }
 
         public void SetButtonMark()
-        {
-            //mainWindow.Title.Background =   
+        {       
+            mainWindow.Title.Background = Brushes.White;
         }
 
         private void ToChapter1_Click(object sender, RoutedEventArgs e)
         {
-            mainWindow.CurrentPage.Navigate(mainWindow.page1);    
+            //mainWindow.CurrentPage.Navigate(mainWindow.page1);
+            mainWindow.Chapter1_Click(sender, e);
         }
 
         private void ToChapter2_Click(object sender, RoutedEventArgs e)
         {
-            mainWindow.CurrentPage.Navigate(mainWindow.page2);
+            //mainWindow.CurrentPage.Navigate(mainWindow.page2);
+            mainWindow.Chapter2_Click(sender, e);
         }
 
         private void ToChapter3_Click(object sender, RoutedEventArgs e)
         {
-            mainWindow.CurrentPage.Navigate(mainWindow.page3);
+            //mainWindow.CurrentPage.Navigate(mainWindow.page3);
+            mainWindow.Chapter3_Click(sender, e);
         }
 
         private void ToChapter4_Click(object sender, RoutedEventArgs e)
         {
-            mainWindow.CurrentPage.Navigate(mainWindow.page4);
+            //mainWindow.CurrentPage.Navigate(mainWindow.page4);
+            mainWindow.Chapter4_Click(sender, e);
         }
 
         private void ToChapter5_Click(object sender, RoutedEventArgs e)
         {
-            mainWindow.CurrentPage.Navigate(mainWindow.page5);
+            //mainWindow.CurrentPage.Navigate(mainWindow.page5);
+            mainWindow.Chapter5_Click(sender, e);
         }
     }
 }
