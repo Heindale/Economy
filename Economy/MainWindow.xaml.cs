@@ -181,7 +181,7 @@ namespace Economy
 
         private async void GenerateDocxButton_Click(object sender, RoutedEventArgs e)
         {
-            this.document = DocX.Load("..\\..\\..\\Resources\\TemplateVersionSecond.docx");
+            this.document = DocX.Load("TemplateVersionSecond.docx");
             SaveFileDialog folderBrowser = new SaveFileDialog();
             folderBrowser.Filter = "Word documents (*.docx)|*.docx";
             if (folderBrowser.ShowDialog() == true)
