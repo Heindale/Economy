@@ -36,6 +36,7 @@
                        HorizontalAlignment="Center">
                 </Label>
                 <TextBlock  Margin="10,0,10,0"
+                            Background="Transparent"
                             Text="Задание № 2 Составление бизнес-модели. Бизнес-модель – это схематическое описание бизнеса (будущего или действующего) с целью запланировать или оценить его ключевые факторы успеха. Составить бизнес-модель можно заполнив поля ниже."
                             TextWrapping="Wrap">
                 </TextBlock>
@@ -43,11 +44,6 @@
             <StackPanel Margin="0,5,0,0">
                 <Label Content="ПРОБЛЕМЫ потребителей. 3 главные проблемы клиента, из-за которых он будет покупать:">
                 </Label>
-                <ComboBox Margin="5 0">
-                    <ComboBoxItem>1</ComboBoxItem>
-                    <ComboBoxItem>Вертолёт</ComboBoxItem>
-                    <ComboBoxItem>Оранжевый</ComboBoxItem>
-                </ComboBox>
 
                 <StackPanel Orientation="Horizontal">
                     <Label Content="1."></Label>

@@ -325,14 +325,14 @@
                           Height="30"
                           Width="200"
                           HorizontalAlignment="Left">
-                    <Label Content="Микрорайон города" />
-                    <Label Content="Город" />
-                    <Label Content="Город и район, а также ближайшие города" />
-                    <Label Content="Регион, область" />
-                    <Label Content="Группа регионов" />
-                    <Label Content="Россия" />
-                    <Label Content="Страны СНГ (русскоязычные)" />
-                    <Label Content="Мир" />
+                    <ComboBoxItem Content="Микрорайон города" />
+                    <ComboBoxItem Content="Город" />
+                    <ComboBoxItem Content="Город и район, а также ближайшие города" />
+                    <ComboBoxItem Content="Регион, область" />
+                    <ComboBoxItem Content="Группа регионов" />
+                    <ComboBoxItem Content="Россия" />
+                    <ComboBoxItem Content="Страны СНГ (русскоязычные)" />
+                    <ComboBoxItem Content="Мир" />
                 </ComboBox>
 
                 <!--<Label Content="Группа регионов:" Grid.Row="4" />
@@ -2016,8 +2016,8 @@
                               Margin="5 0 0 0"
                               Width="200"
                               Height="25">
-                        <Label Content="Ценовая" />
-                        <Label Content="Неценовая" />
+                        <ComboBoxItem Content="Ценовая" />
+                        <ComboBoxItem Content="Неценовая" />
                     </ComboBox>
                 </StackPanel>
 
@@ -2071,8 +2071,8 @@
                               Margin="5 0 0 0"
                               Width="50"
                               Height="25">
-                        <Label Content="" />
-                        <Label Content="+" />
+                        <ComboBoxItem Content="" />
+                        <ComboBoxItem Content="+" />
                     </ComboBox>
                 </StackPanel>
 
@@ -2084,8 +2084,8 @@
                               Margin="5 0 0 0"
                               Width="50"
                               Height="25">
-                        <Label Content="" />
-                        <Label Content="+" />
+                        <ComboBoxItem Content="" />
+                        <ComboBoxItem Content="+" />
                     </ComboBox>
                 </StackPanel>
 
@@ -2496,8 +2496,8 @@
                     <ComboBox x:Name="T425C11"
                               Width="50"
                               Height="20">
-                        <Label Content="" />
-                        <Label Content="+" />
+                        <ComboBoxItem Content="" />
+                        <ComboBoxItem Content="+" />
                     </ComboBox>
                 </StackPanel>
 
@@ -2508,8 +2508,8 @@
                     <ComboBox x:Name="T425C21"
                               Width="50"
                               Height="20">
-                        <Label Content="" />
-                        <Label Content="+" />
+                        <ComboBoxItem Content="" />
+                        <ComboBoxItem Content="+" />
                     </ComboBox>
                 </StackPanel>
 

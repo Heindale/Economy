@@ -17,7 +17,8 @@ namespace Economy
         public MainWindow()
         {
             InitializeComponent();
-            this.title = new Title();
+            this.devInfo = new DevInfo();   
+            this.title = new Title(this);
             this.page1 = new Chapter1();
             this.page2 = new Chapter2();
             this.page3 = new Chapter3();
@@ -28,6 +29,7 @@ namespace Economy
 
         public DocX document { get; set; }
         public int MyProperty { get; set; }
+        public DevInfo devInfo { get; set; }
         public Title title { get; set; }
         public Chapter1 page1 { get; set; }
         public Chapter2 page2 { get; set; }
@@ -298,6 +300,12 @@ namespace Economy
         private void TitleBar_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             App.Current.MainWindow.DragMove();
+        }
+
+        private void DevInfo_Click(object sender, RoutedEventArgs e)
+        {
+            CurrentPage.Navigate(this.devInfo);
+
         }
     }
 

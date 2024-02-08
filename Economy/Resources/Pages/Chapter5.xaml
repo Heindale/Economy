@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Economy.Resources.Pages"
       mc:Ignorable="d" d:DesignWidth="800"
       Title="Chapter5"
-      Background="White" Height="5104">
+      Background="White">
 
     <Page.Resources>
         <ResourceDictionary>
@@ -677,7 +677,7 @@
                     <TextBox x:Name="T535C64" Grid.Row="6" BorderThickness="0 0 1 1" TextAlignment="Center" VerticalContentAlignment="Center" Grid.Column="4"></TextBox>
 
                     <Border BorderThickness="1 0 1 1" Grid.Row="7" Grid.ColumnSpan="2">
-                        <TextBlock Padding="5 0 0 0">ИТОГО:</TextBlock>
+                        <TextBlock Padding="5 0 0 0">СУММА:</TextBlock>
                     </Border>
                     <TextBox x:Name="T535C72" Grid.Row="7" BorderThickness="0 0 1 1" TextAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2"></TextBox>
                     <TextBox x:Name="T535C73" Grid.Row="7" BorderThickness="0 0 1 1" TextAlignment="Center" VerticalContentAlignment="Center" Grid.Column="3"></TextBox>
