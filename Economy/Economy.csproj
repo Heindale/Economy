@@ -7,6 +7,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <Platforms>AnyCPU;x86</Platforms>
+    <PackageIcon>Icon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,6 +25,7 @@
     <None Remove="Resources\Images\BublClick.png" />
     <None Remove="Resources\Images\close.png" />
     <None Remove="Resources\Images\Export.png" />
+    <None Remove="Resources\Images\Icon.ico" />
     <None Remove="Resources\Images\IconBIG.png" />
     <None Remove="Resources\Images\info.png" />
     <None Remove="Resources\Images\Load.png" />
@@ -42,6 +44,13 @@
     <None Remove="Resources\Images\ukrtbPrikol.png" />
     <None Remove="Resources\Images\Welcome.png" />
     <None Remove="Resources\Images\win.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Desktop\PC-condition\Downloads\Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
@@ -89,6 +98,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\Export.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\Icon.ico">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\IconBIG.png">

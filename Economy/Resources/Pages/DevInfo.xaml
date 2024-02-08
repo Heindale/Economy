@@ -13,8 +13,13 @@
     <Grid>
         <StackPanel Margin="10">
             <Image Width="100" Source="/Resources/Images/ukrtbPrikol.png" RenderOptions.BitmapScalingMode="HighQuality"  />
-            <TextBlock FontSize="20" FontWeight="Light" Text="    Программа реализована студентами Уфимского колледжа радиоэлектроники, телекоммуникации и безопасности, специальности 'информационные системы и программирование': Нуриханов Данил, Захлебин Михаил, Курбангулов Данис, Шутков Алексей." TextWrapping="Wrap"/>
-            <TextBlock FontSize="20" FontWeight="Light" Text="    Руководитель проекта - Горцева Таисия Николаевна."/>
+            <TextBlock FontSize="20" FontWeight="Light" Text="    Программа реализована студентами Уфимского колледжа радиоэлектроники, телекоммуникации и безопасности, обучающимися по специальности информационные системы и программирование:" TextWrapping="Wrap"/>
+            <TextBlock Margin="0,5,0,0" FontSize="20" FontWeight="Light" Text="    - Нуриханов Данил"/>
+            <TextBlock Margin="0,5,0,0" FontSize="20" FontWeight="Light" Text="    - Захлебин Михаил"/>
+            <TextBlock Margin="0,5,0,0" FontSize="20" FontWeight="Light" Text="    - Курбангулов Данис"/>
+            <TextBlock Margin="0,5,0,0" FontSize="20" FontWeight="Light" Text="    - Шутков Алексей"/>
+            <TextBlock Margin="0,30,0,0" FontSize="20" FontWeight="Light" Text="    Руководитель проекта - Горцева Таисия Николаевна."/>
+            
             <TextBlock FontSize="20" FontWeight="Light" Text="Уфа, 2024" TextAlignment="Center" Margin="0,50,0,0"/>
 
         </StackPanel>    

@@ -13,6 +13,8 @@
         x:Name="Window1"
         Height="804"
         Width="800"
+        Icon="/Resources/Images/Icon.ico"
+
         >
     <WindowChrome.WindowChrome>
         <WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0">
