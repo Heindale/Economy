@@ -1746,93 +1746,98 @@
                              BorderThickness="0 0 1 1"
                              Grid.Row="2"
                              Grid.Column="1"></TextBox>
-                    <TextBox x:Name="T421C21"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="3"
-                             Grid.Column="1"></TextBox>
-                    <TextBox x:Name="T421C31"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="4"
-                             Grid.Column="1"></TextBox>
-                    <TextBox x:Name="T421C41"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="5"
-                             Grid.Column="1"></TextBox>
-                    <TextBox x:Name="T421C51"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="6"
-                             Grid.Column="1"></TextBox>
-                    <TextBox x:Name="T421C61"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="7"
-                             Grid.Column="1"></TextBox>
-
                     <TextBox x:Name="T421C12"
                              BorderThickness="0 0 1 1"
                              Grid.Row="2"
                              Grid.Column="2"></TextBox>
-                    <TextBox x:Name="T421C22"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="3"
-                             Grid.Column="2"></TextBox>
-                    <TextBox x:Name="T421C32"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="4"
-                             Grid.Column="2"></TextBox>
-                    <TextBox x:Name="T421C42"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="5"
-                             Grid.Column="2"></TextBox>
-                    <TextBox x:Name="T421C52"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="6"
-                             Grid.Column="2"></TextBox>
-                    <TextBox x:Name="T421C62"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="7"
-                             Grid.Column="2"></TextBox>
-
                     <TextBox x:Name="T421C13"
                              BorderThickness="0 0 1 1"
                              Grid.Row="2"
                              Grid.Column="3"></TextBox>
+
+                    <TextBox x:Name="T421C21"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="3"
+                             Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C22"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="3"
+                             Grid.Column="2"></TextBox>
                     <TextBox x:Name="T421C23"
                              BorderThickness="0 0 1 1"
                              Grid.Row="3"
                              Grid.Column="3"></TextBox>
+                    
+                    <TextBox x:Name="T421C31"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="4"
+                             Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C32"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="4"
+                             Grid.Column="2"></TextBox>
                     <TextBox x:Name="T421C33"
                              BorderThickness="0 0 1 1"
                              Grid.Row="4"
                              Grid.Column="3"></TextBox>
+
+                    <TextBox x:Name="T421C41"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="5"
+                             Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C42"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="5"
+                             Grid.Column="2"></TextBox>
                     <TextBox x:Name="T421C43"
                              BorderThickness="0 0 1 1"
                              Grid.Row="5"
                              Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T421C44"
+                             BorderThickness="0 0 1 1"
+                             Grid.Column="4"
+                             Grid.Row="5"></TextBox>
+
+                    <TextBox x:Name="T421C51"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="6"
+                             Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C52"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="6"
+                             Grid.Column="2"></TextBox>
                     <TextBox x:Name="T421C53"
                              BorderThickness="0 0 1 1"
                              Grid.Row="6"
                              Grid.Column="3"></TextBox>
+                    
+                    <TextBox x:Name="T421C61"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="7"
+                             Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C62"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="7"
+                             Grid.Column="2"></TextBox>
                     <TextBox x:Name="T421C63"
                              BorderThickness="0 0 1 1"
                              Grid.Row="7"
                              Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T421C64"
+                             BorderThickness="0 0 1 1"
+                             Grid.Column="4"
+                             Grid.Row="7"></TextBox>
+
                     <TextBlock Margin="3"
                                HorizontalAlignment="Center"
                                Grid.Column="4"
                                Grid.Row="2"
                                Grid.RowSpan="3">Общее кол-во прямых конкурентов</TextBlock>
-                    <TextBox x:Name="T421C44"
-                             BorderThickness="0 0 1 1"
-                             Grid.Column="4"
-                             Grid.Row="5"></TextBox>
+
                     <TextBlock Margin="3"
                                HorizontalAlignment="Center"
                                Grid.Column="4"
                                Grid.Row="6">Средняя доля конкурента, в % (= 100 / (общее кол-во прямых конкурентов +1))</TextBlock>
-                    <TextBox x:Name="T421C64"
-                             BorderThickness="0 0 1 1"
-                             Grid.Column="4"
-                             Grid.Row="7"></TextBox>
 
                     <Border BorderThickness="1 0 1 1"
                             Grid.Row="8"
@@ -1853,85 +1858,89 @@
                              BorderThickness="0 0 1 1"
                              Grid.Row="8"
                              Grid.Column="1"></TextBox>
-                    <TextBox x:Name="T421C81"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="9"
-                             Grid.Column="1"></TextBox>
-                    <TextBox x:Name="T421C91"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="10"
-                             Grid.Column="1"></TextBox>
-                    <TextBox x:Name="T421C101"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="11"
-                             Grid.Column="1"></TextBox>
-                    <TextBox x:Name="T421C111"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="12"
-                             Grid.Column="1"></TextBox>
-                    <TextBox x:Name="T421C121"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="13"
-                             Grid.Column="1"></TextBox>
-
                     <TextBox x:Name="T421C72"
                              BorderThickness="0 0 1 1"
                              Grid.Row="8"
                              Grid.Column="2"></TextBox>
-                    <TextBox x:Name="T421C82"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="9"
-                             Grid.Column="2"></TextBox>
-                    <TextBox x:Name="T421C92"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="10"
-                             Grid.Column="2"></TextBox>
-                    <TextBox x:Name="T421C102"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="11"
-                             Grid.Column="2"></TextBox>
-                    <TextBox x:Name="T421C112"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="12"
-                             Grid.Column="2"></TextBox>
-                    <TextBox x:Name="T421C122"
-                             BorderThickness="0 0 1 1"
-                             Grid.Row="13"
-                             Grid.Column="2"></TextBox>
-
                     <TextBox x:Name="T421C73"
                              BorderThickness="0 0 1 1"
                              Grid.Row="8"
                              Grid.Column="3"></TextBox>
+                    
+                    <TextBox x:Name="T421C81"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="9"
+                             Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C82"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="9"
+                             Grid.Column="2"></TextBox>
                     <TextBox x:Name="T421C83"
                              BorderThickness="0 0 1 1"
                              Grid.Row="9"
                              Grid.Column="3"></TextBox>
+                    
+                    <TextBox x:Name="T421C91"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="10"
+                             Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C92"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="10"
+                             Grid.Column="2"></TextBox>
                     <TextBox x:Name="T421C93"
                              BorderThickness="0 0 1 1"
                              Grid.Row="10"
                              Grid.Column="3"></TextBox>
+                    
+                    <TextBox x:Name="T421C101"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="11"
+                             Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C102"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="11"
+                             Grid.Column="2"></TextBox>
                     <TextBox x:Name="T421C103"
                              BorderThickness="0 0 1 1"
                              Grid.Row="11"
                              Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T421C104"
+                             BorderThickness="0 0 1 1"
+                             Grid.Column="4"
+                             Grid.Row="11"></TextBox>
+                    
+                    <TextBox x:Name="T421C111"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="12"
+                             Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C112"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="12"
+                             Grid.Column="2"></TextBox>
                     <TextBox x:Name="T421C113"
                              BorderThickness="0 0 1 1"
                              Grid.Row="12"
                              Grid.Column="3"></TextBox>
+                    <TextBox x:Name="T421C121"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="13"
+                             Grid.Column="1"></TextBox>
+                    <TextBox x:Name="T421C122"
+                             BorderThickness="0 0 1 1"
+                             Grid.Row="13"
+                             Grid.Column="2"></TextBox>
                     <TextBox x:Name="T421C123"
                              BorderThickness="0 0 1 1"
                              Grid.Row="13"
                              Grid.Column="3"></TextBox>
+
                     <TextBlock Margin="3"
                                HorizontalAlignment="Center"
                                Grid.Column="4"
                                Grid.Row="8"
                                Grid.RowSpan="3">Общее кол-во косвенных конкурентов</TextBlock>
-                    <TextBox x:Name="T421C104"
-                             BorderThickness="0 0 1 1"
-                             Grid.Column="4"
-                             Grid.Row="11"></TextBox>
+
                     <TextBlock Margin="0,3,0,5"
                                TextWrapping="Wrap"
                                HorizontalAlignment="Center"
@@ -2053,61 +2062,58 @@
             </StackPanel>
 
             <StackPanel Margin="5 35 5 5">
-                <StackPanel.Resources>
-                    <Style TargetType="TextBox"
-                           BasedOn="{StaticResource BlueLineTextBox}" />
-                </StackPanel.Resources>
-                <TextBlock HorizontalAlignment="Center"
-                           FontWeight="Bold">Выбор рыночной или измененной цены на основе уникальности товара/услуги</TextBlock>
-                <TextBlock Margin="0 10"
-                           Width="210"
-                           HorizontalAlignment="Left">Чего вы хотите добиться, устанавливая именно такую цену на ваш продукт?» (для выбранного ответа поставьте «+»)</TextBlock>
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Margin="0 10"
-                               Width="210"
-                               HorizontalAlignment="Left">снять сливки с нового рынка</TextBlock>
-                    <ComboBox x:Name="T423C11"
-                              Margin="5 0 0 0"
-                              Width="50"
-                              Height="25">
-                        <ComboBoxItem Content="" />
-                        <ComboBoxItem Content="+" />
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold">Выбор рыночной или измененной цены на основе уникальности товара/услуги</TextBlock>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Border BorderThickness="1"/>
+                    <Border BorderThickness="0 1 1 1" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <Border BorderThickness="0 1 1 1" Grid.Column="3" Grid.ColumnSpan="2"/>
+
+                    <TextBlock FontWeight="Bold" TextAlignment="Center" HorizontalAlignment="Center">Вопрос</TextBlock>
+                    <TextBlock FontWeight="Bold" TextAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="2">Вариант ответа (+)</TextBlock>
+                    <TextBlock FontWeight="Bold" TextAlignment="Center" HorizontalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="2">Вариант ответа (руб.)</TextBlock>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="1" Grid.RowSpan="2"/>
+                    <TextBlock Padding="5" Grid.Row="1" Grid.RowSpan="2">Чего вы хотите добиться, устанавливая именно такую цену на ваш продукт?» (для выбранного ответа поставьте «+»)</TextBlock>
+
+                    <Border BorderThickness="0 0 1 1" Grid.Row="1" Grid.Column="1"></Border>
+                    <TextBlock Padding="5" Grid.Row="1" Grid.Column="1">снять сливки с нового рынка</TextBlock>
+                    <ComboBox x:Name="T423C11" Grid.Row="1" Grid.Column="2">
+                        <ComboBoxItem Content=""/>
+                        <ComboBoxItem Content="+"/>
                     </ComboBox>
-                </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Margin="0 10"
-                               Width="210"
-                               HorizontalAlignment="Left">пробиться на уже сформировавшийся рынок</TextBlock>
-                    <ComboBox x:Name="T423C21"
-                              Margin="5 0 0 0"
-                              Width="50"
-                              Height="25">
-                        <ComboBoxItem Content="" />
-                        <ComboBoxItem Content="+" />
+                    <Border BorderThickness="0 0 1 1" Grid.Row="1" Grid.Column="3"></Border>
+                    <TextBlock Padding="5" Grid.Row="1" Grid.Column="3">Цена будет <Underline>выше</Underline> цен конкурентов, руб.</TextBlock>
+                    <TextBox x:Name="T423C12" Grid.Row="1" Grid.Column="4" BorderThickness="0 0 1 1" TextAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+
+                    <Border BorderThickness="0 0 1 1" Grid.Row="2" Grid.Column="1"></Border>
+                    <TextBlock Padding="5" Grid.Row="2" Grid.Column="1">пробиться на уже сформировавшийся рыно</TextBlock>
+                    <ComboBox x:Name="T423C21" Grid.Row="2" Grid.Column="2">
+                        <ComboBoxItem Content=""/>
+                        <ComboBoxItem Content="+"/>
                     </ComboBox>
-                </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Margin="0 10"
-                               Width="210"
-                               HorizontalAlignment="Left">Цена будет выше цен конкурентов, руб.</TextBlock>
-                    <TextBox x:Name="T423C12"
-                             Margin="5 0 0 0"
-                             Width="50"
-                             Height="25"></TextBox>
-                </StackPanel>
+                    <Border BorderThickness="0 0 1 1" Grid.Row="2" Grid.Column="3"></Border>
+                    <TextBlock Padding="5" Grid.Row="2" Grid.Column="3">Цена будет <Underline>ниже</Underline> цен конкурентов, руб.</TextBlock>
+                    <TextBox x:Name="T423C22" Grid.Row="2" Grid.Column="4" BorderThickness="0 0 1 1" TextAlignment="Center" VerticalContentAlignment="Center"></TextBox>
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Margin="0 10"
-                               Width="210"
-                               HorizontalAlignment="Left">Цена будет ниже цен конкурентов, руб.</TextBlock>
-                    <TextBox x:Name="T423C22"
-                             Margin="5 0 0 0"
-                             Width="50"
-                             Height="25"></TextBox>
-                </StackPanel>
+                </Grid>
             </StackPanel>
 
             <StackPanel Margin="5 35 5 5">
@@ -2479,61 +2485,53 @@
             </StackPanel>
 
             <StackPanel Margin="5 35 5 5">
-                <StackPanel.Resources>
-                    <Style TargetType="TextBox"
-                           BasedOn="{StaticResource BlueLineTextBox}" />
-                </StackPanel.Resources>
-                <TextBlock HorizontalAlignment="Center"
-                           FontWeight="Bold"
-                           Margin="0 0 0 5">Постановка задач ценообразования</TextBlock>
-                <TextBlock HorizontalAlignment="Left"
-                           FontWeight="Bold"
-                           Margin="0 0 0 5">Выберите одну стратегию из двух (+)</TextBlock>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Width="210"
-                               HorizontalAlignment="Left"
-                               Margin="0 0 0 5">Покрытие затрат на производство (реализацию) товара / услуги и обеспечение прибыли</TextBlock>
-                    <ComboBox x:Name="T425C11"
-                              Width="50"
-                              Height="20">
-                        <ComboBoxItem Content="" />
-                        <ComboBoxItem Content="+" />
+
+                <TextBlock HorizontalAlignment="Center" FontWeight="Bold">Постановка задач ценообразования</TextBlock>
+
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Border BorderThickness="1" Grid.ColumnSpan="2"/>
+                    <TextBlock Padding="5" FontWeight="Bold" Grid.ColumnSpan="2">Выберите одну стратегию из двух (+)</TextBlock>
+
+                    <Border BorderThickness="0 1 1 1" Grid.Column="2" Grid.ColumnSpan="2"/>
+                    <TextBlock Padding="5" FontWeight="Bold" Grid.Column="2" Grid.ColumnSpan="2">Вариант ответа (руб.)</TextBlock>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="1"/>
+                    <TextBlock Padding="5" Grid.Row="1">Покрытие затрат на производство (реализацию) товара / услуги и обеспечение прибыли</TextBlock>
+                    <ComboBox x:Name="T425C11" Grid.Row="1" Grid.Column="1">
+                        <ComboBoxItem Content=""/>
+                        <ComboBoxItem Content="+"/>
                     </ComboBox>
-                </StackPanel>
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Width="210"
-                               HorizontalAlignment="Left"
-                               Margin="0 0 0 5">Решение маркетинговых и/или социальных вопросов</TextBlock>
-                    <ComboBox x:Name="T425C21"
-                              Width="50"
-                              Height="20">
-                        <ComboBoxItem Content="" />
-                        <ComboBoxItem Content="+" />
+                    <Border BorderThickness="0 0 1 1" Grid.Row="1" Grid.Column="2"/>
+                    <TextBlock Padding="5" Grid.Row="1" Grid.Column="2">Цена будет <Underline>выше</Underline> себестоимости и составляет</TextBlock>
+                    <TextBox x:Name="T425C12" BorderThickness="0 0 1 1" Grid.Row="1" Grid.Column="3" TextAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+
+                    <Border BorderThickness="1 0 1 1" Grid.Row="2"/>
+                    <TextBlock Padding="5" Grid.Row="2">Решение маркетинговых и/или социальных вопросов</TextBlock>
+                    <ComboBox x:Name="T425C21" Grid.Row="2" Grid.Column="1">
+                        <ComboBoxItem Content=""/>
+                        <ComboBoxItem Content="+"/>
                     </ComboBox>
-                </StackPanel>
 
-                <TextBlock HorizontalAlignment="Left"
-                           FontWeight="Bold"
-                           Margin="0 0 0 5">Вариант ответа (руб.)</TextBlock>
+                    <Border BorderThickness="0 0 1 1" Grid.Row="2" Grid.Column="2"/>
+                    <TextBlock Padding="5" Grid.Row="2" Grid.Column="2">Цена будет <Underline>ниже</Underline> цен себестоимости и составляет</TextBlock>
+                    <TextBox x:Name="T425C22" BorderThickness="0 0 1 1" Grid.Row="2" Grid.Column="3" TextAlignment="Center" VerticalContentAlignment="Center"></TextBox>
 
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Width="210"
-                               HorizontalAlignment="Left"
-                               Margin="0 0 0 5">Цена будет <Underline>выше</Underline> себестоимости и составляет</TextBlock>
-                    <TextBox x:Name="T425C12"
-                             Height="20"
-                             Width="100"></TextBox>
-                </StackPanel>
-
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Width="210"
-                               HorizontalAlignment="Left"
-                               Margin="0 0 0 5">Цена будет <Underline>ниже</Underline> цен себестоимости и составляет</TextBlock>
-                    <TextBox x:Name="T425C22"
-                             Height="20"
-                             Width="100"></TextBox>
-                </StackPanel>
+                </Grid>
             </StackPanel>
 
             <StackPanel Margin="5 35 5 5">
