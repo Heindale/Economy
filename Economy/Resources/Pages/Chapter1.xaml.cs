@@ -21,12 +21,16 @@ namespace Economy.Resources.Pages
 	/// </summary>
 	public partial class Chapter1 : Page
 	{
-		public Chapter1()
+        //private MainWindow mainWindow;
+        public Chapter1()
 		{
 			InitializeComponent();
+			//this.mainWindow = mainWindow;
 		}
 
-		private void Sum_Click(object sender, RoutedEventArgs e)
+    
+
+        private void Sum_Click(object sender, RoutedEventArgs e)
 		{
 			T11Cell16.Text = ComboBoxSum(T11Cell12.Text, T11Cell13.Text, T11Cell15.Text);
 			T11Cell26.Text = ComboBoxSum(T11Cell22.Text, T11Cell23.Text, T11Cell25.Text);
