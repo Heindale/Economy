@@ -10,7 +10,7 @@
       Background="White"
 
       d:DesignWidth="800"
-      d:Height="3000"
+      d:DesignHeight="3000"
       Title="Title">
     <Page.Resources>
         <ResourceDictionary>
