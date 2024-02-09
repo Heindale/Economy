@@ -12,9 +12,22 @@
 
     <Grid>
         <StackPanel Margin="10">
-            <Image Width="100"
-                   Source="/Resources/Images/ukrtbPrikol.png"
+            <DockPanel HorizontalAlignment="Center">
+            <Image Width="34"
+                   Margin="15"
+                   HorizontalAlignment="Left"
+                   Source="/Resources/Images/ukrtbMyaso.png"
                    RenderOptions.BitmapScalingMode="HighQuality" />
+                <TextBlock FontSize="18"
+                           Height="45"
+                           FontWeight="Medium"
+                           Foreground="#4A5C9C"
+                           TextAlignment="Center"
+                           TextWrapping="Wrap"
+                           Text="УФИМСКИЙ КОЛЛЕДЖ РАДИОЭЛЕКТРОНИКИ ТЕЛЕКОММУНИКАЦИИ И БЕЗОПАСНОСТИ">
+                    
+                </TextBlock>
+            </DockPanel>
             <TextBlock FontSize="20"
                        FontWeight="Light"
                        Text="    Программа реализована студентами Уфимского колледжа радиоэлектроники, телекоммуникации и безопасности, обучающимися по специальности информационные системы и программирование."

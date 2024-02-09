@@ -21,6 +21,10 @@
     <None Remove="Resources\Images\ActvPpl.png" />
     <None Remove="Resources\Images\ActvSave.png" />
     <None Remove="Resources\Images\ActvWelcome.png" />
+    <None Remove="Resources\Images\broareyouok.png" />
+    <None Remove="Resources\Images\broinhospital.png" />
+    <None Remove="Resources\Images\broinwarp.png" />
+    <None Remove="Resources\Images\brothinking.png" />
     <None Remove="Resources\Images\Bubl.png" />
     <None Remove="Resources\Images\BublClick.png" />
     <None Remove="Resources\Images\close.png" />
@@ -38,11 +42,15 @@
     <None Remove="Resources\Images\Model.png" />
     <None Remove="Resources\Images\Money.png" />
     <None Remove="Resources\Images\PaperPlane.gif" />
+    <None Remove="Resources\Images\PigPattern.png" />
     <None Remove="Resources\Images\Plan.png" />
     <None Remove="Resources\Images\Ppl.png" />
+    <None Remove="Resources\Images\robobro.png" />
     <None Remove="Resources\Images\Save.png" />
+    <None Remove="Resources\Images\ukrtbMyaso.png" />
     <None Remove="Resources\Images\ukrtbPrikol.png" />
     <None Remove="Resources\Images\Welcome.png" />
+    <None Remove="Resources\Images\whatahell.png" />
     <None Remove="Resources\Images\win.png" />
   </ItemGroup>
 
@@ -86,6 +94,18 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\ActvWelcome.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\broareyouok.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\broinhospital.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\broinwarp.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\brothinking.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\Bubl.png">
@@ -142,19 +162,31 @@
     <Resource Include="Resources\Images\PaperPlane.gif">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Images\PigPattern.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Images\Plan.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\Ppl.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Images\robobro.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\Images\Save.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\ukrtbMyaso.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\ukrtbPrikol.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\Welcome.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Images\whatahell.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Images\win.png">

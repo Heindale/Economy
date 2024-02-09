@@ -339,7 +339,7 @@
             </Frame>
         </ScrollViewer>
         <DockPanel x:Name="TitleBar" VerticalAlignment="Top" Background="Transparent" LastChildFill="False" MouseDown="TitleBar_MouseDown"  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" >
-            <Label Content="Тренажёр для практического применения при разработке бизнес-проекта" Margin="10,0,0,0"  FontWeight="Medium" FontStretch="ExtraExpanded" Foreground="White" FontFamily="Calibri" FontSize="14"/>
+            <Label Content="Приложение для практических занятий при разработке бизнес проекта" Margin="10,0,0,0"  FontWeight="Medium" FontStretch="ExtraExpanded" Foreground="White" FontFamily="Calibri" FontSize="14"/>
 
             <Button  x:Name="Close" Style= "{StaticResource TitleBarBut}" DockPanel.Dock="Right" Click="Close_Click" Width="50" Height="30" Background="Transparent" BorderBrush="Transparent">
                 <Image Source="/Resources/Images/close.png" Width="13" />

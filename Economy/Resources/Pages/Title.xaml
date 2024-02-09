@@ -8,6 +8,7 @@
       xmlns:gif="http://wpfanimatedgif.codeplex.com"
       mc:Ignorable="d"
       Background="White"
+
       d:DesignWidth="800"
       d:Height="3000"
       Title="Title">
@@ -35,7 +36,7 @@
                        TextWrapping="Wrap"
                        TextAlignment="Center"
                        Text="Добро пожаловать в приложение для практических занятий при разработке бизнес-проекта!"
-                       FontWeight="ExtraBold"
+                       FontWeight="Medium"
                        HorizontalAlignment="Center"
                        Foreground="#FF374474">
             </TextBlock>
@@ -76,6 +77,9 @@
                                     Value="Light" />
                         </Style>
                     </StackPanel.Resources>
+                    <Image Source="/Resources/Images/robobro.png"  MaxWidth="800" RenderOptions.BitmapScalingMode="HighQuality"/>
+
+
                     <Button x:Name="ToChapter1"
                             Click="ToChapter1_Click"
                             Height="50"
@@ -92,6 +96,8 @@
                                        VerticalAlignment="Center" />
                         </StackPanel>
                     </Button>
+
+                    <Image Source="/Resources/Images/broinwarp.png"  MaxWidth="800" RenderOptions.BitmapScalingMode="HighQuality" Margin="0,70,0,0"/>
                     <Button x:Name="ToChapter2"
                             Click="ToChapter2_Click"
                             Height="50"
@@ -108,6 +114,7 @@
                                        VerticalAlignment="Center" />
                         </StackPanel>
                     </Button>
+                    <Image Source="/Resources/Images/broinhospital.png"  MaxWidth="800" RenderOptions.BitmapScalingMode="HighQuality" Margin="0,70,0,0"/>
                     <Button x:Name="ToChapter3"
                             Click="ToChapter3_Click"
                             Height="50"
@@ -125,6 +132,7 @@
                         </StackPanel>
                     </Button>
 
+                    <Image Source="/Resources/Images/brothinking.png"  MaxWidth="800" RenderOptions.BitmapScalingMode="HighQuality" Margin="0,70,0,0"/>
                     <Button x:Name="ToChapter4"
                             Click="ToChapter4_Click"
                             Height="50"
@@ -141,7 +149,7 @@
                                        VerticalAlignment="Center" />
                         </StackPanel>
                     </Button>
-
+                    <Image Source="/Resources/Images/broareyouok.png"  MaxWidth="800" RenderOptions.BitmapScalingMode="HighQuality" Margin="0,70,0,0"/>
                     <Button x:Name="ToChapter5"
                             Click="ToChapter5_Click"
                             Height="50"
@@ -163,7 +171,7 @@
 
             <Expander Style="{DynamicResource UberExpander}"
                       Margin="5"
-                      Header="Описание программы"
+                      Header="Описание приложения"
                       FontSize="30"
                       FontWeight="Light">
                 <StackPanel>
@@ -186,7 +194,7 @@
                                TextWrapping="Wrap">
                     </TextBlock>
                     <Image Width="500"
-                           Source="/Resources/Images/MeMchik2025.png"
+                           Source="/Resources/Images/whatahell.png"
                            Margin="10">
                     </Image>
                     <TextBlock Margin="10,0,10,0"
@@ -254,12 +262,14 @@
                         <Image Source="/Resources/Images/Manual2.png" />
                     </Border>
 
-                    <TextBlock Text="   Вы можете сохранить введенные данные в программе, чтобы потом продолжить работу с места, на котором Вы остановились. Для этого воспользуйтесь кнопками, показаными на рисунке." />
+                    <TextBlock Text="   Вы можете сохранить введенные данные в программе, чтобы потом продолжить работу с места, на котором Вы остановились. Для этого, нажмите на кнопку сохранения и выберите папку, в которой будет находиться файл сохранения. Когда потребуется продолжить работу, нажмите на кнопку загрузки данных и выберите созданный ранее файл." />
                     <Border Margin="15"
                             BorderBrush="red"
                             BorderThickness="3">
-                        <Image Source="/Resources/Images/Manual3.png" />
+                       <Image Source="/Resources/Images/Manual3.png" />
+
                     </Border>
+                    <TextBlock Text="   В случае необходимости каких-либо разделов, таблиц, графиков, все эти данные можно ввести в Word-документ, после экспорта." />
                 </StackPanel>
             </Expander>
         </StackPanel>
