@@ -77,7 +77,7 @@
                                     Value="Light" />
                         </Style>
                     </StackPanel.Resources>
-                    <Image Source="/Resources/Images/robobro.png"  MaxWidth="800" RenderOptions.BitmapScalingMode="HighQuality"/>
+                    <Image Source="/Resources/Images/robobro.png"  MaxWidth="800" RenderOptions.BitmapScalingMode="HighQuality" MouseLeftButtonDown="ToChapter1_Click"/>
 
 
                     <Button x:Name="ToChapter1"
@@ -97,7 +97,7 @@
                         </StackPanel>
                     </Button>
 
-                    <Image Source="/Resources/Images/broinwarp.png"  MaxWidth="800" RenderOptions.BitmapScalingMode="HighQuality" Margin="0,70,0,0"/>
+                    <Image Source="/Resources/Images/broinwarp.png"  MaxWidth="800" RenderOptions.BitmapScalingMode="HighQuality" Margin="0,70,0,0" MouseLeftButtonDown="ToChapter2_Click"/>
                     <Button x:Name="ToChapter2"
                             Click="ToChapter2_Click"
                             Height="50"
@@ -114,7 +114,7 @@
                                        VerticalAlignment="Center" />
                         </StackPanel>
                     </Button>
-                    <Image Source="/Resources/Images/broinhospital.png"  MaxWidth="800" RenderOptions.BitmapScalingMode="HighQuality" Margin="0,70,0,0"/>
+                    <Image Source="/Resources/Images/broinhospital.png"  MaxWidth="800" RenderOptions.BitmapScalingMode="HighQuality" Margin="0,70,0,0" MouseLeftButtonDown="ToChapter3_Click"/>
                     <Button x:Name="ToChapter3"
                             Click="ToChapter3_Click"
                             Height="50"
@@ -132,7 +132,7 @@
                         </StackPanel>
                     </Button>
 
-                    <Image Source="/Resources/Images/brothinking.png"  MaxWidth="800" RenderOptions.BitmapScalingMode="HighQuality" Margin="0,70,0,0"/>
+                    <Image Source="/Resources/Images/brothinking.png"  MaxWidth="800" RenderOptions.BitmapScalingMode="HighQuality" Margin="0,70,0,0" MouseLeftButtonDown="ToChapter4_Click"/>
                     <Button x:Name="ToChapter4"
                             Click="ToChapter4_Click"
                             Height="50"
@@ -149,7 +149,7 @@
                                        VerticalAlignment="Center" />
                         </StackPanel>
                     </Button>
-                    <Image Source="/Resources/Images/broareyouok.png"  MaxWidth="800" RenderOptions.BitmapScalingMode="HighQuality" Margin="0,70,0,0"/>
+                    <Image Source="/Resources/Images/broareyouok.png"  MaxWidth="800" RenderOptions.BitmapScalingMode="HighQuality" Margin="0,70,0,0" MouseLeftButtonDown="ToChapter5_Click"/>
                     <Button x:Name="ToChapter5"
                             Click="ToChapter5_Click"
                             Height="50"
@@ -212,7 +212,8 @@
                     <TextBlock  Margin="10,0,10,0"
                                 Text="5. Как будет работать бизнес?" />
                     <TextBlock  Margin="10,20,10,0"
-                                Text="Последовательное продвижение по разделам программы позволит студенту разработать и оформить собственный бизнес-проект:" />
+                                Text="Последовательное продвижение по разделам программы позволит студенту разработать и оформить собственный бизнес-проект:" 
+                                TextWrapping="Wrap"/>
                     <TextBlock  Margin="10,0,10,0"
                                 Text="1. поиск, оценка и выбор бизнес-идеи;" />
                     <TextBlock  Margin="10,0,10,0"
