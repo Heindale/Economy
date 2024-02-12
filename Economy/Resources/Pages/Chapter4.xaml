@@ -9,7 +9,7 @@
       Background="White"
       d:DesignWidth="800"
       Title="Chapter4"
-      Height="7954">
+      d:DesignHeight="7754">
 
     <Page.Resources>
         <ResourceDictionary>

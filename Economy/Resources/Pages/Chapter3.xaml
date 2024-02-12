@@ -7,7 +7,7 @@
       mc:Ignorable="d"
       d:DesignWidth="800"
       Background="White"
-      Height="4034"
+      d:DesignHeight="3830"
       Title="Chapter3">
     <Page.Resources>
         <ResourceDictionary>
@@ -563,7 +563,7 @@
                        TextWrapping="Wrap"
                        Text="4.3. Подтвердилась ли гипотеза " />
             <TextBox x:Name="T33Cell151"
-                     Margin="5 0"
+                     Margin="5 0 5 10"
                      HorizontalAlignment="Left"
                      Width="400" />
         </StackPanel>
