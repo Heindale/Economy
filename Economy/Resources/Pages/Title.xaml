@@ -10,7 +10,7 @@
       Background="White"
 
       d:DesignWidth="800"
-      d:Height="3000"
+      d:Height="13000"
       Title="Title">
     <Page.Resources>
         <ResourceDictionary>
@@ -132,7 +132,7 @@
                         </StackPanel>
                     </Button>
 
-                    <Image Source="/Resources/Images/brothinking.png"  MaxWidth="800" RenderOptions.BitmapScalingMode="HighQuality" Margin="0,70,0,0"/>
+                    <Image Source="/Resources/Images/brothinking.png"  MaxWidth="800" RenderOptions.BitmapScalingMode="HighQuality" Margin="0,70,0,0" />
                     <Button x:Name="ToChapter4"
                             Click="ToChapter4_Click"
                             Height="50"
@@ -214,15 +214,15 @@
                     <TextBlock  Margin="10,20,10,0"
                                 Text="Последовательное продвижение по разделам программы позволит студенту разработать и оформить собственный бизнес-проект:" />
                     <TextBlock  Margin="10,0,10,0"
-                                Text="1. поиск, оценка и выбор бизнес-идеи;" />
+                                Text="1. Поиск, оценка и выбор бизнес-идеи;" />
                     <TextBlock  Margin="10,0,10,0"
-                                Text="2. составление бизнес-модели;" />
+                                Text="2. Составление бизнес-модели;" />
                     <TextBlock  Margin="10,0,10,0"
-                                Text="3. исследование рынка;" />
+                                Text="3. Исследование рынка;" />
                     <TextBlock  Margin="10,0,10,0"
-                                Text="4. составление финансовой модели;" />
+                                Text="4. Составление финансовой модели;" />
                     <TextBlock  Margin="10,0,10,0"
-                                Text="5. разработка бизнес-плана;" />
+                                Text="5. Разработка бизнес-плана." />
                     <TextBlock  Margin="10,20,10,0"
                                 Text="  Формирование предпринимательских компетенций может способствовать активизации положительных эффектов от развития собственного предпринимательского потенциала: инициативные граждане быстрее и эффективнее найдут приложение своим предпринимательским способностям, сформируют более адекватные ожидания от занятий собственным бизнесом."
                                 TextWrapping="Wrap" />
